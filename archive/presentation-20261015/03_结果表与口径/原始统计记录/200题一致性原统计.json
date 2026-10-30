@@ -1,0 +1,50 @@
+[
+  {
+    "task": "all",
+    "n": 200,
+    "B_correct": 140,
+    "C_correct": 101,
+    "passed": 99,
+    "passed_correct": 83,
+    "flagged": 101,
+    "flagged_B_errors": 44,
+    "unavailable_B": 0,
+    "B_accuracy": 0.7,
+    "C_accuracy": 0.505,
+    "retained_accuracy": 0.8383838383838383,
+    "retained_coverage": 0.495,
+    "error_recall": 0.7333333333333333
+  },
+  {
+    "task": "coverage_percentage",
+    "n": 100,
+    "B_correct": 71,
+    "C_correct": 58,
+    "passed": 67,
+    "passed_correct": 52,
+    "flagged": 33,
+    "flagged_B_errors": 14,
+    "unavailable_B": 0,
+    "B_accuracy": 0.71,
+    "C_accuracy": 0.58,
+    "retained_accuracy": 0.7761194029850746,
+    "retained_coverage": 0.67,
+    "error_recall": 0.4827586206896552
+  },
+  {
+    "task": "absolute_area",
+    "n": 100,
+    "B_correct": 69,
+    "C_correct": 43,
+    "passed": 32,
+    "passed_correct": 31,
+    "flagged": 68,
+    "flagged_B_errors": 30,
+    "unavailable_B": 0,
+    "B_accuracy": 0.69,
+    "C_accuracy": 0.43,
+    "retained_accuracy": 0.96875,
+    "retained_coverage": 0.32,
+    "error_recall": 0.967741935483871
+  }
+]

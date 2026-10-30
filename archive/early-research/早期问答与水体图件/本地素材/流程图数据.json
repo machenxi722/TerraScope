@@ -1,0 +1,68 @@
+{
+  "ranking": [
+    {
+      "id": "Ghana_97059",
+      "valid_fraction": 0.10449981689453125,
+      "p": [
+        100.0,
+        100.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 100.0,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.0,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 0.0
+    },
+    {
+      "id": "Pakistan_849790",
+      "valid_fraction": 0.9812889099121094,
+      "p": [
+        99.40250117594921,
+        99.70883108704356
+      ],
+      "abnormal": false,
+      "difference_pp": 0.3063299110943518,
+      "spectral_xor_pct": 17.62485470710118,
+      "spectral_iou_disagreement": 0.17629035142974903,
+      "spectral_nonpermanent_pct": 82.92521740482586,
+      "flips_membership": false,
+      "boundary_risk": 0.003167081296873399,
+      "reference_pct": 66.82812481777647
+    },
+    {
+      "id": "Ghana_866994",
+      "valid_fraction": 0.4482688903808594,
+      "p": [
+        40.89914986682098,
+        40.89914986682098
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 23.984988639361422,
+      "spectral_iou_disagreement": 0.23984988639361426,
+      "spectral_nonpermanent_pct": 18.23573963288543,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 39.98944779637651
+    }
+  ],
+  "example": {
+    "id": "India_747992",
+    "valid_fraction": 0.9997825622558594,
+    "p": [
+      0.15834436656530082,
+      52.41694551809132
+    ],
+    "abnormal": false,
+    "difference_pp": 52.258601151526015,
+    "spectral_xor_pct": 66.25967713011327,
+    "spectral_iou_disagreement": 0.997615942736668,
+    "spectral_nonpermanent_pct": 66.41802149667858,
+    "flips_membership": true,
+    "boundary_risk": 11.55892687365009,
+    "reference_pct": 44.764524757046324
+  }
+}

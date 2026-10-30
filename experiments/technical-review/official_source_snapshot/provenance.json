@@ -1,0 +1,41 @@
+{
+  "commit": "12b9970fca8d87ea3978c55a8f8fceddfd8efc2e",
+  "retrieved_date": "2026-10-15",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/shuyansy/Earth-Observation-VLMs/12b9970fca8d87ea3978c55a8f8fceddfd8efc2e/TerraScope/README.md",
+      "sha256": "2a9684f2ee211460e8eb0b4e30c0ee4ec08f286d564ae88d341dce48046dcc61"
+    },
+    {
+      "path": "projects/terrascope/configs/terrascope_8b.py",
+      "url": "https://raw.githubusercontent.com/shuyansy/Earth-Observation-VLMs/12b9970fca8d87ea3978c55a8f8fceddfd8efc2e/TerraScope/projects/terrascope/configs/terrascope_8b.py",
+      "sha256": "83d5e3920dbade0efc63be5c5da397a424a7c9967bda628f2486766c8ad05f19"
+    },
+    {
+      "path": "projects/terrascope/models/__init__.py",
+      "url": "https://raw.githubusercontent.com/shuyansy/Earth-Observation-VLMs/12b9970fca8d87ea3978c55a8f8fceddfd8efc2e/TerraScope/projects/terrascope/models/__init__.py",
+      "sha256": "489e7c8793f1f19f6eb01b1977a93772e7ce652263bf117892399976c36e73d1"
+    },
+    {
+      "path": "projects/terrascope/models/terrascope_model.py",
+      "url": "https://raw.githubusercontent.com/shuyansy/Earth-Observation-VLMs/12b9970fca8d87ea3978c55a8f8fceddfd8efc2e/TerraScope/projects/terrascope/models/terrascope_model.py",
+      "sha256": "c8dcaccedcfeab33f805d6133d4c6731ddf17657823278f976ce9dc0746454d5"
+    },
+    {
+      "path": "projects/terrascope/models/sam2_train.py",
+      "url": "https://raw.githubusercontent.com/shuyansy/Earth-Observation-VLMs/12b9970fca8d87ea3978c55a8f8fceddfd8efc2e/TerraScope/projects/terrascope/models/sam2_train.py",
+      "sha256": "7604addad1e32909141912ea9c7b78c806ab3767ef81997146ca0e057faffcd6"
+    },
+    {
+      "path": "projects/terrascope/models/internvl.py",
+      "url": "https://raw.githubusercontent.com/shuyansy/Earth-Observation-VLMs/12b9970fca8d87ea3978c55a8f8fceddfd8efc2e/TerraScope/projects/terrascope/models/internvl.py",
+      "sha256": "04a877ee454bed43cfcce4aebfde40f5227cd244663ba6ce76eae1e3ca012fc5"
+    },
+    {
+      "path": "projects/terrascope/evaluation/infer_terrascope_bench.py",
+      "url": "https://raw.githubusercontent.com/shuyansy/Earth-Observation-VLMs/12b9970fca8d87ea3978c55a8f8fceddfd8efc2e/TerraScope/projects/terrascope/evaluation/infer_terrascope_bench.py",
+      "sha256": "d0f267eb0839ae384fb5bc385464b5d274ca59459e0f9d4967c37414ebd23f36"
+    }
+  ]
+}

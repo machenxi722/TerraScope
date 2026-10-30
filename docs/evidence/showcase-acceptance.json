@@ -1,0 +1,209 @@
+{
+  "projects": [
+    {
+      "id": "603ea203-de06-479e-952b-46d9104484ba",
+      "name": "小组展示 · 7598 居民区道路调查",
+      "images": [
+        {
+          "sample_id": "7598",
+          "image_id": "3a378fe8-9bc4-47d1-8e83-2c91bf452df2",
+          "location": null,
+          "results": [
+            {
+              "id": "c72fb25f-265e-49bc-8dba-0585ea7e493d",
+              "strategy": "tta4",
+              "source": "live_inference",
+              "metrics": {
+                "pred_pixels": 235695,
+                "valid_pixels": 701440,
+                "coverage_percent": 33.601591012773724,
+                "scene_threshold_percent": 1,
+                "scene_screen_positive": true,
+                "validity_source": "label_non_255",
+                "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+                "area_m2": null
+              },
+              "evaluation": {
+                "tp": 210967,
+                "fp": 24728,
+                "fn": 12346,
+                "gt_pixels": 223313,
+                "iou": 0.8505327748235171,
+                "precision": 0.8950847493582809,
+                "recall": 0.9447143695172247,
+                "gt_coverage_percent": 31.83636519160584,
+                "coverage_error_pp": 1.7652258211678833,
+                "null_reason": "分母为零的指标为 null；无目标影像不人为设置 IoU=1"
+              },
+              "runtime": {
+                "job_id": "8cf0b44e-8cd5-4d16-b6ff-43b96e26b22c",
+                "device": "NVIDIA A800 80GB PCIe",
+                "elapsed_seconds": 1.4819863848388195,
+                "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+              },
+              "review_revision": 1,
+              "same_as_server_mask": true,
+              "task_seconds": 3.1392199993133545
+            },
+            {
+              "id": "94133531-5365-4ca4-b966-45e20a4e5a1b",
+              "strategy": "single_view",
+              "source": "live_inference",
+              "metrics": {
+                "pred_pixels": 240828,
+                "valid_pixels": 701440,
+                "coverage_percent": 34.33337135036496,
+                "scene_threshold_percent": 1,
+                "scene_screen_positive": true,
+                "validity_source": "label_non_255",
+                "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+                "area_m2": null
+              },
+              "evaluation": {
+                "tp": 212685,
+                "fp": 28143,
+                "fn": 10628,
+                "gt_pixels": 223313,
+                "iou": 0.8458139793840672,
+                "precision": 0.8831406647067617,
+                "recall": 0.9524076072597655,
+                "gt_coverage_percent": 31.83636519160584,
+                "coverage_error_pp": 2.497006158759124,
+                "null_reason": "分母为零的指标为 null；无目标影像不人为设置 IoU=1"
+              },
+              "runtime": {
+                "job_id": "3232acfa-5cc0-49f0-8bb7-5806a94006ff",
+                "device": "NVIDIA A800 80GB PCIe",
+                "elapsed_seconds": 0.3281060680747032,
+                "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+              },
+              "review_revision": 0,
+              "same_as_server_mask": true,
+              "task_seconds": 3.272069215774536
+            }
+          ]
+        },
+        {
+          "sample_id": "6480",
+          "image_id": "c5e4e77a-826f-4551-81df-be4745df37f0",
+          "location": {
+            "latitude": 29.618381333333335,
+            "longitude": -95.72140161111112,
+            "crs": "EPSG:4326",
+            "kind": "camera_position",
+            "source": "FloodNet original EXIF / audited experiment manifest"
+          },
+          "results": [
+            {
+              "id": "30bad85d-84ca-4a3a-9f66-37c4924633fb",
+              "strategy": "tta4",
+              "source": "historical_replay",
+              "metrics": {
+                "pred_pixels": 0,
+                "valid_pixels": 786432,
+                "coverage_percent": 0.0,
+                "scene_threshold_percent": 1,
+                "scene_screen_positive": false,
+                "validity_source": "label_non_255",
+                "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+                "area_m2": null
+              },
+              "evaluation": {
+                "tp": 0,
+                "fp": 0,
+                "fn": 0,
+                "gt_pixels": 0,
+                "iou": null,
+                "precision": null,
+                "recall": null,
+                "gt_coverage_percent": 0.0,
+                "coverage_error_pp": 0.0,
+                "null_reason": "分母为零的指标为 null；无目标影像不人为设置 IoU=1"
+              },
+              "runtime": {},
+              "review_revision": 0,
+              "same_as_server_mask": true,
+              "task_seconds": 0.8222959041595459
+            }
+          ]
+        }
+      ],
+      "reports": [
+        {
+          "id": "440ad7a6-d19e-4a36-b15d-bd3c07bd0830",
+          "sample_id": "7598",
+          "status": "SUCCEEDED",
+          "files": [
+            "report.pdf",
+            "mask.png",
+            "overlay.png",
+            "original.png",
+            "metadata.json",
+            "input.jpg",
+            "difference.png",
+            "statistics.csv",
+            "README.txt",
+            "SHA256SUMS.txt",
+            "evidence.zip"
+          ],
+          "checksums_verified": true
+        },
+        {
+          "id": "14bb5023-2240-49bf-856e-31f8432b67e4",
+          "sample_id": "6480",
+          "status": "SUCCEEDED",
+          "files": [
+            "report.pdf",
+            "mask.png",
+            "overlay.png",
+            "original.png",
+            "metadata.json",
+            "location.geojson",
+            "input.jpg",
+            "difference.png",
+            "statistics.csv",
+            "README.txt",
+            "SHA256SUMS.txt",
+            "evidence.zip"
+          ],
+          "checksums_verified": true
+        }
+      ]
+    }
+  ],
+  "video": {
+    "project_id": "edcc938d-6588-4c46-85ff-558d5d91196f",
+    "image_id": "4ca92925-6f30-4860-aabb-484ef834d8a6",
+    "prediction_id": "73c2aa91-fdfe-4dfe-be0b-4ec209ac92c5",
+    "sample_id": "7611",
+    "metrics": {
+      "pred_pixels": 109239,
+      "valid_pixels": 701440,
+      "coverage_percent": 15.573534443430656,
+      "scene_threshold_percent": 1,
+      "scene_screen_positive": true,
+      "validity_source": "label_non_255",
+      "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+      "area_m2": null
+    },
+    "evaluation": {
+      "tp": 103551,
+      "fp": 5688,
+      "fn": 16509,
+      "gt_pixels": 120060,
+      "iou": 0.8234802939211757,
+      "precision": 0.9479306840963392,
+      "recall": 0.8624937531234382,
+      "gt_coverage_percent": 17.11621806569343,
+      "coverage_error_pp": 1.5426836222627738,
+      "null_reason": "分母为零的指标为 null；无目标影像不人为设置 IoU=1"
+    },
+    "runtime": {
+      "job_id": "046beab1-053b-4998-8081-613c8d2ae15c",
+      "device": "NVIDIA A800 80GB PCIe",
+      "elapsed_seconds": 1.2506582215428352,
+      "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+    },
+    "same_as_server_mask": true
+  }
+}

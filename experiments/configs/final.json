@@ -1,0 +1,65 @@
+{
+  "task": "FloodNet RGB-only flooded-road segmentation",
+  "class_id": 3,
+  "ignore_label": 255,
+  "splits": {
+    "train": 300,
+    "val": 80,
+    "test": 448,
+    "holdout": 370
+  },
+  "base_model": {
+    "repo": "sy1998/TerraScope",
+    "revision": "a2333262586f8a07238d85db85061979198435fc"
+  },
+  "trainable_modules": [
+    "text_hidden_fcs",
+    "sam_mask_decoder"
+  ],
+  "trainable_parameters": 17981509,
+  "loss": "BCE + binary Lovasz hinge",
+  "optimizer": "AdamW",
+  "head_lr": 0.0001,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "micro_batch": 1,
+  "micro_steps": 4800,
+  "gradient_accumulation": 4,
+  "optimizer_updates": 1200,
+  "warmup_updates": 20,
+  "validate_every_micro_steps": 800,
+  "seeds": [
+    20261015,
+    20261016,
+    20261017
+  ],
+  "selected_seed": 20261017,
+  "selected_micro_step": 4800,
+  "selection_metric": "80-image validation global IoU",
+  "selected_checkpoint_kind": "single_checkpoint",
+  "lora_enabled": false,
+  "extra_prompt_enabled": false,
+  "parameter_averaging_enabled": false,
+  "prompt": "Segment the flooded roads in this aerial image.",
+  "assistant_prefix": "The flooded road regions are [SEG]",
+  "inference": {
+    "strategy": "tta4",
+    "views": [
+      "identity",
+      "horizontal",
+      "vertical",
+      "both"
+    ],
+    "aggregate": "mean of inverse-transformed logits",
+    "resize": "bilinear to original image size; align_corners=False",
+    "threshold_logit": 0
+  },
+  "delta_file": "weights/long_bce_lovasz_seed20261017_best_delta.pt",
+  "delta_sha256": "7c70b717815a39b66c052748c44256b685d17ef1513ee482084ce6419d93dfa8",
+  "source_protocol": "experiments/work/night_20261016/backup/protocol.json",
+  "source_report": "experiments/work/night_20261016/backup/results/report.json",
+  "notes": [
+    "Normalized summary; archived protocols preserve original bytes and disabled legacy fields.",
+    "The 448-image test set had been explored previously; the 370-image holdout is same-event."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "floodnet_n": 56,
+  "changed_n": 31,
+  "unchanged_n": 25,
+  "sen1floods11_checked_n": 71,
+  "sen1floods11_geometry_passed": true,
+  "same_model_masks_verified_n": 216,
+  "confirmed_mapping": "top-left native label canvas in EXIF-display coordinates, then nearest-neighbor resize",
+  "label_outside_canvas": 255,
+  "region_outline_experiment": "invalidated for old outlines; not recomputed from stale inputs",
+  "corrected_results_directory": "/Users/zhangchunhe/Documents/Codex/2026-10-12/new-chat-2/outputs/TerraScope_洪灾对齐修正版_20261015",
+  "model_input_downsample_exact_pixel_checks": 56,
+  "spatial_mismatch_factor": {
+    "horizontal": 1.148,
+    "vertical": 1.024
+  },
+  "affected_previous_artifacts": [
+    "/Users/zhangchunhe/Documents/Codex/2026-10-12/new-chat-2/outputs/TerraScope_洪灾完善实验_20261015",
+    "/Users/zhangchunhe/Documents/Codex/2026-10-12/new-chat-2/outputs/TerraScope_结果页重构版_20261015"
+  ],
+  "presentation_status": "Existing PPTX and its embedded charts/images have NOT been regenerated in this audit. Use corrected derived files for the next revision.",
+  "region_outline_status": "Old model calls included misregistered road outlines for dimension-mismatched samples. Withdraw old aggregate gate comparisons; rerun with aligned outlines before reuse.",
+  "unaffected_scope_checked": "71 Sen1Floods11 samples: RGB exact derivation from S2; label/JRC CRS, affine transform and shape agree; model mask sizes agree. This verifies the absence of the discovered coordinate scaling bug, not prediction accuracy.",
+  "reproduction_command": "work/flood-env/bin/python work/flood_workbench/experiment/evaluate_consensus.py",
+  "7571": {
+    "raw_image": "work/floodnet/raw/7571.jpg",
+    "raw_label": "work/floodnet/raw/7571_lab.png",
+    "old_road_share_pct": 40.17275197056638,
+    "corrected_road_share_pct": 84.00715691536948,
+    "original_water_mask_unmodified": true
+  }
+}

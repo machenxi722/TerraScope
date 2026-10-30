@@ -1,0 +1,32 @@
+{
+  "single_view": {
+    "tp": 137064,
+    "fp": 9946,
+    "fn": 42755,
+    "pred_pixels": 147010,
+    "gt_pixels": 179819,
+    "valid_pixels": 701440,
+    "precision": 0.9323447384531665,
+    "recall": 0.7622331344296209,
+    "iou": 0.7222828234922141,
+    "coverage": 20.95831432481752
+  },
+  "tta4": {
+    "tp": 140651,
+    "fp": 11934,
+    "fn": 39168,
+    "pred_pixels": 152585,
+    "gt_pixels": 179819,
+    "valid_pixels": 701440,
+    "precision": 0.9217878559491431,
+    "recall": 0.7821809708651477,
+    "iou": 0.7335009100248757,
+    "coverage": 21.753107892335766
+  },
+  "extra_positive_comparison": {
+    "n": 23,
+    "improved": 15,
+    "decreased": 7,
+    "same": 1
+  }
+}

@@ -1,0 +1,55 @@
+本地验证记录：2026-10-15
+
+环境：macOS arm64，Python 3.12.14，PyTorch 2.3.1 CPU，numpy 1.26.4，
+Pillow 10.4.0，rasterio 1.3.10，pyproj 3.6.1，affine 2.4.0，pytest 8.3.3。
+HF 导入检查另安装 torchvision 0.18.1、transformers 4.42.3、peft 0.11.1、
+accelerate 0.31.0 等 requirements-server.txt 所列核心依赖。
+
+已执行并通过：
+
+1. python -m pytest -q tests
+   结果：8 passed in 2.54s。
+   覆盖：
+   - 调用真实官方 SAM2Base._forward_sam_heads，与轻量适配器输出逐项精确相等；
+     使用缩小的 4×4 特征网格和合成输入，未用实际模型权重冒充实测遥感效果。
+   - 投影层、conv_s0、conv_s1、多候选掩码分支、IoU 质量分支有非零且有限梯度；
+     提示编码器被冻结，所有可训练参数都在 projector/decoder 允许范围内。
+   - 保存、重载头部权重后相同输入输出精确一致。
+   - 修改无效区域标签不改变损失，无效像素对应的 logit 梯度为零。
+   - 无水 GT 保留有效训练梯度，全无效样本会报错。
+   - EPSG:4326 椭球面积与米制投影像元面积正确，空掩码评价口径正确。
+   - 官方四个划分互不重复，数量为 252 / 89 / 90 / 15；预算算式与时区检查。
+   - 真正调用 train.main：合成缓存、2 次优化器更新、梯度累计、完整验证、保存 best。
+   - 真正调用 evaluate.main：读取检查点、测试集汇总、保留地理参考的 GeoTIFF 导出。
+   - 未完成缓存、缓存划分改变均拒绝运行。
+   - 合成 13 波段 GeoTIFF：B4/B3/B2 映射、固定反射率处理、-1 标签屏蔽正确；
+     图像/标签仿射变换不同会报错。
+
+2. HF 官方代码和分词器的离线导入检查（下载固定 revision 的小文件，不下载权重）：
+   AutoConfig、AutoTokenizer、Sa2VAChatModel 类加载成功；
+   架构 Qwen2ForCausalLM，语言隐藏维度 3584；
+   固定模板 + 256 个图像上下文 token + “Water [SEG]”合计 280 tokens；
+   [SEG] ID=151678，恰好出现一次且位于最后一个 token；
+   图像上下文 token 数量恰好为 256。
+   未安装 FlashAttention 的提示是预期现象；此工具包显式 use_flash_attn=False。
+
+3. 官方下载地址检查：
+   S2Hand/Ghana_103272_S2Hand.tif：HTTP 200，Content-Length 2241323；
+   LabelHand/Ghana_103272_LabelHand.tif：HTTP 200，Content-Length 1413。
+   只核验代表性地址，没有下载完整数据集。
+
+4. Python 语法编译检查、bash -n setup_server.sh；
+   run_budget --dry-run 能生成缓存、M1/M2、第二种子与 test/Bolivia 评价命令；
+   在 7.5 元/小时、预留 20 元时，工作截止设为租赁开始后 23 小时，最晚关机 24 小时。
+
+尚未验证，必须在真实服务器执行 preflight：
+
+- 完整官方 TerraScope 8B 的全部权重加载、真实 S2 输入和 CUDA/BF16 前向；
+- 真实模型的缓存头与官方头数值一致性（脚本内已设置断言）；
+- 24GB / 48GB 特定 GPU 上的峰值显存、速度、存储吞吐与最终费用；
+- 全部 446 个真实样本的数据完整性、配准和标签范围；
+- 1000 步训练是否能在时间盒内完成，以及 M1/M2 是否真的改善测试结果；
+- 队友原始 R0 的代码/权重/输入还原。
+
+本记录不能作为“已经完成 GPU 训练”“模型提升了某个百分比”或“24GB 一定能跑”的证明。
+请将服务器 preflight.json、实际 run_config、profile_100_steps.json、评价表和账单作为新证据。

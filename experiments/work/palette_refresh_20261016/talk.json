@@ -1,0 +1,204 @@
+[
+  {
+    "title": "TerraScope 洪灾道路智能解译",
+    "seconds": 14,
+    "speech": "大家好，我们的项目是 TerraScope 洪灾道路智能解译。我们以遥感多模态模型为基础，完成了受淹道路的轻量微调、多视图推理和应用验证，希望让模型从看懂洪灾影像，进一步走向准确定位需要调查的道路。",
+    "point": "用一句话交代模型基础、自己的工作和应用目标。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "航拍洪灾调查的时效需求与解译瓶颈",
+    "seconds": 37,
+    "speech": "洪灾发生后，需要尽快查清哪些道路受淹、影响范围有多大。卫星覆盖范围广，但获取合适的影像要考虑重访时机，光学影像还受云层影响。无人机则能面向重点区域灵活航拍，提供道路和建筑的局部细节。但拍到影像之后，仍然需要逐张判读、圈绘和统计。所以我们希望把航拍的采集优势继续延伸到解译阶段，自动定位受淹道路，输出可以核查的空间结果。",
+    "point": "先比较左侧卫星与航拍，再指右侧影像堆叠与判读任务，最后讲处理瓶颈。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json",
+      "ESA: https://business.esa.int/newcomers-earth-observation-guide",
+      "USGS: https://www.usgs.gov/publications/operationalizing-small-unoccupied-aircraft-systems-rapid-flood-inundation-mapping-and",
+      "左侧卫星示例为本地武汉2016-07-09影像，右侧为FloodNet航拍，比较采集方式，不是同一地点或事件。"
+    ]
+  },
+  {
+    "title": "TerraScope：用像素证据支持遥感问答",
+    "seconds": 29,
+    "speech": "TerraScope 可以同时生成语言回答和像素级掩膜。左边是我们本地运行的例子：输入水面覆盖率问题，模型回答约百分之十六，同时圈出了它所依据的水面位置。右边列出原模型覆盖的六类地理空间任务，包括覆盖率、面积、距离和变化分析。我们看中的是语言目标与空间证据的结合，并进一步把它适配到受淹道路这一具体任务。",
+    "point": "左侧讲一个真实问答，右侧六项能力只点到覆盖率、距离和变化，不逐项念。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "TerraScope 原理：语言引导分割与证据回注",
+    "seconds": 40,
+    "speech": "这张图介绍 TerraScope 的核心机制。左侧影像和问题进入多模态语言模型。当模型生成 SEG 标记，隐藏状态会经过投影层，变成 SAM2 可用的分割提示。下方 SAM2 结合图像特征生成像素掩膜。右侧再利用掩膜选取区域视觉信息，回注语言模型，为回答提供区域证据。我们在这个底座上，将任务收敛到受淹道路识别，重点适配提示投影和掩膜解码这两个环节。",
+    "point": "按语言输入、SEG 投影、SAM2 掩膜、REGION 回注顺序讲解。道路专用推理采用固定 SEG 前缀。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "本组流程：任务适配、四视图推理与调查统计",
+    "seconds": 30,
+    "speech": "我们的工作分成训练和使用两个阶段。左侧用三百幅标注影像适配模型，由八十幅验证影像选择权重。右上把同一影像的四个视图输入同一模型，将预测恢复到原坐标后融合。右下输出受淹位置、覆盖率和逐景记录。底部的两组独立留出评估，用来检查定位能力和场景误报。",
+    "point": "先左侧 A，再右上 B，最后右下 C。底部结果只作概括，不逐项复述。扩展集来自同一事件。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "受淹道路任务适配：SEG 投影与 SAM2 解码器微调",
+    "seconds": 40,
+    "speech": "具体训练哪里，看中间两个模块。蓝色雪花标记的视觉和语言主干保持冻结。第一个训练模块把语言模型的目标表示，映射成二百五十六维的分割提示。第二个是 SAM2 掩膜解码器，让提示与多尺度图像特征交互，恢复受淹道路的边界。右侧用预测和标签计算分割损失，反向更新只作用于这两个模块，总计约一千八百万参数。",
+    "point": "依次指两个中央模块和右侧损失。说明火焰、雪花含义，避免逐个读出所有内部层。7301 仅作本地输出示例，不属于训练集。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "四视图融合：预测先恢复坐标，再逐像素汇总",
+    "seconds": 37,
+    "speech": "这里最关键的是坐标恢复。左侧把同一影像变成原图、水平翻转、垂直翻转和双向翻转四种视图，都使用同一组权重。中间第一列是翻转坐标下的预测，方向会跟着输入改变。如果直接叠加，就会把不同位置混在一起。我们先按对应方向翻回来，使右侧四幅预测对齐到原始坐标，再平均四路 logits，恢复原图尺寸并阈值化。整个过程需要四次前向计算，但不增加模型参数。",
+    "point": "对比中间两列掩膜的方向变化，再沿汇合线讲右侧融合。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "数据与实验：300 幅训练，818 幅评估",
+    "seconds": 23,
+    "speech": "数据采用 FloodNet 的洪灾无人机 RGB 影像及像素级标签。我们用三百幅训练、八十幅验证，再分别评估四百四十八幅测试影像和额外三百七十幅影像。这里同时关注三类指标：分割位置的重合程度、覆盖率误差，以及影像级的命中和误报。两批评估结果分开报告，既看平均分，也看模型会不会把未淹场景错误地报出来。",
+    "point": "依次指四个数据分区，再指底部三类评价。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "主要结果：空间定位与误报同时改善",
+    "seconds": 35,
+    "speech": "首先看完整测试集。原始模型的全局 IoU 是百分之八点六六，初步微调达到四十八点八一，优化后的单视图模型达到五十八点六三。最终采用的四视图配置是五十八点二八，相比原始模型提高了四十九点六二个百分点。同时，覆盖率平均误差从五点零五降到零点八三个百分点，未淹场景误报从一百六十九幅降到两幅。主要提升来自任务适配，四视图则进一步降低误报。",
+    "point": "左图讲提升过程；右侧只读覆盖率误差和误报数。不要将单视图最高分写成四视图分数。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "优化依据：用对照实验确定最终配置",
+    "seconds": 26,
+    "speech": "我们也比较了 LoRA、残差细节模块、边界监督和道路辅助任务。第一阶段的结果说明，增加模块并不自动带来更高的整体 IoU。后续把重点转向训练预算和损失目标后，结果进一步改善。两种损失各跑三个种子，BCE 加 Dice 的整体波动更小，而验证集最好的单次配置来自 BCE 加 Lovasz。最终采用的是验证集选出的权重，而不是把所有尝试简单堆叠。",
+    "point": "表格证明做过系统探索，右图解释最终选择；不逐项念全部数值。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  },
+  {
+    "title": "典型场景：受淹范围恢复与未淹误报抑制",
+    "seconds": 30,
+    "speech": "这一页同时比较影像、预测和空间差异。第一行的交叉路口，IoU 从百分之二十六点六六提高到六十点八五。第二行居民区道路，从三十一点三二提高到七十三点三五，可以看到主要路段被连续识别出来。第三行是未淹道路，原始模型大面积误报，最终配置将误报覆盖率降到零。最右侧的差异图还区分命中、遗漏和多检，让我们能够解释结果改善具体发生在哪里。",
+    "point": "逐行讲一个变化，最后指差异图图例。不要逐张介绍所有图片。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json",
+      "work/editorial_v2_20261016/assets/measurements.json"
+    ]
+  },
+  {
+    "title": "额外 370 幅验证：误报减少，定位整体改善",
+    "seconds": 34,
+    "speech": "额外三百七十幅验证中，使用同一权重，四视图把全局 IoU 从五十二点零六提高到五十五点六九。下方是全部二十三幅受淹影像的逐景比较，其中十五幅得到改善。右侧两个未淹场景说明，单次预测容易将水面响应为受淹道路，融合后这些误报消失。整体误报从十幅降到一幅，受淹场景仍命中二十一幅，说明这次优化在保持场景检出的同时，降低了不必要的核查负担。",
+    "point": "先看左上总体指标，再用左下逐景图补充；右侧两例只讲误报从有到无。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json",
+      "work/editorial_v2_20261016/assets/measurements.json"
+    ]
+  },
+  {
+    "title": "调查应用：道路定位、覆盖率与局部核查",
+    "seconds": 33,
+    "speech": "以七三零一这幅居民区影像为例，左侧定位主要受淹路段，右侧在同一个窗口比较原图、预测、标签和空间差异。预测受淹区域占影像百分之二十一点七五，空间 IoU 是百分之七十三点三五。精确率约百分之九十二，召回率约百分之七十八，说明主要预测区域比较可靠，同时还有一些边缘需要核查。这样输出的不只是一个面积数字，还包括具体位置和需要重点复查的部分。",
+    "point": "先指左图圈定窗口，再看右下差异图，最后读覆盖率和 IoU 两个主要数值。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json",
+      "work/editorial_v2_20261016/assets/measurements.json"
+    ]
+  },
+  {
+    "title": "本组工作与洪灾调查成果",
+    "seconds": 22,
+    "speech": "我们最终完成了面向受淹道路的轻量微调、四视图稳健推理和应用验证。完整测试集的全局 IoU 相比原模型提高四十九点六二个百分点，额外验证的误报数量减少百分之九十。通过这套流程，航拍影像可以转化为可定位、可统计的灾后调查依据。谢谢大家。",
+    "point": "左图回扣具体用途，右侧两项核心结果读完即可结束。",
+    "sources": [
+      "TerraScope: https://arxiv.org/abs/2603.19039",
+      "作者模型代码：work/terrascope_preflight/modeling_sa2va_chat.py",
+      "本组训练及推理：work/night_20261016/train_night.py；eval_tta.py",
+      "统计：outputs/TerraScope_夜间优化_20261016/最终方案选择.json",
+      "原始对照：work/finetune_backups_20261015/formal/results/baseline_test.json",
+      "数据划分：work/night_20261016/manifest.json；holdout/protocol.json"
+    ]
+  }
+]

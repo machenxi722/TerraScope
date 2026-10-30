@@ -1,0 +1,146 @@
+[
+  {
+    "id": "7301",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7301",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7301",
+    "mode": "baseline",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7595",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7595",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7595",
+    "mode": "baseline",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7986",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7986",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7986",
+    "mode": "baseline",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7461",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7461",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7461",
+    "mode": "baseline",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6598",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6598",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6598",
+    "mode": "baseline",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6345",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6345",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6345",
+    "mode": "baseline",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7679",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7679",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6480",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "6480",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7558",
+    "mode": "single_view",
+    "aligned": true,
+    "counts_match_saved_json": true
+  },
+  {
+    "id": "7558",
+    "mode": "tta4",
+    "aligned": true,
+    "counts_match_saved_json": true
+  }
+]

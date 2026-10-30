@@ -1,0 +1,183 @@
+{
+  "threshold": 0.1,
+  "splits": {
+    "development": {
+      "baseline": {
+        "total": 8,
+        "valid": 8,
+        "TP": 4,
+        "FP": 1,
+        "FN": 0,
+        "TN": 3,
+        "accuracy": 0.875,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mae_pp": 28.280338245618424,
+        "mean_road_IoU": 0.37014509580922056
+      },
+      "consensus": {
+        "total": 8,
+        "valid": 8,
+        "TP": 4,
+        "FP": 1,
+        "FN": 0,
+        "TN": 3,
+        "accuracy": 0.875,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mae_pp": 28.244379708685827,
+        "mean_road_IoU": 0.37174654445202004
+      }
+    },
+    "evaluation": {
+      "baseline": {
+        "total": 24,
+        "valid": 24,
+        "TP": 11,
+        "FP": 3,
+        "FN": 1,
+        "TN": 9,
+        "accuracy": 0.8333333333333334,
+        "precision": 0.7857142857142857,
+        "recall": 0.9166666666666666,
+        "mae_pp": 27.090683816586175,
+        "mean_road_IoU": 0.5514387875758507
+      },
+      "consensus": {
+        "total": 24,
+        "valid": 24,
+        "TP": 11,
+        "FP": 3,
+        "FN": 1,
+        "TN": 9,
+        "accuracy": 0.8333333333333334,
+        "precision": 0.7857142857142857,
+        "recall": 0.9166666666666666,
+        "mae_pp": 27.096054820441992,
+        "mean_road_IoU": 0.5519840170724076
+      }
+    },
+    "extension": {
+      "baseline": {
+        "total": 24,
+        "valid": 24,
+        "TP": 11,
+        "FP": 2,
+        "FN": 1,
+        "TN": 10,
+        "accuracy": 0.875,
+        "precision": 0.8461538461538461,
+        "recall": 0.9166666666666666,
+        "mae_pp": 35.035829129631445,
+        "mean_road_IoU": 0.42929284845632526
+      },
+      "consensus": {
+        "total": 24,
+        "valid": 24,
+        "TP": 11,
+        "FP": 2,
+        "FN": 1,
+        "TN": 10,
+        "accuracy": 0.875,
+        "precision": 0.8461538461538461,
+        "recall": 0.9166666666666666,
+        "mae_pp": 35.72660508544312,
+        "mean_road_IoU": 0.423534021340251
+      }
+    }
+  },
+  "review": {
+    "evaluation": {
+      "不复核": {
+        "correct": 20,
+        "selected": [],
+        "errors_found": 0,
+        "budget": 0
+      },
+      "随机复核": {
+        "correct": 20.666666666666668,
+        "errors_found": 0.6666666666666666,
+        "budget": 4,
+        "correct_p025": 20.0,
+        "correct_p975": 22.0,
+        "exact_subsets": 10626
+      },
+      "按道路分歧": {
+        "correct": 22,
+        "selected": [
+          "10817",
+          "8928",
+          "6348",
+          "7556"
+        ],
+        "errors_found": 2,
+        "budget": 4,
+        "already_correct_selected": 2
+      },
+      "按决策变化": {
+        "correct": 22,
+        "selected": [
+          "10817",
+          "8928",
+          "6348",
+          "7556"
+        ],
+        "errors_found": 2,
+        "budget": 4,
+        "already_correct_selected": 2
+      }
+    },
+    "extension": {
+      "不复核": {
+        "correct": 21,
+        "selected": [],
+        "errors_found": 0,
+        "budget": 0
+      },
+      "随机复核": {
+        "correct": 21.5,
+        "errors_found": 0.5,
+        "budget": 4,
+        "correct_p025": 21.0,
+        "correct_p975": 23.0,
+        "exact_subsets": 10626
+      },
+      "按道路分歧": {
+        "correct": 21,
+        "selected": [
+          "7372",
+          "7202",
+          "6707",
+          "9003"
+        ],
+        "errors_found": 0,
+        "budget": 4,
+        "already_correct_selected": 4
+      },
+      "按决策变化": {
+        "correct": 21,
+        "selected": [
+          "7372",
+          "7202",
+          "6707",
+          "9003"
+        ],
+        "errors_found": 0,
+        "budget": 4,
+        "already_correct_selected": 4
+      }
+    }
+  },
+  "review_type": "oracle simulation, not actual human review",
+  "protocol_sha256": "aab81b291325161b723f285f9fb2187e3b9e82810cefd0279cc8cf1c5d695e53",
+  "alignment": {
+    "version": "native_top_left_canvas_v1",
+    "affected_images": 31,
+    "total_images": 56,
+    "ignore_value": 255,
+    "raw_model_outputs_modified": false,
+    "new_inference_calls": 0,
+    "visual_check_sheets": 7,
+    "unmodified_cases_exact_metric_match": 25
+  }
+}

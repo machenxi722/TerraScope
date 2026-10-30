@@ -1,0 +1,52 @@
+{
+  "version": "2026-10-16-night-v1",
+  "task": "RGB-only flooded-road segmentation with fixed SEG prefix",
+  "dataset": "FloodNet-Supervised_v1.0",
+  "class_id": 3,
+  "train_n": 300,
+  "validation_n": 80,
+  "test_n": 448,
+  "selection": "Official train: all 162 positives + SHA256-ordered 138 negatives; official val: 30 positives + 50 negatives; official test: all 448 images. Fixed before inference.",
+  "manifest_sha256": "0a016c0b2d9f40064c62a72a18275177efc14944c24c42a53971982554aafde2",
+  "micro_steps": 4800,
+  "gradient_accumulation": 4,
+  "head_lr": 0.0001,
+  "lora_lr": 2e-05,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "warmup_updates": 20,
+  "validate_every": 800,
+  "lora_seeds": [
+    20261015,
+    20261016,
+    20261017
+  ],
+  "maximum_run_seconds": 12000,
+  "checkpoint_selection": "Best validation global IoU among six scheduled states and one late average. Test never selects.",
+  "input_long_side": 1024,
+  "threshold_logit": 0,
+  "augmentation": "horizontal/vertical flips and brightness/contrast 0.9-1.1",
+  "training_sampling": "50% positive, 50% negative, replacement; shared seed gives same sample/augmentation sequence for head and first LoRA arm",
+  "scope": "Follow-up exploratory experiment on an already inspected 448-image test set. Frozen original train/val/test IDs, canonical RGB/labels, threshold, architecture and image encoders. No LoRA or added module in these matched arms.",
+  "deadline_epoch": 1792096200,
+  "seeds": [
+    20261015,
+    20261016,
+    20261017
+  ],
+  "arms": [
+    "long_bce_dice",
+    "long_bce_lovasz"
+  ],
+  "loss_formula": {
+    "long_bce_dice": "BCE + soft Dice (unchanged)",
+    "long_bce_lovasz": "BCE + binary Lovasz hinge, valid pixels, per image"
+  },
+  "averaging": "Uniform average of training states at steps 3200,4000,4800. Compare to best single state using validation IoU only; identical treatment for both arms.",
+  "references": [
+    "https://arxiv.org/abs/1705.08790",
+    "https://proceedings.mlr.press/v162/wortsman22a.html"
+  ],
+  "test_access": "After all scheduled training (or deadline stop), each selected model is evaluated once on all 448 test images. Do not branch on test metrics.",
+  "source_runner_sha256": "b8c70cf4bf31b68308178c763901faece482b4c5a6200fef4c6b9ec25a884fba"
+}

@@ -1,0 +1,2173 @@
+[
+  {
+    "id": "Nigeria_417184",
+    "event": "Nigeria",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.55,
+      "mask_pct": 12.738418579101562,
+      "nonpermanent_pct": 12.731552124023438,
+      "iou": 0.16365646885366752,
+      "mask_pct_valid": 13.69076842336928,
+      "mask_mae_pp": 11.347745856540655,
+      "nonpermanent_mae_pp": 11.347745856540655
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 7.0,
+      "mask_pct": 12.170028686523438,
+      "nonpermanent_pct": 12.163162231445312,
+      "iou": 0.166980303600552,
+      "mask_pct_valid": 13.404662344038329,
+      "mask_mae_pp": 11.061639777209704,
+      "nonpermanent_mae_pp": 11.061639777209704
+    },
+    "valid_fraction": 0.22533035278320312,
+    "gt_water_pct_valid": 2.343022566828624,
+    "gt_nonpermanent_pct_valid": 2.343022566828624,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_952728",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 3.0988363466796667,
+      "nonpermanent_mae_pp": 3.0537951207104856
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 3.0988363466796667,
+      "nonpermanent_mae_pp": 3.0537951207104856
+    },
+    "valid_fraction": 0.7198944091796875,
+    "gt_water_pct_valid": 3.0988363466796667,
+    "gt_nonpermanent_pct_valid": 3.0537951207104856,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Mekong_1443339",
+    "event": "Mekong",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 20.56,
+      "mask_pct": 28.863525390625,
+      "nonpermanent_pct": 20.557022094726562,
+      "iou": 0.3832625677597543,
+      "mask_pct_valid": 28.864516375150206,
+      "mask_mae_pp": 44.67888683312034,
+      "nonpermanent_mae_pp": 44.56825681423694
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 31.6,
+      "mask_pct": 32.61604309082031,
+      "nonpermanent_pct": 24.3133544921875,
+      "iou": 0.43115604766337357,
+      "mask_pct_valid": 32.61716291223988,
+      "mask_mae_pp": 40.92624029603067,
+      "nonpermanent_mae_pp": 40.81179544890992
+    },
+    "valid_fraction": 0.9999656677246094,
+    "gt_water_pct_valid": 73.54340320827055,
+    "gt_nonpermanent_pct_valid": 65.12598470253876,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Spain_7387658",
+    "event": "Spain",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 9.0,
+      "mask_pct": 10.425949096679688,
+      "nonpermanent_pct": 4.570770263671875,
+      "iou": 0.11939640724509938,
+      "mask_pct_valid": 10.429410395448318,
+      "mask_mae_pp": 47.95712383183811,
+      "nonpermanent_mae_pp": 47.026791881155624
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.0,
+      "mask_pct": 10.509109497070312,
+      "nonpermanent_pct": 4.6375274658203125,
+      "iou": 0.11995012932879287,
+      "mask_pct_valid": 10.51259840416398,
+      "mask_mae_pp": 47.87393582312245,
+      "nonpermanent_mae_pp": 46.96001251636094
+    },
+    "valid_fraction": 0.9996681213378906,
+    "gt_water_pct_valid": 58.38653422728643,
+    "gt_nonpermanent_pct_valid": 51.59907958955494,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_747992",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.1583099365234375,
+      "nonpermanent_pct": 0.1583099365234375,
+      "iou": 0.0033662286308397673,
+      "mask_pct_valid": 0.15834436656530082,
+      "mask_mae_pp": 44.60618039048103,
+      "nonpermanent_mae_pp": 44.60618039048103
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.19,
+      "mask_pct": 52.405548095703125,
+      "nonpermanent_pct": 52.405548095703125,
+      "iou": 0.5728630182667013,
+      "mask_pct_valid": 52.41694551809132,
+      "mask_mae_pp": 7.652420761044996,
+      "nonpermanent_mae_pp": 7.652420761044996
+    },
+    "valid_fraction": 0.9997825622558594,
+    "gt_water_pct_valid": 44.764524757046324,
+    "gt_nonpermanent_pct_valid": 44.764524757046324,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_900498",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 67.61,
+      "mask_pct": 61.2335205078125,
+      "nonpermanent_pct": 39.804840087890625,
+      "iou": 0.6699046231911295,
+      "mask_pct_valid": 61.21751809215549,
+      "mask_mae_pp": 13.905768115056949,
+      "nonpermanent_mae_pp": 12.465647806039879
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 72.2,
+      "mask_pct": 61.94572448730469,
+      "nonpermanent_pct": 40.5181884765625,
+      "iou": 0.6648575699934267,
+      "mask_pct_valid": 61.929753580261995,
+      "mask_mae_pp": 14.618003603163455,
+      "nonpermanent_mae_pp": 13.17902836727839
+    },
+    "valid_fraction": 0.999420166015625,
+    "gt_water_pct_valid": 47.311749977098536,
+    "gt_nonpermanent_pct_valid": 27.31228434456014,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_359826",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 3.8818359375,
+      "nonpermanent_pct": 3.8818359375,
+      "iou": 0.13526529934401726,
+      "mask_pct_valid": 3.8818359375,
+      "mask_mae_pp": 2.5482177734375,
+      "nonpermanent_mae_pp": 2.5482177734375,
+      "text_mae_pp": 3.6663818359375
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.46,
+      "mask_pct": 3.8158416748046875,
+      "nonpermanent_pct": 3.8158416748046875,
+      "iou": 0.13867566427667652,
+      "mask_pct_valid": 3.8158416748046875,
+      "mask_mae_pp": 2.4822235107421875,
+      "nonpermanent_mae_pp": 2.4822235107421875,
+      "text_mae_pp": 2.1263818359375
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 1.3336181640625,
+    "gt_nonpermanent_pct_valid": 1.3336181640625,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_504150",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.8975982666015625,
+      "nonpermanent_pct": 0.687408447265625,
+      "iou": 0.24363233665559247,
+      "mask_pct_valid": 0.897659904015626,
+      "mask_mae_pp": 0.3467797929240137,
+      "nonpermanent_mae_pp": 0.10643736218459825
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.980377197265625,
+      "nonpermanent_pct": 0.7640838623046875,
+      "iou": 0.24190800681431004,
+      "mask_pct_valid": 0.9804445190480914,
+      "mask_mae_pp": 0.26399517789154836,
+      "nonpermanent_mae_pp": 0.02975668190107048
+    },
+    "valid_fraction": 0.9999313354492188,
+    "gt_water_pct_valid": 1.2444396969396396,
+    "gt_nonpermanent_pct_valid": 0.7938930132836881,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Nigeria_22088",
+    "event": "Nigeria",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 0.2825112510442586,
+      "nonpermanent_mae_pp": 0.2825112510442586
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 0.2825112510442586,
+      "nonpermanent_mae_pp": 0.2825112510442586
+    },
+    "valid_fraction": 0.8493270874023438,
+    "gt_water_pct_valid": 0.2825112510442586,
+    "gt_nonpermanent_pct_valid": 0.2825112510442586,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Sri-Lanka_713926",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 26.5,
+      "mask_pct": 30.729293823242188,
+      "nonpermanent_pct": 1.0784149169921875,
+      "iou": 0.9474556184395104,
+      "mask_pct_valid": 30.72558984220004,
+      "mask_mae_pp": 0.010301254463876934,
+      "nonpermanent_mae_pp": 0.08775142691450721
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 27.0,
+      "mask_pct": 30.779266357421875,
+      "nonpermanent_pct": 1.11541748046875,
+      "iou": 0.9460154552040569,
+      "mask_pct_valid": 30.775188474803894,
+      "mask_mae_pp": 0.05989988706772884,
+      "nonpermanent_mae_pp": 0.12437810945273632
+    },
+    "valid_fraction": 0.999847412109375,
+    "gt_water_pct_valid": 30.71528858773617,
+    "gt_nonpermanent_pct_valid": 0.9900650123615055,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Somalia_94102",
+    "event": "Somalia",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 5.259363606231355,
+      "nonpermanent_mae_pp": 5.259363606231355
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 1.06,
+      "mask_pct": 0.1129150390625,
+      "nonpermanent_pct": 0.1129150390625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.008286377195889956,
+      "mask_mae_pp": 5.251077229035466,
+      "nonpermanent_mae_pp": 5.251077229035466
+    },
+    "valid_fraction": 0.92071533203125,
+    "gt_water_pct_valid": 5.259363606231355,
+    "gt_nonpermanent_pct_valid": 5.259363606231355,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_778194",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0156402587890625,
+      "nonpermanent_pct": 0.0156402587890625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.01564467508680887,
+      "mask_mae_pp": 1.4488495440149578,
+      "nonpermanent_mae_pp": 0.9646277712061663
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.1064300537109375,
+      "nonpermanent_pct": 0.1064300537109375,
+      "iou": 0.0,
+      "mask_pct_valid": 0.10646010607852864,
+      "mask_mae_pp": 1.358034113023238,
+      "nonpermanent_mae_pp": 0.8738123402144465
+    },
+    "valid_fraction": 0.9997177124023438,
+    "gt_water_pct_valid": 1.4644942191017667,
+    "gt_nonpermanent_pct_valid": 0.9802724462929753,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_53713",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.0141143798828125,
+      "nonpermanent_pct": 0.0141143798828125,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0141143798828125,
+      "mask_mae_pp": 0.0141143798828125,
+      "nonpermanent_mae_pp": 0.0141143798828125,
+      "text_mae_pp": 5.1
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.0087738037109375,
+      "nonpermanent_pct": 0.0087738037109375,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0087738037109375,
+      "mask_mae_pp": 0.0087738037109375,
+      "nonpermanent_mae_pp": 0.0087738037109375,
+      "text_mae_pp": 3.44
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 0.0,
+    "gt_nonpermanent_pct_valid": 0.0,
+    "gt_water_positive": false
+  },
+  {
+    "id": "Somalia_166342",
+    "event": "Somalia",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 8.1268310546875,
+      "nonpermanent_pct": 8.1268310546875,
+      "iou": 0.00017502406580904875,
+      "mask_pct_valid": 5.175970296087081,
+      "mask_mae_pp": 5.170530018995635,
+      "nonpermanent_mae_pp": 5.170530018995635
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 9.040451049804688,
+      "nonpermanent_pct": 9.040451049804688,
+      "iou": 0.0001599488163787588,
+      "mask_pct_valid": 5.664235165044406,
+      "mask_mae_pp": 5.6587948879529595,
+      "nonpermanent_mae_pp": 5.6587948879529595
+    },
+    "valid_fraction": 0.8414344787597656,
+    "gt_water_pct_valid": 0.005440277091446524,
+    "gt_nonpermanent_pct_valid": 0.005440277091446524,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Sri-Lanka_1049830",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.836944580078125,
+      "nonpermanent_pct": 0.8312225341796875,
+      "iou": 0.0,
+      "mask_pct_valid": 0.19397265458674362,
+      "mask_mae_pp": 1.1606819006166122,
+      "nonpermanent_mae_pp": 1.10338374519668
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.455474853515625,
+      "nonpermanent_pct": 0.45013427734375,
+      "iou": 0.0,
+      "mask_pct_valid": 0.13614882801616965,
+      "mask_mae_pp": 1.2185057271871862,
+      "nonpermanent_mae_pp": 1.1612075717672539
+    },
+    "valid_fraction": 0.7256813049316406,
+    "gt_water_pct_valid": 1.354654555203356,
+    "gt_nonpermanent_pct_valid": 1.2973563997834234,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_280900",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 16.0,
+      "mask_pct": 7.109832763671875,
+      "nonpermanent_pct": 7.0178985595703125,
+      "iou": 0.2591982427237781,
+      "mask_pct_valid": 7.10988700780493,
+      "mask_mae_pp": 4.597889693372294,
+      "nonpermanent_mae_pp": 4.602085892378939
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.12,
+      "mask_pct": 8.144760131835938,
+      "nonpermanent_pct": 8.052825927734375,
+      "iou": 0.23359533692484324,
+      "mask_pct_valid": 8.144822271898438,
+      "mask_mae_pp": 5.632824957465801,
+      "nonpermanent_mae_pp": 5.637021156472446
+    },
+    "valid_fraction": 0.9999923706054688,
+    "gt_water_pct_valid": 2.5119973144326355,
+    "gt_nonpermanent_pct_valid": 2.4158662099167625,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_271769",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 1.8341064453125,
+      "nonpermanent_pct": 1.8341064453125,
+      "iou": 0.0,
+      "mask_pct_valid": 1.8341064453125,
+      "mask_mae_pp": 0.8373260498046875,
+      "nonpermanent_mae_pp": 0.86212158203125,
+      "text_mae_pp": 4.103219604492187
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 15.5,
+      "mask_pct": 13.75274658203125,
+      "nonpermanent_pct": 13.75274658203125,
+      "iou": 0.0,
+      "mask_pct_valid": 13.75274658203125,
+      "mask_mae_pp": 12.755966186523438,
+      "nonpermanent_mae_pp": 12.78076171875,
+      "text_mae_pp": 14.503219604492188
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 0.9967803955078125,
+    "gt_nonpermanent_pct_valid": 0.97198486328125,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_683296",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 4.3567657470703125,
+      "nonpermanent_pct": 4.3567657470703125,
+      "iou": 0.009110396570203644,
+      "mask_pct_valid": 4.399833576034949,
+      "mask_mae_pp": 1.545585527278891,
+      "nonpermanent_mae_pp": 2.734438203545755
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 3.8768768310546875,
+      "nonpermanent_pct": 3.874969482421875,
+      "iou": 0.011221729872820396,
+      "mask_pct_valid": 3.9152008259559743,
+      "mask_mae_pp": 1.0609527771999168,
+      "nonpermanent_mae_pp": 2.2478792501675797
+    },
+    "valid_fraction": 0.9902114868164062,
+    "gt_water_pct_valid": 2.854248048756058,
+    "gt_nonpermanent_pct_valid": 1.6653953724891941,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Nigeria_225131",
+    "event": "Nigeria",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.461578369140625,
+      "nonpermanent_pct": 0.461578369140625,
+      "iou": 0.0222707423580786,
+      "mask_pct_valid": 0.5015440094505813,
+      "mask_mae_pp": 0.03274543532776523,
+      "nonpermanent_mae_pp": 0.03274543532776523
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.12,
+      "mask_pct": 0.20599365234375,
+      "nonpermanent_pct": 0.20599365234375,
+      "iou": 0.019524100061012812,
+      "mask_pct_valid": 0.22382955793662307,
+      "mask_mae_pp": 0.24496901618619302,
+      "nonpermanent_mae_pp": 0.24496901618619302
+    },
+    "valid_fraction": 0.9203147888183594,
+    "gt_water_pct_valid": 0.4687985741228161,
+    "gt_nonpermanent_pct_valid": 0.4687985741228161,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_1029191",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 26.09,
+      "mask_pct": 19.992446899414062,
+      "nonpermanent_pct": 5.6949615478515625,
+      "iou": 0.7865551478898954,
+      "mask_pct_valid": 20.63779598876887,
+      "mask_mae_pp": 0.8155566144358641,
+      "nonpermanent_mae_pp": 0.877776771403931
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 27.0,
+      "mask_pct": 20.5078125,
+      "nonpermanent_pct": 6.2694549560546875,
+      "iou": 0.774383799815907,
+      "mask_pct_valid": 21.17060530761567,
+      "mask_mae_pp": 1.3483659332826647,
+      "nonpermanent_mae_pp": 1.4708372549096822
+    },
+    "valid_fraction": 0.9686927795410156,
+    "gt_water_pct_valid": 19.822239374333,
+    "gt_nonpermanent_pct_valid": 5.001240465154743,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_758178",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.006103515625,
+      "nonpermanent_pct": 0.006103515625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.006103771749455429,
+      "mask_mae_pp": 0.6107586606798838,
+      "nonpermanent_mae_pp": 0.5626914581529223
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.000762939453125,
+      "nonpermanent_pct": 0.000762939453125,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0007629714686819286,
+      "mask_mae_pp": 0.6160994609606574,
+      "nonpermanent_mae_pp": 0.5680322584336959
+    },
+    "valid_fraction": 0.9999580383300781,
+    "gt_water_pct_valid": 0.6168624324293392,
+    "gt_nonpermanent_pct_valid": 0.5687952299023779,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Sri-Lanka_922192",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 6.9416046142578125,
+      "nonpermanent_pct": 6.917572021484375,
+      "iou": 0.13501238645747315,
+      "mask_pct_valid": 1.8633514469332688,
+      "mask_mae_pp": 1.433796390903442,
+      "nonpermanent_mae_pp": 1.4417202220340892
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 6.681060791015625,
+      "nonpermanent_pct": 6.6570281982421875,
+      "iou": 0.12726613488034808,
+      "mask_pct_valid": 2.1636229424104294,
+      "mask_mae_pp": 1.7340678863806025,
+      "nonpermanent_mae_pp": 1.7419917175112498
+    },
+    "valid_fraction": 0.9146995544433594,
+    "gt_water_pct_valid": 0.429555056029827,
+    "gt_nonpermanent_pct_valid": 0.39535746904492813,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Mekong_45934",
+    "event": "Mekong",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.574493408203125,
+      "nonpermanent_pct": 0.574493408203125,
+      "iou": 0.0,
+      "mask_pct_valid": 0.5751186707350139,
+      "mask_mae_pp": 0.4620807381071492,
+      "nonpermanent_mae_pp": 0.4620807381071492
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 2,
+      "text_pct": 10.19,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 0.11303793262786462,
+      "nonpermanent_mae_pp": 0.11303793262786462
+    },
+    "valid_fraction": 0.9989128112792969,
+    "gt_water_pct_valid": 0.11303793262786462,
+    "gt_nonpermanent_pct_valid": 0.11303793262786462,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Sri-Lanka_450918",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 4.3147105703851665,
+      "nonpermanent_mae_pp": 4.3147105703851665
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 4.3147105703851665,
+      "nonpermanent_mae_pp": 4.3147105703851665
+    },
+    "valid_fraction": 0.37813568115234375,
+    "gt_water_pct_valid": 4.3147105703851665,
+    "gt_nonpermanent_pct_valid": 4.3147105703851665,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Nigeria_812045",
+    "event": "Nigeria",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 20.59,
+      "mask_pct": 33.829498291015625,
+      "nonpermanent_pct": 27.55889892578125,
+      "iou": 0.6825273711453834,
+      "mask_pct_valid": 36.25081177730735,
+      "mask_mae_pp": 14.40324879603937,
+      "nonpermanent_mae_pp": 14.402827093542047
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 4,
+      "text_pct": null,
+      "mask_pct": 7.2628021240234375,
+      "nonpermanent_pct": 7.2628021240234375,
+      "iou": 0.002009188978986332,
+      "mask_pct_valid": 8.022046606560004,
+      "mask_mae_pp": 42.632013966786715,
+      "nonpermanent_mae_pp": 35.72832238312515
+    },
+    "valid_fraction": 0.9045944213867188,
+    "gt_water_pct_valid": 50.65406057334671,
+    "gt_nonpermanent_pct_valid": 43.75036898968516,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Pakistan_664885",
+    "event": "Pakistan",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 16.32,
+      "mask_pct": 28.54461669921875,
+      "nonpermanent_pct": 21.19293212890625,
+      "iou": 0.1166377913150394,
+      "mask_pct_valid": 24.102177783865226,
+      "mask_mae_pp": 20.83824133680318,
+      "nonpermanent_mae_pp": 17.11957266127928
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 22.32,
+      "mask_pct": 47.25799560546875,
+      "nonpermanent_pct": 37.23182678222656,
+      "iou": 0.07751886667549318,
+      "mask_pct_valid": 41.3244760991645,
+      "mask_mae_pp": 38.060539652102456,
+      "nonpermanent_mae_pp": 31.654567867415423
+    },
+    "valid_fraction": 0.27851104736328125,
+    "gt_water_pct_valid": 3.263936447062046,
+    "gt_nonpermanent_pct_valid": 0.013696753869332967,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_1018327",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.0,
+      "mask_pct": 8.0291748046875,
+      "nonpermanent_pct": 7.0068359375,
+      "iou": 0.40872134189515835,
+      "mask_pct_valid": 8.029236062897208,
+      "mask_mae_pp": 5.9513546093338725,
+      "nonpermanent_mae_pp": 5.9528804998817435
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.0,
+      "mask_pct": 7.9860687255859375,
+      "nonpermanent_pct": 6.9637298583984375,
+      "iou": 0.40919658370653156,
+      "mask_pct_valid": 7.9861296549198535,
+      "mask_mae_pp": 5.994461017311228,
+      "nonpermanent_mae_pp": 5.995986907859099
+    },
+    "valid_fraction": 0.9999923706054688,
+    "gt_water_pct_valid": 13.98059067223108,
+    "gt_nonpermanent_pct_valid": 12.959769895705382,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Spain_7370579",
+    "event": "Spain",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.652313232421875,
+      "nonpermanent_pct": 0.652313232421875,
+      "iou": 0.006057801522863994,
+      "mask_pct_valid": 0.6525596748650041,
+      "mask_mae_pp": 26.07376595622889,
+      "nonpermanent_mae_pp": 26.07376595622889
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.19,
+      "mask_pct": 38.802337646484375,
+      "nonpermanent_pct": 38.802337646484375,
+      "iou": 0.32309031522509474,
+      "mask_pct_valid": 38.81699708065408,
+      "mask_mae_pp": 12.09067144956019,
+      "nonpermanent_mae_pp": 12.09067144956019
+    },
+    "valid_fraction": 0.9996223449707031,
+    "gt_water_pct_valid": 26.726325631093893,
+    "gt_nonpermanent_pct_valid": 26.726325631093893,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Spain_5650136",
+    "event": "Spain",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 20.61,
+      "mask_pct": 27.9541015625,
+      "nonpermanent_pct": 3.101348876953125,
+      "iou": 0.6318233222695218,
+      "mask_pct_valid": 42.702044336697824,
+      "mask_mae_pp": 18.0260612135481,
+      "nonpermanent_mae_pp": 4.631226835124362
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 20.56,
+      "mask_pct": 28.419113159179688,
+      "nonpermanent_pct": 3.16925048828125,
+      "iou": 0.6394077281567649,
+      "mask_pct_valid": 43.41301662043404,
+      "mask_mae_pp": 17.315088929811886,
+      "nonpermanent_mae_pp": 4.526912049231917
+    },
+    "valid_fraction": 0.6545867919921875,
+    "gt_water_pct_valid": 60.72810555024593,
+    "gt_nonpermanent_pct_valid": 9.366768456141168,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_868895",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 30.0,
+      "mask_pct": 28.699874877929688,
+      "nonpermanent_pct": 27.85797119140625,
+      "iou": 0.17761682794430023,
+      "mask_pct_valid": 36.500726640640586,
+      "mask_mae_pp": 27.50349072464594,
+      "nonpermanent_mae_pp": 27.665346365372013
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 30.1,
+      "mask_pct": 30.008697509765625,
+      "nonpermanent_pct": 29.146575927734375,
+      "iou": 0.17059965123474152,
+      "mask_pct_valid": 38.44185450089761,
+      "mask_mae_pp": 29.44461858490297,
+      "nonpermanent_mae_pp": 29.57341920041034
+    },
+    "valid_fraction": 0.6693458557128906,
+    "gt_water_pct_valid": 8.997235915994644,
+    "gt_nonpermanent_pct_valid": 7.857407460177243,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_595451",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 9.0,
+      "mask_pct": 4.87823486328125,
+      "nonpermanent_pct": 4.87823486328125,
+      "iou": 0.1226078167115903,
+      "mask_pct_valid": 4.878383739738151,
+      "mask_mae_pp": 2.9538102359080782,
+      "nonpermanent_mae_pp": 2.909939878536332
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.0,
+      "mask_pct": 6.6448211669921875,
+      "nonpermanent_pct": 6.6448211669921875,
+      "iou": 0.16704594378498064,
+      "mask_pct_valid": 6.645023957029938,
+      "mask_mae_pp": 1.1871700186162908,
+      "nonpermanent_mae_pp": 1.1432996612445447
+    },
+    "valid_fraction": 0.999969482421875,
+    "gt_water_pct_valid": 7.832193975646229,
+    "gt_nonpermanent_pct_valid": 7.788323618274484,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_97059",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 94.0,
+      "mask_pct": 100.0,
+      "nonpermanent_pct": 100.0,
+      "iou": 0.0,
+      "mask_pct_valid": 100.0,
+      "mask_mae_pp": 100.0,
+      "nonpermanent_mae_pp": 100.0
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 94.0,
+      "mask_pct": 100.0,
+      "nonpermanent_pct": 100.0,
+      "iou": 0.0,
+      "mask_pct_valid": 100.0,
+      "mask_mae_pp": 100.0,
+      "nonpermanent_mae_pp": 100.0
+    },
+    "valid_fraction": 0.10449981689453125,
+    "gt_water_pct_valid": 0.0,
+    "gt_nonpermanent_pct_valid": 0.0,
+    "gt_water_positive": false
+  },
+  {
+    "id": "Pakistan_528249",
+    "event": "Pakistan",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 6.0375213623046875,
+      "nonpermanent_pct": 6.0375213623046875,
+      "iou": 1.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 0.0,
+      "nonpermanent_mae_pp": 0.0
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.59,
+      "mask_pct": 6.7386627197265625,
+      "nonpermanent_pct": 6.7386627197265625,
+      "iou": 1.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 0.0,
+      "nonpermanent_mae_pp": 0.0
+    },
+    "valid_fraction": 0.29366302490234375,
+    "gt_water_pct_valid": 0.0,
+    "gt_nonpermanent_pct_valid": 0.0,
+    "gt_water_positive": false
+  },
+  {
+    "id": "Spain_7558720",
+    "event": "Spain",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.00457763671875,
+      "nonpermanent_pct": 0.00457763671875,
+      "iou": 0.0,
+      "mask_pct_valid": 0.004580432392817882,
+      "mask_mae_pp": 0.8111182362281666,
+      "nonpermanent_mae_pp": 0.8111182362281666
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0034332275390625,
+      "nonpermanent_pct": 0.0034332275390625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.003435324294613412,
+      "mask_mae_pp": 0.8122633443263712,
+      "nonpermanent_mae_pp": 0.8122633443263712
+    },
+    "valid_fraction": 0.9993896484375,
+    "gt_water_pct_valid": 0.8156986686209846,
+    "gt_nonpermanent_pct_valid": 0.8156986686209846,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_319168",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 16.31,
+      "mask_pct": 12.75482177734375,
+      "nonpermanent_pct": 12.75482177734375,
+      "iou": 0.6162566442447904,
+      "mask_pct_valid": 17.013354775555868,
+      "mask_mae_pp": 6.014310352864402,
+      "nonpermanent_mae_pp": 6.014310352864402
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.12,
+      "mask_pct": 13.305282592773438,
+      "nonpermanent_pct": 13.305282592773438,
+      "iou": 0.6336022448263767,
+      "mask_pct_valid": 17.678180207896332,
+      "mask_mae_pp": 5.349484920523936,
+      "nonpermanent_mae_pp": 5.349484920523936
+    },
+    "valid_fraction": 0.654693603515625,
+    "gt_water_pct_valid": 23.027665128420267,
+    "gt_nonpermanent_pct_valid": 23.027665128420267,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_350244",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.113677978515625,
+      "nonpermanent_pct": 0.113677978515625,
+      "iou": 0.10776766969909027,
+      "mask_pct_valid": 0.11368838699832137,
+      "mask_mae_pp": 0.37654509385014495,
+      "nonpermanent_mae_pp": 0.3509842820082405
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.3387451171875,
+      "nonpermanent_pct": 0.3387451171875,
+      "iou": 0.09250879839115134,
+      "mask_pct_valid": 0.3387761330688235,
+      "mask_mae_pp": 0.15145734777964293,
+      "nonpermanent_mae_pp": 0.12589653593773842
+    },
+    "valid_fraction": 0.999908447265625,
+    "gt_water_pct_valid": 0.49023348084846635,
+    "gt_nonpermanent_pct_valid": 0.46467266900656184,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Spain_6095801",
+    "event": "Spain",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0057220458984375,
+      "nonpermanent_pct": 0.0057220458984375,
+      "iou": 0.00035175658444356505,
+      "mask_pct_valid": 0.00572383634407125,
+      "mask_mae_pp": 8.670085704909525,
+      "nonpermanent_mae_pp": 8.670085704909525
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0019073486328125,
+      "nonpermanent_pct": 0.0019073486328125,
+      "iou": 0.00017592470422659101,
+      "mask_pct_valid": 0.00190794544802375,
+      "mask_mae_pp": 8.673901595805573,
+      "nonpermanent_mae_pp": 8.673901595805573
+    },
+    "valid_fraction": 0.9996871948242188,
+    "gt_water_pct_valid": 8.675809541253598,
+    "gt_nonpermanent_pct_valid": 8.675809541253598,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Sri-Lanka_849649",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 1.91802978515625,
+      "nonpermanent_pct": 1.91802978515625,
+      "iou": 0.0,
+      "mask_pct_valid": 1.1539501482537224,
+      "mask_mae_pp": 0.2868835555229667,
+      "nonpermanent_mae_pp": 0.7066684386843685
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 1.7620086669921875,
+      "nonpermanent_pct": 1.7620086669921875,
+      "iou": 0.0,
+      "mask_pct_valid": 1.2446896753999643,
+      "mask_mae_pp": 0.37762308266920863,
+      "nonpermanent_mae_pp": 0.7974079658306105
+    },
+    "valid_fraction": 0.8323936462402344,
+    "gt_water_pct_valid": 0.8670665927307556,
+    "gt_nonpermanent_pct_valid": 0.44728170956935387,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_80102",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 16.22,
+      "mask_pct": 17.78564453125,
+      "nonpermanent_pct": 17.78564453125,
+      "iou": 0.0,
+      "mask_pct_valid": 17.785712378358376,
+      "mask_mae_pp": 17.777320012359667,
+      "nonpermanent_mae_pp": 17.777320012359667
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.42,
+      "mask_pct": 17.987823486328125,
+      "nonpermanent_pct": 17.987823486328125,
+      "iou": 0.0,
+      "mask_pct_valid": 17.98789210469095,
+      "mask_mae_pp": 17.97949973869224,
+      "nonpermanent_mae_pp": 17.97949973869224
+    },
+    "valid_fraction": 0.9999961853027344,
+    "gt_water_pct_valid": 0.008392365998710627,
+    "gt_nonpermanent_pct_valid": 0.008392365998710627,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Mekong_333434",
+    "event": "Mekong",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 1.6166747894236781,
+      "nonpermanent_mae_pp": 1.6166747894236781
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 1.6166747894236781,
+      "nonpermanent_mae_pp": 1.6166747894236781
+    },
+    "valid_fraction": 0.7748908996582031,
+    "gt_water_pct_valid": 1.6166747894236781,
+    "gt_nonpermanent_pct_valid": 1.6166747894236781,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_1049586",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.55389404296875,
+      "nonpermanent_pct": 0.2460479736328125,
+      "iou": 0.41600633914421553,
+      "mask_pct_valid": 0.5540694723747525,
+      "mask_mae_pp": 0.2556656656274684,
+      "nonpermanent_mae_pp": 0.2369677288875491
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.2,
+      "mask_pct": 0.8892059326171875,
+      "nonpermanent_pct": 0.58135986328125,
+      "iou": 0.30663145539906106,
+      "mask_pct_valid": 0.8894875620561624,
+      "mask_mae_pp": 0.07975242405394163,
+      "nonpermanent_mae_pp": 0.09845036079386096
+    },
+    "valid_fraction": 0.9996833801269531,
+    "gt_water_pct_valid": 0.8097351380022209,
+    "gt_nonpermanent_pct_valid": 0.48309363087220153,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_527077",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0438690185546875,
+      "nonpermanent_pct": 0.0438690185546875,
+      "iou": 0.0,
+      "mask_pct_valid": 0.04387186363861792,
+      "mask_mae_pp": 0.5840680280932524,
+      "nonpermanent_mae_pp": 0.4825905000247971
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.2056121826171875,
+      "nonpermanent_pct": 0.2056121826171875,
+      "iou": 0.0,
+      "mask_pct_valid": 0.20562551740187007,
+      "mask_mae_pp": 0.42231437433000035,
+      "nonpermanent_mae_pp": 0.320836846261545
+    },
+    "valid_fraction": 0.9999351501464844,
+    "gt_water_pct_valid": 0.6279398917318704,
+    "gt_nonpermanent_pct_valid": 0.526462363663415,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_40936",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.56,
+      "mask_pct": 17.49420166015625,
+      "nonpermanent_pct": 17.49420166015625,
+      "iou": 0.0,
+      "mask_pct_valid": 3.4769726606944653,
+      "mask_mae_pp": 3.4769726606944653,
+      "nonpermanent_mae_pp": 3.4769726606944653
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.44,
+      "mask_pct": 18.492889404296875,
+      "nonpermanent_pct": 18.492889404296875,
+      "iou": 0.0,
+      "mask_pct_valid": 4.282244544445528,
+      "mask_mae_pp": 4.282244544445528,
+      "nonpermanent_mae_pp": 4.282244544445528
+    },
+    "valid_fraction": 0.8214225769042969,
+    "gt_water_pct_valid": 0.0,
+    "gt_nonpermanent_pct_valid": 0.0,
+    "gt_water_positive": false
+  },
+  {
+    "id": "Paraguay_232281",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 18.63,
+      "mask_pct": 20.222091674804688,
+      "nonpermanent_pct": 20.222091674804688,
+      "iou": 0.3536159109929602,
+      "mask_pct_valid": 20.222091674804688,
+      "mask_mae_pp": 8.977508544921875,
+      "nonpermanent_mae_pp": 8.977508544921875,
+      "text_mae_pp": 7.3854168701171865
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 20.56,
+      "mask_pct": 20.917510986328125,
+      "nonpermanent_pct": 20.917510986328125,
+      "iou": 0.3437729112874948,
+      "mask_pct_valid": 20.917510986328125,
+      "mask_mae_pp": 9.672927856445312,
+      "nonpermanent_mae_pp": 9.672927856445312,
+      "text_mae_pp": 9.315416870117186
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 11.244583129882812,
+    "gt_nonpermanent_pct_valid": 11.244583129882812,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_44475",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.3696441650390625,
+      "nonpermanent_pct": 0.3696441650390625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.3724416258287691,
+      "mask_mae_pp": 0.3724416258287691,
+      "nonpermanent_mae_pp": 0.3724416258287691
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.396728515625,
+      "nonpermanent_pct": 0.396728515625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.39973095032189876,
+      "mask_mae_pp": 0.39973095032189876,
+      "nonpermanent_mae_pp": 0.39973095032189876
+    },
+    "valid_fraction": 0.9924888610839844,
+    "gt_water_pct_valid": 0.0,
+    "gt_nonpermanent_pct_valid": 0.0,
+    "gt_water_positive": false
+  },
+  {
+    "id": "USA_519181",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.5123138427734375,
+      "nonpermanent_pct": 0.51116943359375,
+      "iou": 0.008366993652625505,
+      "mask_pct_valid": 0.5123470684057728,
+      "mask_mae_pp": 0.3086290233360165,
+      "nonpermanent_mae_pp": 0.13695651344577248
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.46,
+      "mask_pct": 1.178741455078125,
+      "nonpermanent_pct": 1.1669158935546875,
+      "iou": 0.01412265428516154,
+      "mask_pct_valid": 1.1788179012463424,
+      "mask_mae_pp": 0.35784180950455313,
+      "nonpermanent_mae_pp": 0.5188324743349597
+    },
+    "valid_fraction": 0.9999351501464844,
+    "gt_water_pct_valid": 0.8209760917417893,
+    "gt_nonpermanent_pct_valid": 0.6481590984522769,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Somalia_685158",
+    "event": "Somalia",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.2414703369140625,
+      "nonpermanent_pct": 0.2414703369140625,
+      "iou": 0.019333753346983777,
+      "mask_pct_valid": 0.3437004539235063,
+      "mask_mae_pp": 13.36848163673088,
+      "nonpermanent_mae_pp": 13.36848163673088
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 13.712182090654387,
+      "nonpermanent_mae_pp": 13.712182090654387
+    },
+    "valid_fraction": 0.7025604248046875,
+    "gt_water_pct_valid": 13.712182090654387,
+    "gt_nonpermanent_pct_valid": 13.712182090654387,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Pakistan_849790",
+    "event": "Pakistan",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 78.0,
+      "mask_pct": 99.407958984375,
+      "nonpermanent_pct": 99.407958984375,
+      "iou": 0.663632048678385,
+      "mask_pct_valid": 99.40250117594921,
+      "mask_mae_pp": 32.57437635817275,
+      "nonpermanent_mae_pp": 32.57437635817275
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 87.72,
+      "mask_pct": 99.71427917480469,
+      "nonpermanent_pct": 99.71427917480469,
+      "iou": 0.6657904764867366,
+      "mask_pct_valid": 99.70883108704356,
+      "mask_mae_pp": 32.8807062692671,
+      "nonpermanent_mae_pp": 32.8807062692671
+    },
+    "valid_fraction": 0.9812889099121094,
+    "gt_water_pct_valid": 66.82812481777647,
+    "gt_nonpermanent_pct_valid": 66.82812481777647,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_790830",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.0,
+      "mask_pct": 13.281631469726562,
+      "nonpermanent_pct": 3.41796875,
+      "iou": 0.8742350233002077,
+      "mask_pct_valid": 13.329683498022579,
+      "mask_mae_pp": 1.0987790918035674,
+      "nonpermanent_mae_pp": 1.0256547689692534
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.91,
+      "mask_pct": 13.19580078125,
+      "nonpermanent_pct": 3.3344268798828125,
+      "iou": 0.8789958206257765,
+      "mask_pct_valid": 13.243542280024043,
+      "mask_mae_pp": 1.01263787380503,
+      "nonpermanent_mae_pp": 0.9418106501173436
+    },
+    "valid_fraction": 0.9963951110839844,
+    "gt_water_pct_valid": 12.230904406219013,
+    "gt_nonpermanent_pct_valid": 2.404679956661396,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_141271",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 1.3187408447265625,
+      "nonpermanent_pct": 1.3187408447265625,
+      "iou": 0.3639528655597215,
+      "mask_pct_valid": 1.3187408447265625,
+      "mask_mae_pp": 0.6946563720703125,
+      "nonpermanent_mae_pp": 0.6946563720703125,
+      "text_mae_pp": 4.37591552734375
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.24,
+      "mask_pct": 1.140594482421875,
+      "nonpermanent_pct": 1.140594482421875,
+      "iou": 0.38752249550089984,
+      "mask_pct_valid": 1.140594482421875,
+      "mask_mae_pp": 0.516510009765625,
+      "nonpermanent_mae_pp": 0.516510009765625,
+      "text_mae_pp": 4.61591552734375
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 0.62408447265625,
+    "gt_nonpermanent_pct_valid": 0.62408447265625,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_828067",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.24,
+      "mask_pct": 1.8589019775390625,
+      "nonpermanent_pct": 1.7650604248046875,
+      "iou": 0.4586151764850572,
+      "mask_pct_valid": 2.6572739187418084,
+      "mask_mae_pp": 1.162079510703364,
+      "nonpermanent_mae_pp": 1.0435779816513762
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.21,
+      "mask_pct": 1.7787933349609375,
+      "nonpermanent_pct": 1.6902923583984375,
+      "iou": 0.4488374984458535,
+      "mask_pct_valid": 2.544233289646134,
+      "mask_mae_pp": 1.2751201397990388,
+      "nonpermanent_mae_pp": 1.1489733508082132
+    },
+    "valid_fraction": 0.69854736328125,
+    "gt_water_pct_valid": 3.8193534294451728,
+    "gt_nonpermanent_pct_valid": 3.5665137614678897,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_79637",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 1.214599609375,
+      "nonpermanent_pct": 1.214599609375,
+      "iou": 0.06329597554763118,
+      "mask_pct_valid": 1.214599609375,
+      "mask_mae_pp": 0.7556915283203125,
+      "nonpermanent_mae_pp": 0.7556915283203125,
+      "text_mae_pp": 3.0297088623046875
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 10.19,
+      "mask_pct": 0.0057220458984375,
+      "nonpermanent_pct": 0.0057220458984375,
+      "iou": 0.0005794861889124976,
+      "mask_pct_valid": 0.0057220458984375,
+      "mask_mae_pp": 1.964569091796875,
+      "nonpermanent_mae_pp": 1.964569091796875,
+      "text_mae_pp": 8.219708862304687
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 1.9702911376953125,
+    "gt_nonpermanent_pct_valid": 1.9702911376953125,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Somalia_699062",
+    "event": "Somalia",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 1.6190227795028762,
+      "nonpermanent_mae_pp": 1.6190227795028762
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 14.42,
+      "mask_pct": 3.7689208984375,
+      "nonpermanent_pct": 3.7689208984375,
+      "iou": 0.0,
+      "mask_pct_valid": 0.4335437898911958,
+      "mask_mae_pp": 1.1854789896116804,
+      "nonpermanent_mae_pp": 1.1854789896116804
+    },
+    "valid_fraction": 0.7751808166503906,
+    "gt_water_pct_valid": 1.6190227795028762,
+    "gt_nonpermanent_pct_valid": 1.6190227795028762,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Pakistan_167553",
+    "event": "Pakistan",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.23,
+      "mask_pct": 7.208251953125,
+      "nonpermanent_pct": 7.208251953125,
+      "iou": 0.0004935834155972359,
+      "mask_pct_valid": 6.792658991117137,
+      "mask_mae_pp": 6.202626413872645,
+      "nonpermanent_mae_pp": 6.202626413872645
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.46,
+      "mask_pct": 10.554122924804688,
+      "nonpermanent_pct": 10.554122924804688,
+      "iou": 0.0,
+      "mask_pct_valid": 9.05202241961919,
+      "mask_mae_pp": 8.461989842374699,
+      "nonpermanent_mae_pp": 8.461989842374699
+    },
+    "valid_fraction": 0.9426307678222656,
+    "gt_water_pct_valid": 0.5900325772444912,
+    "gt_nonpermanent_pct_valid": 0.5900325772444912,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Sri-Lanka_534068",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 94.0,
+      "mask_pct": 99.44839477539062,
+      "nonpermanent_pct": 1.7101287841796875,
+      "iou": 0.986789666481272,
+      "mask_pct_valid": 99.44839477539062,
+      "mask_mae_pp": 1.308441162109375,
+      "nonpermanent_mae_pp": 1.2622833251953125,
+      "text_mae_pp": 4.13995361328125
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 99.0,
+      "mask_pct": 99.51133728027344,
+      "nonpermanent_pct": 1.772308349609375,
+      "iou": 0.9861807504178358,
+      "mask_pct_valid": 99.51133728027344,
+      "mask_mae_pp": 1.3713836669921875,
+      "nonpermanent_mae_pp": 1.324462890625,
+      "text_mae_pp": 0.86004638671875
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 98.13995361328125,
+    "gt_nonpermanent_pct_valid": 0.447845458984375,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_167233",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.11,
+      "mask_pct": 0.173187255859375,
+      "nonpermanent_pct": 0.173187255859375,
+      "iou": 0.0,
+      "mask_pct_valid": 0.173187255859375,
+      "mask_mae_pp": 0.173187255859375,
+      "nonpermanent_mae_pp": 0.173187255859375,
+      "text_mae_pp": 5.11
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.000762939453125,
+      "nonpermanent_pct": 0.000762939453125,
+      "iou": 0.0,
+      "mask_pct_valid": 0.000762939453125,
+      "mask_mae_pp": 0.000762939453125,
+      "nonpermanent_mae_pp": 0.000762939453125,
+      "text_mae_pp": 3.44
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 0.0,
+    "gt_nonpermanent_pct_valid": 0.0,
+    "gt_water_positive": false
+  },
+  {
+    "id": "USA_430764",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.79345703125,
+      "nonpermanent_pct": 0.79345703125,
+      "iou": 0.00011417480162128218,
+      "mask_pct_valid": 0.7934782194043573,
+      "mask_mae_pp": 5.09619016010712,
+      "nonpermanent_mae_pp": 5.09619016010712
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.609588623046875,
+      "nonpermanent_pct": 0.609588623046875,
+      "iou": 0.00011740534194305841,
+      "mask_pct_valid": 0.6096049012539245,
+      "mask_mae_pp": 5.280063478257553,
+      "nonpermanent_mae_pp": 5.280063478257553
+    },
+    "valid_fraction": 0.9999732971191406,
+    "gt_water_pct_valid": 5.889668379511477,
+    "gt_nonpermanent_pct_valid": 5.889668379511477,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_905409",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 18.32,
+      "mask_pct": 16.98455810546875,
+      "nonpermanent_pct": 1.955413818359375,
+      "iou": 0.9186537881074555,
+      "mask_pct_valid": 16.98747419868065,
+      "mask_mae_pp": 0.02174750762116605,
+      "nonpermanent_mae_pp": 0.0736362977348254
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 16.0,
+      "mask_pct": 17.015457153320312,
+      "nonpermanent_pct": 1.9863128662109375,
+      "iou": 0.9170110192837465,
+      "mask_pct_valid": 17.018378551615992,
+      "mask_mae_pp": 0.05265186055650727,
+      "nonpermanent_mae_pp": 0.10454065067016662
+    },
+    "valid_fraction": 0.9998283386230469,
+    "gt_water_pct_valid": 16.965726691059483,
+    "gt_nonpermanent_pct_valid": 1.882113247284423,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_67102",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 3.9218902587890625,
+      "nonpermanent_pct": 1.39312744140625,
+      "iou": 0.6659925851027975,
+      "mask_pct_valid": 3.922683342808414,
+      "mask_mae_pp": 0.3014220251744623,
+      "nonpermanent_mae_pp": 0.4811305996772114
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.54,
+      "mask_pct": 3.9794921875,
+      "nonpermanent_pct": 1.448822021484375,
+      "iou": 0.6583152988180456,
+      "mask_pct_valid": 3.9802969197721403,
+      "mask_mae_pp": 0.35903560213818864,
+      "nonpermanent_mae_pp": 0.5368364423043904
+    },
+    "valid_fraction": 0.9997978210449219,
+    "gt_water_pct_valid": 3.6212613176339516,
+    "gt_nonpermanent_pct_valid": 0.9122785597368853,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Mekong_254910",
+    "event": "Mekong",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0003814697265625,
+      "nonpermanent_pct": 0.0003814697265625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0004866298450083944,
+      "mask_mae_pp": 0.06520839923112486,
+      "nonpermanent_mae_pp": 0.06520839923112486
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 0,
+      "text_pct": 14.06,
+      "mask_pct": null,
+      "nonpermanent_pct": null
+    },
+    "valid_fraction": 0.7839012145996094,
+    "gt_water_pct_valid": 0.06569502907613324,
+    "gt_nonpermanent_pct_valid": 0.06569502907613324,
+    "gt_water_positive": true
+  },
+  {
+    "id": "India_592446",
+    "event": "India",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 1.5811920166015625,
+      "nonpermanent_pct": 1.01470947265625,
+      "iou": 0.24029470104845566,
+      "mask_pct_valid": 1.8216665552361213,
+      "mask_mae_pp": 2.2094448530231108,
+      "nonpermanent_mae_pp": 1.046555681843507
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 1.59149169921875,
+      "nonpermanent_pct": 1.0162353515625,
+      "iou": 0.2406830833097462,
+      "mask_pct_valid": 1.830135276682044,
+      "mask_mae_pp": 2.200976131577188,
+      "nonpermanent_mae_pp": 1.0478928483876
+    },
+    "valid_fraction": 0.8558464050292969,
+    "gt_water_pct_valid": 4.031111408259232,
+    "gt_nonpermanent_pct_valid": 2.22370796282677,
+    "gt_water_positive": true
+  },
+  {
+    "id": "USA_670826",
+    "event": "USA",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.2685546875,
+      "nonpermanent_pct": 0.2685546875,
+      "iou": 0.008690928843020097,
+      "mask_pct_valid": 0.26856698152076053,
+      "mask_mae_pp": 0.8797094593563547,
+      "nonpermanent_mae_pp": 0.8606350998733463
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.4512786865234375,
+      "nonpermanent_pct": 0.4512786865234375,
+      "iou": 0.013291445142580956,
+      "mask_pct_valid": 0.45129934536798255,
+      "mask_mae_pp": 0.6969770955091328,
+      "nonpermanent_mae_pp": 0.6779027360261243
+    },
+    "valid_fraction": 0.9999542236328125,
+    "gt_water_pct_valid": 1.1482764408771153,
+    "gt_nonpermanent_pct_valid": 1.1292020813941068,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_34417",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 0.0,
+      "nonpermanent_pct": 0.0,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0,
+      "mask_mae_pp": 100.0,
+      "nonpermanent_mae_pp": 100.0
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 94.22,
+      "mask_pct": 99.34158325195312,
+      "nonpermanent_pct": 99.34158325195312,
+      "iou": 1.0,
+      "mask_pct_valid": 100.0,
+      "mask_mae_pp": 0.0,
+      "nonpermanent_mae_pp": 0.0
+    },
+    "valid_fraction": 0.19083404541015625,
+    "gt_water_pct_valid": 100.0,
+    "gt_nonpermanent_pct_valid": 100.0,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Mekong_382276",
+    "event": "Mekong",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 4.0065765380859375,
+      "nonpermanent_pct": 4.0065765380859375,
+      "iou": 0.8167262969588551,
+      "mask_pct_valid": 4.007080969512916,
+      "mask_mae_pp": 0.26515483898043196,
+      "nonpermanent_mae_pp": 0.26515483898043196
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 4.03594970703125,
+      "nonpermanent_pct": 4.03594970703125,
+      "iou": 0.8153325616596919,
+      "mask_pct_valid": 4.0364578365654245,
+      "mask_mae_pp": 0.2945317060329402,
+      "nonpermanent_mae_pp": 0.2945317060329402
+    },
+    "valid_fraction": 0.9998741149902344,
+    "gt_water_pct_valid": 3.7419261305324842,
+    "gt_nonpermanent_pct_valid": 3.7419261305324842,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_83483",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 78.0,
+      "mask_pct": 86.52153015136719,
+      "nonpermanent_pct": 86.52153015136719
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 15.31,
+      "mask_pct": 99.94964599609375,
+      "nonpermanent_pct": 99.94964599609375
+    },
+    "valid_fraction": 0.0,
+    "gt_water_positive": false,
+    "unscorable": "No valid annotated pixels"
+  },
+  {
+    "id": "Sri-Lanka_117737",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.054931640625,
+      "nonpermanent_pct": 0.054931640625,
+      "iou": 0.0,
+      "mask_pct_valid": 0.054931640625,
+      "mask_mae_pp": 2.5127410888671875,
+      "nonpermanent_mae_pp": 2.359771728515625,
+      "text_mae_pp": 2.532327270507812
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.0335693359375,
+      "nonpermanent_pct": 0.0335693359375,
+      "iou": 0.0,
+      "mask_pct_valid": 0.0335693359375,
+      "mask_mae_pp": 2.5341033935546875,
+      "nonpermanent_mae_pp": 2.381134033203125,
+      "text_mae_pp": 0.8723272705078124
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 2.5676727294921875,
+    "gt_nonpermanent_pct_valid": 2.414703369140625,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Sri-Lanka_377277",
+    "event": "Sri-Lanka",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 6.607818603515625,
+      "nonpermanent_pct": 6.607818603515625,
+      "iou": 0.0,
+      "mask_pct_valid": 6.678026739864603,
+      "mask_mae_pp": 3.3613736950051663,
+      "nonpermanent_mae_pp": 4.952426480793251
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 6.595611572265625,
+      "nonpermanent_pct": 6.595611572265625,
+      "iou": 0.0,
+      "mask_pct_valid": 6.6656900087899205,
+      "mask_mae_pp": 3.3490369639304824,
+      "nonpermanent_mae_pp": 4.9400897497185685
+    },
+    "valid_fraction": 0.9894866943359375,
+    "gt_water_pct_valid": 3.3166530448594385,
+    "gt_nonpermanent_pct_valid": 1.7256002590713526,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_866994",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 87.81,
+      "mask_pct": 100.0,
+      "nonpermanent_pct": 39.34593200683594,
+      "iou": 0.901796427568483,
+      "mask_pct_valid": 100.0,
+      "mask_mae_pp": 9.820357243151705,
+      "nonpermanent_mae_pp": 0.909702070444469
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 94.3,
+      "mask_pct": 100.0,
+      "nonpermanent_pct": 39.34593200683594,
+      "iou": 0.901796427568483,
+      "mask_pct_valid": 100.0,
+      "mask_mae_pp": 9.820357243151705,
+      "nonpermanent_mae_pp": 0.909702070444469
+    },
+    "valid_fraction": 0.4482688903808594,
+    "gt_water_pct_valid": 90.1796427568483,
+    "gt_nonpermanent_pct_valid": 39.98944779637651,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_313799",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 1.1379241943359375,
+      "nonpermanent_pct": 1.1379241943359375,
+      "iou": 0.15927484622855292,
+      "mask_pct_valid": 1.2157209241442504,
+      "mask_mae_pp": 4.892744944040841,
+      "nonpermanent_mae_pp": 4.892744944040841
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 0.90484619140625,
+      "nonpermanent_pct": 0.90484619140625,
+      "iou": 0.1320594201950134,
+      "mask_pct_valid": 0.9678316643759408,
+      "mask_mae_pp": 5.1406342038091495,
+      "nonpermanent_mae_pp": 5.1406342038091495
+    },
+    "valid_fraction": 0.93255615234375,
+    "gt_water_pct_valid": 6.108465868185091,
+    "gt_nonpermanent_pct_valid": 6.108465868185091,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_406026",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.0,
+      "mask_pct": 1.564788818359375,
+      "nonpermanent_pct": 1.564788818359375,
+      "iou": 0.619533808514737,
+      "mask_pct_valid": 1.564788818359375,
+      "mask_mae_pp": 0.0774383544921875,
+      "nonpermanent_mae_pp": 0.074005126953125,
+      "text_mae_pp": 3.3577728271484375
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 3.44,
+      "mask_pct": 1.493072509765625,
+      "nonpermanent_pct": 1.493072509765625,
+      "iou": 0.6156870454098683,
+      "mask_pct_valid": 1.493072509765625,
+      "mask_mae_pp": 0.1491546630859375,
+      "nonpermanent_mae_pp": 0.145721435546875,
+      "text_mae_pp": 1.7977728271484374
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 1.6422271728515625,
+    "gt_nonpermanent_pct_valid": 1.6387939453125,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Ghana_1078550",
+    "event": "Ghana",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 5.1,
+      "mask_pct": 0.7030487060546875,
+      "nonpermanent_pct": 0.7030487060546875,
+      "iou": 0.0,
+      "mask_pct_valid": 0.7030487060546875,
+      "mask_mae_pp": 0.16632080078125,
+      "nonpermanent_mae_pp": 0.16632080078125,
+      "text_mae_pp": 4.563272094726562
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 22.32,
+      "mask_pct": 36.35444641113281,
+      "nonpermanent_pct": 36.35444641113281,
+      "iou": 3.102218085931441e-05,
+      "mask_pct_valid": 36.35444641113281,
+      "mask_mae_pp": 35.817718505859375,
+      "nonpermanent_mae_pp": 35.817718505859375,
+      "text_mae_pp": 21.783272094726563
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 0.5367279052734375,
+    "gt_nonpermanent_pct_valid": 0.5367279052734375,
+    "gt_water_positive": true
+  },
+  {
+    "id": "Paraguay_511199",
+    "event": "Paraguay",
+    "p1": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 6.0,
+      "mask_pct": 1.8741607666015625,
+      "nonpermanent_pct": 1.8741607666015625,
+      "iou": 0.0299787207410189,
+      "mask_pct_valid": 1.8741607666015625,
+      "mask_mae_pp": 2.5295257568359375,
+      "nonpermanent_mae_pp": 2.5295257568359375,
+      "text_mae_pp": 1.5963134765625
+    },
+    "p2": {
+      "status": "ok",
+      "mask_count": 1,
+      "text_pct": 15.62,
+      "mask_pct": 37.10441589355469,
+      "nonpermanent_pct": 37.10441589355469,
+      "iou": 0.061394695513914764,
+      "mask_pct_valid": 37.10441589355469,
+      "mask_mae_pp": 32.70072937011719,
+      "nonpermanent_mae_pp": 32.70072937011719,
+      "text_mae_pp": 11.2163134765625
+    },
+    "valid_fraction": 1.0,
+    "gt_water_pct_valid": 4.4036865234375,
+    "gt_nonpermanent_pct_valid": 4.4036865234375,
+    "gt_water_positive": true
+  }
+]

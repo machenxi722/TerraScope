@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "c5e4e77a-826f-4551-81df-be4745df37f0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.72140161111112,
+          29.618381333333335
+        ]
+      },
+      "properties": {
+        "sample_id": "6480",
+        "acquired_at": "2017:09:03 10:49:53",
+        "prediction_id": "30bad85d-84ca-4a3a-9f66-37c4924633fb",
+        "latitude": 29.618381333333335,
+        "longitude": -95.72140161111112,
+        "crs": "EPSG:4326",
+        "kind": "camera_position",
+        "source": "FloodNet original EXIF / audited experiment manifest"
+      }
+    }
+  ]
+}

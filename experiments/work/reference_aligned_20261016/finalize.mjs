@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {PresentationFile,FileBlob} from '@oai/artifact-tool';
+const R=process.cwd(),W=path.join(R,'work/reference_aligned_20261016'),O=path.join(R,'outputs/TerraScope_主图独立样稿_20261016');
+const K='/Users/zhangchunhe/.codex/plugins/cache/openai-primary-runtime/presentations/26.1013.11914/skills/presentations';
+const PY='/Users/zhangchunhe/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3';
+process.env.RUNTIME_NODE_MODULES='/Users/zhangchunhe/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const {finalizePresentation}=await import(pathToFileURL(path.join(K,'container_tools/artifact_tool_utils.mjs')).href);
+const finalPath=path.join(O,'TerraScope_原理主图_对齐与解码细化版_v2.pptx');
+const q=await finalizePresentation({workspaceDir:R,candidatePath:path.join(W,'candidate.pptx'),finalPath,pythonExecutable:PY,integrityValidatorPath:path.join(K,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(K,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-heading-fit'],explicitTotalSlideCount:1,requiredNativeChartOwnerSlides:[],requiredNativeTableOwnerSlides:[],fontPolicy:{basis:'design',families:['Songti SC','Times New Roman']},verifyArtifactToolImport:true,receiptPath:path.join(W,'validation_v2.json')});
+const p=await PresentationFile.importPptx(await FileBlob.load(finalPath));
+await fs.writeFile(path.join(O,'TerraScope_原理主图_对齐与解码细化版_v2_预览.png'),new Uint8Array(await(await p.slides.items[0].export({format:'png',scale:1.7})).arrayBuffer()));
+console.log(JSON.stringify({file:q.finalPath,slides:p.slides.items.length,hash:q.finalSha256}));

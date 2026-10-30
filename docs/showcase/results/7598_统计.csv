@@ -1,0 +1,2 @@
+﻿sample_id,split,pred_pixels,valid_pixels,coverage_percent,scene_threshold_percent,scene_screen_positive,validity_source,coverage_definition,area_m2,source_mode,prediction_id,review_revision,review_status
+7598,holdout,235695,701440,33.601591012773724,1,True,label_non_255,影像有效区域内预测受淹道路像素比例,,live_inference,c72fb25f-265e-49bc-8dba-0585ea7e493d,1,confirmed

@@ -1,0 +1,19 @@
+{
+  "boxes": [
+    {
+      "x": 464.0,
+      "y": 345.0,
+      "w": 360.0,
+      "h": 128.0
+    },
+    {
+      "x": 464.0,
+      "y": 542.0,
+      "w": 360.0,
+      "h": 128.0
+    }
+  ],
+  "region_return_horizontal": true,
+  "decoder_source": "work/terrascope-src/TerraScope/third_parts/sam2/modeling/sam/mask_decoder.py",
+  "final_render_checked": true
+}

@@ -1,0 +1,294 @@
+{
+  "schemaVersion": "presentation-finalization.v1",
+  "finalSha256": "3575463f70ba2235bfb1eedb2687d4583a4e254f554e29736a6c84a66a10f582",
+  "byteCount": 47706302,
+  "packageIntegrity": {
+    "chart_count": 3,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 14,
+    "relationship_part_count": 61,
+    "slide_count": 14,
+    "status": "pass",
+    "exitCode": 0,
+    "findingCount": 0,
+    "warnings": []
+  },
+  "presentationLayout": {
+    "finding_count": 0,
+    "findings": [],
+    "slide_count": 14,
+    "slide_size_in": [
+      13.3333,
+      7.5
+    ],
+    "warning_count": 9,
+    "warnings": [
+      {
+        "kind": "substantial_text_frame_overlap",
+        "left_object_id": "371",
+        "overlap_height_in": 0.7156,
+        "overlap_width_in": 2.6771,
+        "right_object_id": "375",
+        "slide": 4
+      },
+      {
+        "kind": "substantial_text_frame_overlap",
+        "left_object_id": "300",
+        "overlap_height_in": 0.7156,
+        "overlap_width_in": 2.6771,
+        "right_object_id": "303",
+        "slide": 5
+      },
+      {
+        "connector_id": "321",
+        "connector_z": 17,
+        "kind": "connector_over_text",
+        "slide": 6,
+        "text_object_id": "313",
+        "text_z": 9
+      },
+      {
+        "connector_id": "32",
+        "connector_z": 133,
+        "kind": "connector_over_text",
+        "slide": 6,
+        "text_object_id": "15",
+        "text_z": 116
+      },
+      {
+        "connector_id": "40",
+        "connector_z": 141,
+        "kind": "connector_over_text",
+        "slide": 6,
+        "text_object_id": "18",
+        "text_z": 119
+      },
+      {
+        "connector_id": "201",
+        "connector_z": 167,
+        "kind": "connector_over_text",
+        "slide": 6,
+        "text_object_id": "50",
+        "text_z": 147
+      },
+      {
+        "kind": "substantial_text_frame_overlap",
+        "left_object_id": "449",
+        "overlap_height_in": 0.7156,
+        "overlap_width_in": 2.6771,
+        "right_object_id": "452",
+        "slide": 6
+      },
+      {
+        "kind": "object_outside_slide_boundary",
+        "object_id": "39",
+        "object_kind": "sp",
+        "slide": 8
+      },
+      {
+        "kind": "object_outside_slide_boundary",
+        "object_id": "44",
+        "object_kind": "sp",
+        "slide": 10
+      }
+    ],
+    "exitCode": 0,
+    "findingCount": 0
+  },
+  "fontSelection": {
+    "basis": "unspecified",
+    "approvedFamilies": [],
+    "scriptFonts": {},
+    "referenceSha256": null,
+    "referenceFontsVerifiedInEncodedText": false
+  },
+  "firstPartyImport": {
+    "performed": true,
+    "passed": true,
+    "slideCount": 14,
+    "sha256": "3575463f70ba2235bfb1eedb2687d4583a4e254f554e29736a6c84a66a10f582",
+    "runtimeNodeModules": "/Users/chenxi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules",
+    "nodeExecutable": "/Users/chenxi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  },
+  "nativeTableArithmetic": {
+    "performed": true,
+    "checked_column_count": 0,
+    "checks": [],
+    "claim_boundary": "Displayed-value arithmetic with rounding tolerance; not source-data verification.",
+    "eligible_table_count": 0,
+    "finding_count": 0,
+    "findings": [],
+    "native_table_count": 3,
+    "passed": true,
+    "schema_version": "presentation-native-table-arithmetic.v1",
+    "skipped_tables": [
+      {
+        "reason": "no_unambiguous_bottom_total",
+        "slide": 5,
+        "table": 1
+      },
+      {
+        "reason": "no_numeric_amounts",
+        "slide": 8,
+        "table": 1
+      },
+      {
+        "reason": "no_unambiguous_bottom_total",
+        "slide": 9,
+        "table": 1
+      }
+    ],
+    "slide_count": 14,
+    "warning_count": 0,
+    "warnings": []
+  },
+  "nativeChartTitles": {
+    "performed": true,
+    "checks": [
+      {
+        "chart": 1,
+        "slide": 9,
+        "status": "absent"
+      },
+      {
+        "chart": 1,
+        "slide": 11,
+        "status": "absent"
+      },
+      {
+        "chart": 2,
+        "slide": 11,
+        "status": "absent"
+      }
+    ],
+    "finding_count": 0,
+    "findings": [],
+    "native_chart_count": 3,
+    "native_powerpoint_verified": false,
+    "passed": true,
+    "presentation_sha256": "3575463f70ba2235bfb1eedb2687d4583a4e254f554e29736a6c84a66a10f582",
+    "schema_version": "presentation-native-chart-titles.v1",
+    "slide_count": 14,
+    "source_text_emitted": false,
+    "unresolved_linked_title_count": 0
+  },
+  "sourceDerivedPolicyFlags": [
+    "--expected-slide-size-emu",
+    "12192000,6858000",
+    "--validate-bullet-geometry",
+    "--validate-heading-fit",
+    "--require-native-table-slide",
+    "8",
+    "--require-native-table-slide",
+    "9",
+    "--cover-role",
+    "none",
+    "--expected-slide-count",
+    "14"
+  ],
+  "nativeChartValidation": {
+    "detectedOwnerSlides": [
+      9,
+      11
+    ],
+    "detectedChartCount": 3,
+    "targetApplication": "portable",
+    "sourceChartOwnersExplicitlyDeclared": true,
+    "validatorRan": true,
+    "passed": true
+  },
+  "nativeQuantitativeCharts": {
+    "report": {
+      "claim_boundary": "OOXML/workbook structural validation only; source provenance and native PowerPoint opening remain separate checks.",
+      "expected_quantitative_chart_slides": [
+        9,
+        11
+      ],
+      "failed_slide_count": 0,
+      "failed_slides": [],
+      "formal_human_reviewed": false,
+      "native_application_open_verified": false,
+      "package_sha256": "3575463f70ba2235bfb1eedb2687d4583a4e254f554e29736a6c84a66a10f582",
+      "passed": true,
+      "required_embedded_workbook_slides": [
+        9,
+        11
+      ],
+      "results": [
+        {
+          "approved_source_figure_exception": false,
+          "charts": [
+            {
+              "cache_reference_ranges_verified": true,
+              "embedded_workbook_count": 1,
+              "embedded_workbook_sheet_count": 1,
+              "native_chart_types": [
+                "barChart"
+              ],
+              "numeric_cache_point_count": 4,
+              "series_formula_count": 2,
+              "workbook_numeric_cell_count": 4
+            }
+          ],
+          "failure_codes": [],
+          "native_chart_count": 1,
+          "raster_picture_count": 3,
+          "required_native_chart_count": 1,
+          "slide_number": 9,
+          "status": "passed"
+        },
+        {
+          "approved_source_figure_exception": false,
+          "charts": [
+            {
+              "cache_reference_ranges_verified": true,
+              "embedded_workbook_count": 1,
+              "embedded_workbook_sheet_count": 1,
+              "native_chart_types": [
+                "barChart"
+              ],
+              "numeric_cache_point_count": 2,
+              "series_formula_count": 2,
+              "workbook_numeric_cell_count": 2
+            },
+            {
+              "cache_reference_ranges_verified": true,
+              "embedded_workbook_count": 1,
+              "embedded_workbook_sheet_count": 1,
+              "native_chart_types": [
+                "barChart"
+              ],
+              "numeric_cache_point_count": 2,
+              "series_formula_count": 2,
+              "workbook_numeric_cell_count": 2
+            }
+          ],
+          "failure_codes": [],
+          "native_chart_count": 2,
+          "raster_picture_count": 7,
+          "required_native_chart_count": 1,
+          "slide_number": 11,
+          "status": "passed"
+        }
+      ],
+      "schema_version": "owner-private.quantitative-chart-native-gate.v1",
+      "slide_count": 14,
+      "source_attachments_accessed": false,
+      "target_application": "portable",
+      "validated_slide_count": 2
+    },
+    "exitCode": 0,
+    "validatedSlideCount": 2,
+    "requiredOwnerSlides": [
+      9,
+      11
+    ],
+    "approvedSourceFigureExceptionSlides": [],
+    "requiredEmbeddedWorkbookChartOwnerSlides": [
+      9,
+      11
+    ]
+  }
+}

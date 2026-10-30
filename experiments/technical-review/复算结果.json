@@ -1,0 +1,433 @@
+{
+  "scope": "Aggregate/row-level numeric audit only; raw imagery, prediction masks and teammate source code are absent.",
+  "seed": 20261015,
+  "inventory": {
+    "": 1,
+    ".txt": 12,
+    ".csv": 10,
+    ".pptx": 1,
+    ".docx": 1,
+    ".json": 12,
+    ".png": 96
+  },
+  "qa100": {
+    "summary": [
+      {
+        "split": "test",
+        "task": "all",
+        "route": "A",
+        "total": 100,
+        "correct": 32,
+        "accuracy_percent": 32.0,
+        "strict_accuracy_percent": 30.0,
+        "normalized_format_count": 3,
+        "available_answers": 93,
+        "wilson95_low": 23.669010815456883,
+        "wilson95_high": 41.66280225367919,
+        "mae": null,
+        "mae_unit": null
+      },
+      {
+        "split": "test",
+        "task": "all",
+        "route": "B",
+        "total": 100,
+        "correct": 76,
+        "accuracy_percent": 76.0,
+        "strict_accuracy_percent": 76.0,
+        "normalized_format_count": 0,
+        "available_answers": 99,
+        "wilson95_low": 66.76748127670787,
+        "wilson95_high": 83.30878873454004,
+        "mae": null,
+        "mae_unit": null
+      },
+      {
+        "split": "test",
+        "task": "all",
+        "route": "C",
+        "total": 100,
+        "correct": 54,
+        "accuracy_percent": 54.0,
+        "strict_accuracy_percent": 54.0,
+        "normalized_format_count": 0,
+        "available_answers": 100,
+        "wilson95_low": 44.264685393523855,
+        "wilson95_high": 63.439356146668146,
+        "mae": null,
+        "mae_unit": null
+      },
+      {
+        "split": "test",
+        "task": "coverage_percentage",
+        "route": "A",
+        "total": 50,
+        "correct": 15,
+        "accuracy_percent": 30.0,
+        "strict_accuracy_percent": 28.0,
+        "normalized_format_count": 1,
+        "available_answers": 49,
+        "wilson95_low": 19.10338908960936,
+        "wilson95_high": 43.75061227736339,
+        "mae": 8.248642857142855,
+        "mae_unit": "percentage points"
+      },
+      {
+        "split": "test",
+        "task": "coverage_percentage",
+        "route": "B",
+        "total": 50,
+        "correct": 40,
+        "accuracy_percent": 80.0,
+        "strict_accuracy_percent": 80.0,
+        "normalized_format_count": 0,
+        "available_answers": 49,
+        "wilson95_low": 66.96262789551477,
+        "wilson95_high": 88.75637005402612,
+        "mae": 1.6557551020408159,
+        "mae_unit": "percentage points"
+      },
+      {
+        "split": "test",
+        "task": "coverage_percentage",
+        "route": "C",
+        "total": 50,
+        "correct": 36,
+        "accuracy_percent": 72.0,
+        "strict_accuracy_percent": 72.0,
+        "normalized_format_count": 0,
+        "available_answers": 50,
+        "wilson95_low": 58.33461285401034,
+        "wilson95_high": 82.52598564231963,
+        "mae": 4.668998917968749,
+        "mae_unit": "percentage points"
+      },
+      {
+        "split": "test",
+        "task": "absolute_area",
+        "route": "A",
+        "total": 50,
+        "correct": 17,
+        "accuracy_percent": 34.0,
+        "strict_accuracy_percent": 32.0,
+        "normalized_format_count": 2,
+        "available_answers": 44,
+        "wilson95_low": 22.43676963506106,
+        "wilson95_high": 47.846431458517145,
+        "mae": 503491.61363636365,
+        "mae_unit": "m2"
+      },
+      {
+        "split": "test",
+        "task": "absolute_area",
+        "route": "B",
+        "total": 50,
+        "correct": 36,
+        "accuracy_percent": 72.0,
+        "strict_accuracy_percent": 72.0,
+        "normalized_format_count": 0,
+        "available_answers": 50,
+        "wilson95_low": 58.33461285401034,
+        "wilson95_high": 82.52598564231963,
+        "mae": 149800.0,
+        "mae_unit": "m2"
+      },
+      {
+        "split": "test",
+        "task": "absolute_area",
+        "route": "C",
+        "total": 50,
+        "correct": 18,
+        "accuracy_percent": 36.0,
+        "strict_accuracy_percent": 36.0,
+        "normalized_format_count": 0,
+        "available_answers": 50,
+        "wilson95_low": 24.138562967182875,
+        "wilson95_high": 49.859237989698045,
+        "mae": 359718.0,
+        "mae_unit": "m2"
+      }
+    ],
+    "B_C_paired": {
+      "split": "test",
+      "left": "B",
+      "right": "C",
+      "both_correct": 44,
+      "left_only_correct": 32,
+      "right_only_correct": 10,
+      "both_wrong": 14
+    },
+    "mcnemar_exact_two_sided": 0.0009406740282429382,
+    "inference_limit": "Question-wise test; repeated images/geographic dependence cannot be checked from aggregate tables."
+  },
+  "water12": {
+    "n": 12,
+    "mae_pp": {
+      "A": 8.870399475097656,
+      "B": 4.080023498535156,
+      "C": 1.7162640889485676
+    },
+    "B_to_C_improved": 10,
+    "B_minus_C_mae_pp": 2.3637594095865886,
+    "B_minus_C_scene_bootstrap95_pp": [
+      1.1296090329488118,
+      3.531034765879313
+    ],
+    "A_strict_missing": 5,
+    "strict_common7_mae_pp": {
+      "A": 12.452292306082589,
+      "B": 3.6108637346540178,
+      "C": 1.1553083147321428
+    },
+    "reference_below_5pct_count": 10
+  },
+  "consistency200": {
+    "by_task": [
+      {
+        "task": "all",
+        "n": 200,
+        "B_correct": 140,
+        "C_correct": 101,
+        "passed": 99,
+        "passed_correct": 83,
+        "flagged": 101,
+        "flagged_B_errors": 44,
+        "unavailable_B": 0,
+        "B_accuracy": 0.7,
+        "C_accuracy": 0.505,
+        "retained_accuracy": 0.8383838383838383,
+        "retained_coverage": 0.495,
+        "error_recall": 0.7333333333333333
+      },
+      {
+        "task": "coverage_percentage",
+        "n": 100,
+        "B_correct": 71,
+        "C_correct": 58,
+        "passed": 67,
+        "passed_correct": 52,
+        "flagged": 33,
+        "flagged_B_errors": 14,
+        "unavailable_B": 0,
+        "B_accuracy": 0.71,
+        "C_accuracy": 0.58,
+        "retained_accuracy": 0.7761194029850746,
+        "retained_coverage": 0.67,
+        "error_recall": 0.4827586206896552
+      },
+      {
+        "task": "absolute_area",
+        "n": 100,
+        "B_correct": 69,
+        "C_correct": 43,
+        "passed": 32,
+        "passed_correct": 31,
+        "flagged": 68,
+        "flagged_B_errors": 30,
+        "unavailable_B": 0,
+        "B_accuracy": 0.69,
+        "C_accuracy": 0.43,
+        "retained_accuracy": 0.96875,
+        "retained_coverage": 0.32,
+        "error_recall": 0.967741935483871
+      }
+    ],
+    "flagged_error_precision_pct": 43.56435643564357,
+    "correct_answers_flagged": 57,
+    "retained_accuracy_wilson95_pct": [
+      75.348771370771,
+      89.80005165090128
+    ]
+  },
+  "water65": {
+    "n": 65,
+    "MNDWI_wins": 57,
+    "MNDWI_minus_TerraScope_mean_pp": 24.08112284573553,
+    "paired_event_bootstrap": {
+      "groups": 10,
+      "ci95_pp": [
+        15.648317410566264,
+        33.393462916669925
+      ],
+      "assumption": "Country/event prefix is the available grouping proxy; not a full geographic independence guarantee."
+    },
+    "by_model": {
+      "TerraScope_IoU_pct": {
+        "mean": 23.566189920056438,
+        "median": 6.329597554763118,
+        "zero_count": 20
+      },
+      "MNDWI_IoU_pct": {
+        "mean": 47.647312765791966,
+        "median": 48.92550143266476,
+        "zero_count": 2
+      }
+    }
+  },
+  "water_validity": {
+    "total": 72,
+    "zero_valid": 1,
+    "fully_valid": 12,
+    "below_half_valid": 7
+  },
+  "official_split_audit": {
+    "counts": {
+      "flood_bolivia_data.csv": 15,
+      "flood_test_data.csv": 90,
+      "flood_train_data.csv": 252,
+      "flood_valid_data.csv": 89
+    },
+    "package72_overlap": {
+      "flood_bolivia_data.csv": 0,
+      "flood_test_data.csv": 72,
+      "flood_train_data.csv": 0,
+      "flood_valid_data.csv": 0
+    },
+    "pairwise_overlap": {
+      "flood_bolivia_data.csv + flood_test_data.csv": 0,
+      "flood_bolivia_data.csv + flood_train_data.csv": 0,
+      "flood_bolivia_data.csv + flood_valid_data.csv": 0,
+      "flood_test_data.csv + flood_train_data.csv": 0,
+      "flood_test_data.csv + flood_valid_data.csv": 0,
+      "flood_train_data.csv + flood_valid_data.csv": 0
+    },
+    "sha256": {
+      "flood_bolivia_data.csv": "4775d100fae1f1ca66a842b8af6d2a97b8bfc5847f29d88ff0affff2c1e22768",
+      "flood_test_data.csv": "8b598c9438042f3ed8aed4484268387fae1aa5b660882e1c5b4c1218eba63d67",
+      "flood_train_data.csv": "57be4dc440bf8a526effa77e06d4b8cb7a8484589c0bffa201d8e0f49e994beb",
+      "flood_valid_data.csv": "04999b82b93e393c32a54ac85b2bf8a18b671f7a6f43a9478b340e8a9b9647fb"
+    },
+    "source": "Official public GCS v1.1/splits/flood_handlabeled; see dataset_split_snapshot/provenance.json"
+  },
+  "roads48": {
+    "n": 48,
+    "confusion": {
+      "FP": 5,
+      "TN": 19,
+      "TP": 22,
+      "FN": 2
+    },
+    "accuracy_pct": 85.41666666666667,
+    "accuracy_wilson95_pct": [
+      72.83282347525372,
+      92.75175067339629
+    ],
+    "precision_pct": 81.48148148148148,
+    "recall_pct": 91.66666666666667,
+    "mae_pp": 31.063256473108808,
+    "baseline_mean_road_iou_pct": 49.0365818016088,
+    "consensus_mean_road_iou_pct": 48.77590192063293,
+    "consensus_confusion": {
+      "FP": 5,
+      "TN": 19,
+      "TP": 22,
+      "FN": 2
+    },
+    "GT_share_exactly_zero_or_one": 47,
+    "any_prompt_missing": 7,
+    "prompt_decision_flips": 0,
+    "errors": [
+      {
+        "id": "10817",
+        "split": "evaluation",
+        "baseline_share": 0.2744013062409289,
+        "reference_share": 0.0,
+        "range": 0.03696480406386066,
+        "all_three_valid": false
+      },
+      {
+        "id": "6348",
+        "split": "evaluation",
+        "baseline_share": 0.6004392971246006,
+        "reference_share": 0.0,
+        "range": 0.012350239616613412,
+        "all_three_valid": true
+      },
+      {
+        "id": "7357",
+        "split": "evaluation",
+        "baseline_share": 0.0,
+        "reference_share": 1.0,
+        "range": 0.0,
+        "all_three_valid": true
+      },
+      {
+        "id": "9022",
+        "split": "evaluation",
+        "baseline_share": 0.834242223468053,
+        "reference_share": 0.0,
+        "range": 0.002956016512919768,
+        "all_three_valid": false
+      },
+      {
+        "id": "7199",
+        "split": "extension",
+        "baseline_share": 0.7957043270740438,
+        "reference_share": 0.0,
+        "range": 0.017584626012686067,
+        "all_three_valid": true
+      },
+      {
+        "id": "7362",
+        "split": "extension",
+        "baseline_share": 0.09062825809939375,
+        "reference_share": 1.0,
+        "range": 0.011314051820674215,
+        "all_three_valid": true
+      },
+      {
+        "id": "7982",
+        "split": "extension",
+        "baseline_share": 0.7985144419265494,
+        "reference_share": 0.0,
+        "range": 0.0038128124887594206,
+        "all_three_valid": false
+      }
+    ]
+  },
+  "review71": {
+    "n": 71,
+    "top_k": 24,
+    "budget": 16,
+    "strategies_recomputed": {
+      "no_review": 14,
+      "prompt_disagreement": 18,
+      "decision_boundary": 18,
+      "spectral_disagreement": 17
+    },
+    "provided_random": {
+      "mean": 15.8955,
+      "p025": 14.0,
+      "p975": 18.0
+    },
+    "random_10000_new_seed": {
+      "mean": 15.9075,
+      "p025": 14.0,
+      "p975": 18.0,
+      "fraction_hits_ge_18": 0.0383
+    },
+    "large_error_zero_prompt_disagreement": [
+      {
+        "id": "Ghana_97059",
+        "valid_fraction": 0.10449981689453125,
+        "p": [
+          100.0,
+          100.0
+        ],
+        "reference_pct": 0.0,
+        "difference_pp": 0.0
+      }
+    ],
+    "interpretation": "Oracle review simulation only. Random tail frequency is conditional on this fixed pool, not a population-level significance test."
+  },
+  "source_sha256": {
+    "03_结果表与口径/原始统计记录/ABC_100题汇总.json": "a48de7bc0988d90668c0d3c81af514b17863dd7c0522e6d7a6c9efc0bd2f98e4",
+    "03_结果表与口径/原始统计记录/12幅水体ABC原统计.json": "93ba07cb767d747b75d05a6a9a44f9f5e7b10c4573c2f1fc42e80591d7d4a1de",
+    "03_结果表与口径/原始统计记录/200题一致性原统计.json": "85f9f88d0d7cdf1ad46bce98c95ebdb27ae7c4517b6fa7239e531cf258258714",
+    "03_结果表与口径/P13_65幅水体IoU对照.csv": "c678c601ec5c20532014923ec6103eb0ae62ae3ce5a76de5a720c5ee1145f960",
+    "03_结果表与口径/原始统计记录/水体逐景原统计.json": "57059d561f0f376f0254746a3090dfdb38a30518a12d65200abcbbe069d5546a",
+    "03_结果表与口径/原始统计记录/道路对齐修正后逐景统计.json": "686b2e462cd0c0357828f4e2c433d340e5b05c81d637db60a78b56e85b7eb2fb",
+    "03_结果表与口径/P11_48幅道路逐景结果.csv": "59080446d9627eee0262ed4e894865d21336e49f6951e77e8dc773943ffb877e",
+    "03_结果表与口径/原始统计记录/71幅复核模拟原统计.json": "e5bc575a32b1a74b8edda62ded009c3e231622d5e227c4df7b9512dcb8f7968a"
+  }
+}

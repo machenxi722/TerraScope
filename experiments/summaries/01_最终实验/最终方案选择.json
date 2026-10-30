@@ -1,0 +1,68 @@
+{
+  "selection_rule": "maximum 80-image validation global IoU, never test performance",
+  "selected": "四视图平均",
+  "candidates": {
+    "本轮单模型": {
+      "validation_iou": 0.6128828172073406,
+      "test": {
+        "global_iou": 0.5862745329962844,
+        "global_dice": 0.7391841964314732,
+        "coverage_mae_pp": 0.8102850438324494,
+        "scene_tp": 45,
+        "scene_fp": 4,
+        "pixel_precision": 0.7213197217589096,
+        "pixel_recall": 0.7579560193870967,
+        "positive_macro_iou": 0.5555451831181704,
+        "positive_coverage_mae_pp": 5.509305056420378,
+        "negative_mean_prediction_pp": 0.23321241070761606
+      },
+      "holdout": {
+        "global_iou": 0.5205639690842221,
+        "global_dice": 0.6846985456294061,
+        "coverage_mae_pp": 0.7039221460519633,
+        "scene_tp": 21,
+        "scene_fp": 10,
+        "positive_macro_iou": 0.5588721886306943,
+        "positive_coverage_mae_pp": 8.219625218184706
+      }
+    },
+    "四视图平均": {
+      "validation_iou": 0.6391788229077243,
+      "test": {
+        "global_iou": 0.5827679429196668,
+        "global_dice": 0.7363908847492309,
+        "coverage_mae_pp": 0.8333716062692292,
+        "scene_tp": 44,
+        "scene_fp": 2,
+        "positive_macro_iou": 0.5597482570415643,
+        "positive_coverage_mae_pp": 5.768646190227916
+      },
+      "holdout": {
+        "global_iou": 0.5568506151575942,
+        "global_dice": 0.7153552302784378,
+        "coverage_mae_pp": 0.597475209038286,
+        "scene_tp": 21,
+        "scene_fp": 1,
+        "positive_macro_iou": 0.5683617473095396,
+        "positive_coverage_mae_pp": 6.339858626229769
+      }
+    },
+    "跨种子参数平均": {
+      "validation_iou": 0.5819195700311396,
+      "test": {
+        "global_iou": 0.5445278738028398,
+        "coverage_mae_pp": 0.9238027150654984,
+        "positive_macro_iou": 0.5124870751670142,
+        "scene_tp": 42,
+        "scene_fp": 3
+      },
+      "holdout": {
+        "global_iou": 0.5579628305497254,
+        "coverage_mae_pp": 0.5983152045232818,
+        "positive_macro_iou": 0.5575252853191182,
+        "scene_tp": 21,
+        "scene_fp": 4
+      }
+    }
+  }
+}

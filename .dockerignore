@@ -1,0 +1,17 @@
+.venv
+runtime
+frontend/node_modules
+frontend/dist
+frontend/test-results
+frontend/playwright-report
+**/__pycache__
+**/.pytest_cache
+.env
+docs/evidence
+
+.git
+experiments
+archive
+weights
+docs/presentations
+docs/showcase

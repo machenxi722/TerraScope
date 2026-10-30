@@ -1,0 +1,59 @@
+{
+  "status": "PROPOSAL_ONLY_NOT_A_DROP_IN_TRAINER_CONFIG",
+  "date": "2026-10-15",
+  "main_task": "Sen1Floods11 hand-labeled optical water segmentation",
+  "application_validation": "FloodNet road flood screening, separate known-road and predicted-road protocols",
+  "budget": {"currency": "CNY", "total_cap": 200, "non_gpu_reserve": 20, "max_gpu_hours": 24, "max_hourly_rate_if_24h": 7.5},
+  "initialization": "Verified final TerraScope checkpoint used by the team, not a fresh InternVL3 backbone",
+  "data": {
+    "split_source": "Official versioned CSVs, verify counts and event/geographic overlap before use",
+    "train_hint": 252,
+    "validation_hint": 89,
+    "test_hint": 90,
+    "bolivia_holdout_hint": 15,
+    "label_values_sen1": {"water": 1, "not_water": 0, "ignore": -1},
+    "invalid_loss_mask_required": true,
+    "label_validity_not_an_operational_feature": true,
+    "weak_labels_first_run": false
+  },
+  "stage1": {
+    "trainable_module_names_in_official_training_wrapper": ["text_hidden_fcs", "grounding_encoder.sam2_model.sam_mask_decoder"],
+    "freeze_everything_else_after_initialization": true,
+    "single_target_single_seg_token": true,
+    "cache": ["pre-projector first SEG hidden state", "frozen SAM2 multiscale image features"],
+    "cache_key": ["checkpoint_hash", "image_hash", "prompt", "crop_and_augmentation", "preprocessing_version", "dynamic_patch_layout"],
+    "optimizer": "AdamW",
+    "decoder_lr": 0.0001,
+    "projector_lr": 0.00002,
+    "weight_decay": 0.01,
+    "precision": "bf16",
+    "microbatch_start": 1,
+    "effective_batch": 8,
+    "gradient_clip": 1,
+    "max_optimizer_updates": 1000,
+    "validate_every_updates": 100,
+    "early_stopping_validation_checks": 5,
+    "measure_runtime_over_optimizer_updates": 100,
+    "seeds": [42, 2026],
+    "first_seed_both_ablations_second_seed_winner_only": true
+  },
+  "ablations": [
+    {"id": "R0", "description": "Original checkpoint and original prompts"},
+    {"id": "R1", "description": "Fixed single-target prompt, no fine-tuning"},
+    {"id": "M1", "description": "Same prompt, projector and decoder tuning, valid BCE plus Dice"},
+    {"id": "M2", "description": "Same as M1 plus valid-area consistency", "area_loss_lambda_start": 0.1},
+    {"id": "S0", "description": "Small RGB segmentation baseline, existing implementation required"},
+    {"id": "P0", "description": "MNDWI on multispectral imagery, separate input track, validation-only threshold"}
+  ],
+  "optional_peft": {
+    "choose_only_one_if_time_remains": true,
+    "visual_domain_failure": "SAM2 last-stage LoRA rank 4 or 8; invalidate image feature cache; explicitly save new adapter weights",
+    "language_grounding_failure": "Last selected LLM layers q/v LoRA rank 8, alpha 16, dropout 0.05, lr 1e-5, 200-400 updates",
+    "module_names_must_be_inspected": true,
+    "quantization_requires_separate_compatibility_test": true
+  },
+  "primary_metrics": ["water micro-IoU including all evaluable scenes", "scene macro-IoU with fixed empty-mask rule", "event-level metrics", "valid-area coverage MAE", "water-absent false positives"],
+  "engineering_targets_not_promises": {"iou_gain_over_R1_pp": 5, "coverage_mae_relative_reduction": 0.2},
+  "required_checks": ["weight loading and baseline reproduction", "no spatial split overlap", "validity mask applied to every segmentation loss", "20-batch forward/backward and tiny-set overfit", "trainable parameter whitelist", "checkpoint save/reload prediction parity", "performance and GPU-memory pilot"],
+  "timeboxes_hours": {"preflight": 2, "cache_and_baseline": 3, "M1": 3, "M2": 3, "winner_second_seed": 3, "small_baseline": 2, "test_and_export": 4, "buffer": 4}
+}

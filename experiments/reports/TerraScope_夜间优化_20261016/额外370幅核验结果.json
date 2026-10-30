@@ -1,0 +1,66 @@
+{
+  "archive_sha256": "60831c93faa65e0a22b2a1c7f86fe3e35e22209e7e438accec799be166e59dcc",
+  "files_verified": 1496,
+  "mask_count_verified": 1480,
+  "n_images": 370,
+  "n_positive": 23,
+  "original_test_overlap": 0,
+  "methods": {
+    "original_head": {
+      "checkpoint_name": "head_seed20261015",
+      "validation_iou": 0.53781868433307,
+      "recomputed": {
+        "global_iou": 0.5166938251046712,
+        "global_dice": 0.6813422940770696,
+        "coverage_mae_pp": 0.6511698186205495,
+        "positive_macro_iou": 0.5145634474560686,
+        "positive_coverage_mae_pp": 7.3866059385909235,
+        "negative_mean_prediction_pp": 0.2047288077867782,
+        "scene_tp": 21,
+        "scene_fp": 8
+      }
+    },
+    "original_lora": {
+      "checkpoint_name": "lora_seed20261016",
+      "validation_iou": 0.5803704424902236,
+      "recomputed": {
+        "global_iou": 0.5020437513463479,
+        "global_dice": 0.6684808626863818,
+        "coverage_mae_pp": 0.756020634321879,
+        "positive_macro_iou": 0.5139365495598651,
+        "positive_coverage_mae_pp": 7.195936061964455,
+        "negative_mean_prediction_pp": 0.32916745035709716,
+        "scene_tp": 19,
+        "scene_fp": 8
+      }
+    },
+    "long_bce_dice": {
+      "checkpoint_name": "long_bce_dice_seed20261017",
+      "validation_iou": 0.5911283510854924,
+      "recomputed": {
+        "global_iou": 0.5325936214204465,
+        "global_dice": 0.6950226256674946,
+        "coverage_mae_pp": 0.6641147628827326,
+        "positive_macro_iou": 0.5482435107645504,
+        "positive_coverage_mae_pp": 8.575061736353538,
+        "negative_mean_prediction_pp": 0.1397580470619011,
+        "scene_tp": 21,
+        "scene_fp": 6
+      }
+    },
+    "long_bce_lovasz": {
+      "checkpoint_name": "long_bce_lovasz_seed20261017",
+      "validation_iou": 0.6128828172073406,
+      "recomputed": {
+        "global_iou": 0.5205639690842221,
+        "global_dice": 0.6846985456294061,
+        "coverage_mae_pp": 0.7039221460519633,
+        "positive_macro_iou": 0.5588721886306943,
+        "positive_coverage_mae_pp": 8.219625218184706,
+        "negative_mean_prediction_pp": 0.20576315279820825,
+        "scene_tp": 21,
+        "scene_fp": 10
+      }
+    }
+  }
+}

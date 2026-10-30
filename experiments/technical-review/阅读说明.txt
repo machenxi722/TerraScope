@@ -1,0 +1,26 @@
+本目录是对原分享包的技术审查与实验建议，原分享包未修改。
+
+先看：技术审查与200元优化方案.txt
+  包含结果复核、数据划分、六篇 2025—2026 年论文、微调路线、代码修改点、24 小时预算和验收标准。
+
+复算：audit_results.py
+  Python 3.9+，只用标准库。可从任意工作目录调用。
+  python3 audit_results.py --out 复算结果.json
+  移动原分享包后，通过 --package 参数指定路径。
+
+复算结果.json
+  已执行输出。包含探索性不确定性分析、官方划分交叉检查和输入哈希。
+
+proposed_experiments.json
+  实验计划的结构化参数，不是可直接交给官方训练器运行的配置。
+
+dataset_split_snapshot/
+  官方 Sen1Floods11 四份划分 CSV 和来源。数量为 252/89/90/15。
+  原分享包 72 幅水体样本全部属于官方 test，不能用于微调训练。
+
+official_source_snapshot/
+  固定 Git commit 的少量 TerraScope 官方源码，只供静态审阅。
+  来源 URL 和 SHA256 见 provenance.json。不是完整可运行仓库。
+
+本次没有进行 GPU 训练，未获得新模型或新的模型准确率。
+需要真正落地训练时，仍须队友的实际代码、模型版本、原始影像/标签和推理日志。

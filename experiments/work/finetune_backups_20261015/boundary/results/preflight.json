@@ -1,0 +1,83 @@
+{
+  "added_parameters": 50016,
+  "feature_shapes": [
+    [
+      1,
+      256,
+      256,
+      256
+    ],
+    [
+      1,
+      256,
+      128,
+      128
+    ],
+    [
+      1,
+      256,
+      64,
+      64
+    ]
+  ],
+  "identity_max_logit_error": 0.0,
+  "gradient_steps": [
+    {
+      "step": 1,
+      "loss": 1.2116340398788452,
+      "gradient_abs_sum": {
+        "road_detail_adapter.blocks.0.down.weight": 0.0,
+        "road_detail_adapter.blocks.0.local.weight": 0.0,
+        "road_detail_adapter.blocks.0.up.weight": 1.112166166305542,
+        "road_detail_adapter.blocks.1.down.weight": 0.0,
+        "road_detail_adapter.blocks.1.local.weight": 0.0,
+        "road_detail_adapter.blocks.1.up.weight": 0.3134758770465851,
+        "road_detail_adapter.blocks.2.down.weight": 0.0,
+        "road_detail_adapter.blocks.2.local.weight": 0.0,
+        "road_detail_adapter.blocks.2.up.weight": 7.069435119628906
+      }
+    },
+    {
+      "step": 2,
+      "loss": 1.212569236755371,
+      "gradient_abs_sum": {
+        "road_detail_adapter.blocks.0.down.weight": 0.019493501633405685,
+        "road_detail_adapter.blocks.0.local.weight": 0.0016316473484039307,
+        "road_detail_adapter.blocks.0.up.weight": 1.114816665649414,
+        "road_detail_adapter.blocks.1.down.weight": 0.008214371278882027,
+        "road_detail_adapter.blocks.1.local.weight": 0.00046595005551353097,
+        "road_detail_adapter.blocks.1.up.weight": 0.31437554955482483,
+        "road_detail_adapter.blocks.2.down.weight": 0.17361538112163544,
+        "road_detail_adapter.blocks.2.local.weight": 0.011172652244567871,
+        "road_detail_adapter.blocks.2.up.weight": 7.382848739624023
+      }
+    },
+    {
+      "step": 3,
+      "loss": 1.2120329141616821,
+      "gradient_abs_sum": {
+        "road_detail_adapter.blocks.0.down.weight": 0.03912617266178131,
+        "road_detail_adapter.blocks.0.local.weight": 0.003322061151266098,
+        "road_detail_adapter.blocks.0.up.weight": 1.1340620517730713,
+        "road_detail_adapter.blocks.1.down.weight": 0.016488227993249893,
+        "road_detail_adapter.blocks.1.local.weight": 0.000950708519667387,
+        "road_detail_adapter.blocks.1.up.weight": 0.3214021325111389,
+        "road_detail_adapter.blocks.2.down.weight": 0.33513742685317993,
+        "road_detail_adapter.blocks.2.local.weight": 0.0218006931245327,
+        "road_detail_adapter.blocks.2.up.weight": 7.206558704376221
+      }
+    }
+  ],
+  "baseline_mask_matches": [
+    "6345",
+    "6503",
+    "6511"
+  ],
+  "boundary_loss_unit_checks": {
+    "empty_and_full_targets_zero_boundary_loss": true,
+    "partial_target_finite_nonzero_gradient": true,
+    "all_invalid_zero_boundary_loss": true
+  },
+  "auxiliary_parameters": 0,
+  "reload_max_logit_error": 0.0
+}

@@ -1,0 +1,10 @@
+﻿任务,路线,题数,答对,正确率_pct
+all,A,100,32,32.0
+all,B,100,76,76.0
+all,C,100,54,54.0
+coverage_percentage,A,50,15,30.0
+coverage_percentage,B,50,40,80.0
+coverage_percentage,C,50,36,72.0
+absolute_area,A,50,17,34.0
+absolute_area,B,50,36,72.0
+absolute_area,C,50,18,36.0

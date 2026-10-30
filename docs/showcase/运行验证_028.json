@@ -1,0 +1,93 @@
+{
+  "tested_at": "2026-10-20T08:54:10.146169+00:00",
+  "instance_id": "bb5a41b362-ace379d4",
+  "instance_name": "028",
+  "sample_id": "7611",
+  "base_matches_039": true,
+  "runs": [
+    {
+      "strategy": "single_view",
+      "task_id": "f7c2e0c1-93f8-4dec-9a35-c6708f46af8a",
+      "prediction_id": "3645a423-3b2d-4b3d-8885-1bf13ce8e5c0",
+      "metrics": {
+        "pred_pixels": 109716,
+        "valid_pixels": 701440,
+        "coverage_percent": 15.641537408759124,
+        "scene_threshold_percent": 1.0,
+        "scene_screen_positive": true,
+        "validity_source": "label_non_255",
+        "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+        "area_m2": null
+      },
+      "evaluation": {
+        "tp": 102530,
+        "fp": 7186,
+        "fn": 17530,
+        "gt_pixels": 120060,
+        "iou": 0.8057620671769643,
+        "precision": 0.9345036275474863,
+        "recall": 0.8539896718307513,
+        "gt_coverage_percent": 17.11621806569343,
+        "coverage_error_pp": 1.4746806569343065,
+        "null_reason": "分母为零的指标为 null；无目标影像不人为设置 IoU=1"
+      },
+      "runtime": {
+        "job_id": "32a9b4e5-7e49-467f-b1a8-6972e420e847",
+        "device": "NVIDIA A800 80GB PCIe",
+        "elapsed_seconds": 0.6856729090213776,
+        "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+      },
+      "mask_sha256": "6c29f6a3acdbe3452c3c7ab5d2ac663b3f6a054376e4d736bab919778b180749",
+      "different_pixels": 0
+    },
+    {
+      "strategy": "tta4",
+      "task_id": "e2764385-ee1e-44a6-ad82-c85eb8f61b20",
+      "prediction_id": "2c6f4384-4657-4cb4-b861-f3940861b53f",
+      "metrics": {
+        "pred_pixels": 109239,
+        "valid_pixels": 701440,
+        "coverage_percent": 15.573534443430656,
+        "scene_threshold_percent": 1.0,
+        "scene_screen_positive": true,
+        "validity_source": "label_non_255",
+        "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+        "area_m2": null
+      },
+      "evaluation": {
+        "tp": 103551,
+        "fp": 5688,
+        "fn": 16509,
+        "gt_pixels": 120060,
+        "iou": 0.8234802939211757,
+        "precision": 0.9479306840963392,
+        "recall": 0.8624937531234382,
+        "gt_coverage_percent": 17.11621806569343,
+        "coverage_error_pp": 1.5426836222627738,
+        "null_reason": "分母为零的指标为 null；无目标影像不人为设置 IoU=1"
+      },
+      "runtime": {
+        "job_id": "95c08c33-00d0-45cb-a8d3-1b94fc0a5c0e",
+        "device": "NVIDIA A800 80GB PCIe",
+        "elapsed_seconds": 1.3378216624259949,
+        "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+      },
+      "mask_sha256": "0cb016d141aa007dcc8c1e3e53b0148c9deaefe33b01692a24051c7a33f61240",
+      "different_pixels": 0
+    }
+  ],
+  "gpu": {
+    "available": true,
+    "reason": "模型服务已连接并验证版本",
+    "device": "NVIDIA A800 80GB PCIe",
+    "state": "ready",
+    "queue_depth": 0,
+    "running_jobs": 0,
+    "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+  },
+  "project_id": "4a5e7f50-9a6e-4f7f-b067-02020355e16f",
+  "image_id": "96a9b0f0-fc13-402c-9231-e8dd3a8ba193",
+  "report_id": "874c1e70-307d-4d36-9821-79356f3e6ff6",
+  "report_checksums_verified": true,
+  "passed": true
+}

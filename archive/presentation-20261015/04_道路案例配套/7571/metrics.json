@@ -1,0 +1,34 @@
+{
+  "baseline_share": 0.8400715691536947,
+  "consensus_share": 0.8397996063696547,
+  "prompt_shares": [
+    0.8400715691536947,
+    0.8384684201109321,
+    0.8407657899445339
+  ],
+  "range": 0.0022973698336017367,
+  "decision_flip": false,
+  "all_three_valid": true,
+  "id": "7571",
+  "split": "evaluation",
+  "road_pixels": 139725,
+  "width": 1024,
+  "height": 685,
+  "text_percentages": [
+    16.0,
+    20.55,
+    17.56
+  ],
+  "mask_percentages": [
+    19.406649178832115,
+    19.372291286496353,
+    19.42589530109489
+  ],
+  "elapsed_seconds": 6.301679566502571,
+  "alignment_version": "native_top_left_canvas_v1",
+  "valid_annotation_pixels": 596748,
+  "reference_share": 1.0,
+  "true_priority": true,
+  "baseline_road_iou": 0.8400715691536947,
+  "consensus_road_iou": 0.8397996063696547
+}

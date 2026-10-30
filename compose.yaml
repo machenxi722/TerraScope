@@ -1,0 +1,81 @@
+name: terrascope
+x-backend: &backend
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  environment: &backend-env
+    TERRA_DATABASE_URL: postgresql+psycopg://terra:${POSTGRES_PASSWORD:?Run scripts/configure.py first}@postgres:5432/terrascope
+    TERRA_REDIS_URL: redis://redis:6379/0
+    TERRA_WORKER_MODE: celery
+    TERRA_STORAGE_DIR: /app/runtime/assets
+    TERRA_ADMIN_USERNAME: ${TERRA_ADMIN_USERNAME:-admin}
+    TERRA_ADMIN_PASSWORD: ${TERRA_ADMIN_PASSWORD:?Run scripts/configure.py first}
+    TERRA_SECURE_COOKIES: ${TERRA_SECURE_COOKIES:-false}
+    TERRA_ALLOWED_HOSTS: ${TERRA_ALLOWED_HOSTS:-localhost,127.0.0.1,api}
+    TERRA_MODEL_SERVICE_URL: ${TERRA_MODEL_SERVICE_URL:-}
+    TERRA_MODEL_SERVICE_TOKEN: ${TERRA_MODEL_SERVICE_TOKEN:-}
+  volumes:
+    - assets:/app/runtime/assets
+  restart: unless-stopped
+  security_opt:
+    - no-new-privileges:true
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: terra
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/configure.py first}
+      POSTGRES_DB: terrascope
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U terra -d terrascope"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  redis:
+    image: redis:7-alpine
+    command: [redis-server, --appendonly, "yes"]
+    volumes:
+      - redis:/data
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  api:
+    <<: *backend
+    command: [sh, -c, "alembic -c backend/alembic.ini upgrade head && python -m app.cli init --demo-if-present && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+  worker:
+    <<: *backend
+    command: [celery, -A, app.worker.celery, worker, --beat, --loglevel=INFO, --concurrency=1, --schedule=/tmp/celerybeat-schedule]
+    depends_on:
+      api:
+        condition: service_healthy
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "127.0.0.1:${WEB_PORT:-8080}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  database:
+  assets:
+  redis:

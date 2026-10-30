@@ -1,0 +1,81 @@
+{
+  "archive_sha256": "2c8027c7bdd30af1da1b6122a12d0d3cd84e61060f209cf5ea438855ca4eb404",
+  "code_hashes_verified": true,
+  "checkpoint_name": "long_bce_lovasz_seed20261017",
+  "deployment_mode_selected_by_validation": "tta4",
+  "splits": {
+    "val": {
+      "single_view": {
+        "global_iou": 0.6128828172073406,
+        "global_dice": 0.7599843096704685,
+        "coverage_mae_pp": 2.417405622718978,
+        "scene_tp": 29,
+        "scene_fp": 0,
+        "positive_macro_iou": 0.5376599100934626,
+        "positive_coverage_mae_pp": 6.446414993917274
+      },
+      "max_reference_disagreement_fraction": 0,
+      "tta4": {
+        "global_iou": 0.6391788229077243,
+        "global_dice": 0.7798768675816478,
+        "coverage_mae_pp": 2.249698833827555,
+        "scene_tp": 27,
+        "scene_fp": 0,
+        "positive_macro_iou": 0.5632880108965508,
+        "positive_coverage_mae_pp": 5.999196890206813
+      }
+    },
+    "test": {
+      "single_view": {
+        "global_iou": 0.5862745329962844,
+        "global_dice": 0.7391841964314732,
+        "coverage_mae_pp": 0.8102850438324494,
+        "scene_tp": 45,
+        "scene_fp": 4,
+        "positive_macro_iou": 0.5555451831181704,
+        "positive_coverage_mae_pp": 5.509305056420378
+      },
+      "max_reference_disagreement_fraction": 0,
+      "tta4": {
+        "global_iou": 0.5827679429196668,
+        "global_dice": 0.7363908847492309,
+        "coverage_mae_pp": 0.8333716062692292,
+        "scene_tp": 44,
+        "scene_fp": 2,
+        "positive_macro_iou": 0.5597482570415643,
+        "positive_coverage_mae_pp": 5.768646190227916
+      }
+    },
+    "holdout": {
+      "single_view": {
+        "global_iou": 0.5205639690842221,
+        "global_dice": 0.6846985456294061,
+        "coverage_mae_pp": 0.7039221460519633,
+        "scene_tp": 21,
+        "scene_fp": 10,
+        "positive_macro_iou": 0.5588721886306943,
+        "positive_coverage_mae_pp": 8.219625218184706
+      },
+      "max_reference_disagreement_fraction": 0,
+      "tta4": {
+        "global_iou": 0.5568506151575942,
+        "global_dice": 0.7153552302784378,
+        "coverage_mae_pp": 0.597475209038286,
+        "scene_tp": 21,
+        "scene_fp": 1,
+        "positive_macro_iou": 0.5683617473095396,
+        "positive_coverage_mae_pp": 6.339858626229769
+      }
+    }
+  },
+  "diagnostic_logit_checks": [
+    {
+      "id": "6598",
+      "logit_mean_max_error": 0.0
+    },
+    {
+      "id": "6345",
+      "logit_mean_max_error": 0.0
+    }
+  ]
+}

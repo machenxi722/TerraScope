@@ -1,0 +1,240 @@
+{
+  "protocol": {
+    "version": "2026-10-16-uniform-soups-v1",
+    "task": "RGB-only flooded-road segmentation with fixed SEG prefix",
+    "dataset": "FloodNet-Supervised_v1.0",
+    "class_id": 3,
+    "train_n": 300,
+    "validation_n": 80,
+    "test_n": 448,
+    "selection": "Official train: all 162 positives + SHA256-ordered 138 negatives; official val: 30 positives + 50 negatives; official test: all 448 images. Fixed before inference.",
+    "manifest_sha256": "0116ab402d651d67308e703b1f57181fe265ad6f61977bc4b8e1008d9dc4993f",
+    "micro_steps": 4800,
+    "gradient_accumulation": 4,
+    "head_lr": 0.0001,
+    "lora_lr": 2e-05,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "warmup_updates": 20,
+    "validate_every": 800,
+    "lora_seeds": [
+      20261015,
+      20261016,
+      20261017
+    ],
+    "maximum_run_seconds": 600,
+    "checkpoint_selection": "Best of three fixed uniform soups on original 80-image validation set; evaluate selected soup on full test and holdout even if it loses to the best individual checkpoint.",
+    "input_long_side": 1024,
+    "threshold_logit": 0,
+    "augmentation": "horizontal/vertical flips and brightness/contrast 0.9-1.1",
+    "training_sampling": "50% positive, 50% negative, replacement; shared seed gives same sample/augmentation sequence for head and first LoRA arm",
+    "scope": "Inference only; uniform arithmetic averages of compatible decoder and projection parameters across fixed seeds. No independent averaging of LoRA factors.",
+    "deadline_epoch": 1792098300,
+    "seeds": [
+      20261015,
+      20261016,
+      20261017
+    ],
+    "arms": [
+      "long_bce_dice",
+      "long_bce_lovasz"
+    ],
+    "loss_formula": {
+      "long_bce_dice": "BCE + soft Dice (unchanged)",
+      "long_bce_lovasz": "BCE + binary Lovasz hinge, valid pixels, per image"
+    },
+    "averaging": "Uniform average of training states at steps 3200,4000,4800. Compare to best single state using validation IoU only; identical treatment for both arms.",
+    "references": [
+      "https://arxiv.org/abs/1705.08790",
+      "https://proceedings.mlr.press/v162/wortsman22a.html"
+    ],
+    "test_access": "After all scheduled training (or deadline stop), each selected model is evaluated once on all 448 test images. Do not branch on test metrics.",
+    "source_runner_sha256": "b8c70cf4bf31b68308178c763901faece482b4c5a6200fef4c6b9ec25a884fba",
+    "reference": "https://proceedings.mlr.press/v162/wortsman22a.html",
+    "estimated_additional_minutes": 6,
+    "balance_verified_at": "2026-10-16 02:23 CST",
+    "balance_cny": 21.11,
+    "candidates": [
+      "three BCE-Dice selected states",
+      "three BCE-Lovasz selected states",
+      "all six selected states"
+    ],
+    "original_scope": "Model-soups inspired uniform parameter averaging; same frozen backbone and base initialization across all members."
+  },
+  "completed": true,
+  "arms": {},
+  "started": "2026-10-16 04:55:10",
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "torch": "2.3.1+cu121",
+  "single_checkpoint_name": "long_bce_lovasz_seed20261017",
+  "single_validation_iou": 0.6128828172073406,
+  "preflight": [
+    {
+      "id": "6598",
+      "mask_disagreement_fraction": 0.0
+    },
+    {
+      "id": "6345",
+      "mask_disagreement_fraction": 0.0
+    }
+  ],
+  "candidates": {
+    "long_bce_dice": {
+      "members": [
+        {
+          "name": "long_bce_dice_seed20261015",
+          "sha256": "e4bce204b2fb8044083d52bf5cf5fa39e3d35bc8e9aabc3d569efc75d360cf50"
+        },
+        {
+          "name": "long_bce_dice_seed20261016",
+          "sha256": "ec24121a3f32c89315fd082f6235d2098f3929cef492ea36624f88b6a5f71650"
+        },
+        {
+          "name": "long_bce_dice_seed20261017",
+          "sha256": "02332f19941cb22709ff3e4e543dbbb5f254b037030c761b633763d552bcc7c7"
+        }
+      ],
+      "validation": {
+        "n": 80,
+        "n_positive": 30,
+        "global_iou": 0.5819195700311396,
+        "global_dice": 0.7357132196293452,
+        "positive_macro_iou": 0.5060299454285693,
+        "coverage_mae_pp": 2.7843311616104014,
+        "negative_false_positive_fraction": 0.0,
+        "scene_tp": 25,
+        "scene_fn": 5,
+        "scene_fp": 0,
+        "scene_tn": 50,
+        "mean_loss": 0.45775980576872827
+      },
+      "uniform_weight": 0.3333333333333333
+    },
+    "long_bce_lovasz": {
+      "members": [
+        {
+          "name": "long_bce_lovasz_seed20261015",
+          "sha256": "cfb6573150415abd1eaedfadfe083882a21827a464af4d37ee596c2b415dda11"
+        },
+        {
+          "name": "long_bce_lovasz_seed20261016",
+          "sha256": "a2575c17ea6eb63de55b4de59d4061ee55071970ffc576d7b21d3a1c587fc07d"
+        },
+        {
+          "name": "long_bce_lovasz_seed20261017",
+          "sha256": "7c70b717815a39b66c052748c44256b685d17ef1513ee482084ce6419d93dfa8"
+        }
+      ],
+      "validation": {
+        "n": 80,
+        "n_positive": 30,
+        "global_iou": 0.4900879453439593,
+        "global_dice": 0.657797342600247,
+        "positive_macro_iou": 0.5012619486547872,
+        "coverage_mae_pp": 4.516225550296533,
+        "negative_false_positive_fraction": 0.0,
+        "scene_tp": 27,
+        "scene_fn": 3,
+        "scene_fp": 0,
+        "scene_tn": 50,
+        "mean_loss": 0.9720676816999912
+      },
+      "uniform_weight": 0.3333333333333333
+    },
+    "all_six": {
+      "members": [
+        {
+          "name": "long_bce_dice_seed20261015",
+          "sha256": "e4bce204b2fb8044083d52bf5cf5fa39e3d35bc8e9aabc3d569efc75d360cf50"
+        },
+        {
+          "name": "long_bce_lovasz_seed20261015",
+          "sha256": "cfb6573150415abd1eaedfadfe083882a21827a464af4d37ee596c2b415dda11"
+        },
+        {
+          "name": "long_bce_dice_seed20261016",
+          "sha256": "ec24121a3f32c89315fd082f6235d2098f3929cef492ea36624f88b6a5f71650"
+        },
+        {
+          "name": "long_bce_lovasz_seed20261016",
+          "sha256": "a2575c17ea6eb63de55b4de59d4061ee55071970ffc576d7b21d3a1c587fc07d"
+        },
+        {
+          "name": "long_bce_dice_seed20261017",
+          "sha256": "02332f19941cb22709ff3e4e543dbbb5f254b037030c761b633763d552bcc7c7"
+        },
+        {
+          "name": "long_bce_lovasz_seed20261017",
+          "sha256": "7c70b717815a39b66c052748c44256b685d17ef1513ee482084ce6419d93dfa8"
+        }
+      ],
+      "validation": {
+        "n": 80,
+        "n_positive": 30,
+        "global_iou": 0.47074332252903434,
+        "global_dice": 0.6401434095509773,
+        "positive_macro_iou": 0.497646887851184,
+        "coverage_mae_pp": 5.054370295392336,
+        "negative_false_positive_fraction": 0.0,
+        "scene_tp": 27,
+        "scene_fn": 3,
+        "scene_fp": 0,
+        "scene_tn": 50,
+        "mean_loss": 0.6937833271920681
+      },
+      "uniform_weight": 0.16666666666666666
+    }
+  },
+  "groups_locked_before_evaluation": {
+    "long_bce_dice": [
+      "long_bce_dice_seed20261015",
+      "long_bce_dice_seed20261016",
+      "long_bce_dice_seed20261017"
+    ],
+    "long_bce_lovasz": [
+      "long_bce_lovasz_seed20261015",
+      "long_bce_lovasz_seed20261016",
+      "long_bce_lovasz_seed20261017"
+    ],
+    "all_six": [
+      "long_bce_dice_seed20261015",
+      "long_bce_lovasz_seed20261015",
+      "long_bce_dice_seed20261016",
+      "long_bce_lovasz_seed20261016",
+      "long_bce_dice_seed20261017",
+      "long_bce_lovasz_seed20261017"
+    ]
+  },
+  "elapsed_seconds": 362.5444841608405,
+  "selected_soup_by_validation": "long_bce_dice",
+  "deployment_choice_by_validation": "single_checkpoint",
+  "validation_choice_locked_at": "2026-10-16 04:56:40",
+  "soup_test": {
+    "n": 448,
+    "n_positive": 49,
+    "global_iou": 0.5445278738028398,
+    "global_dice": 0.7051059201180194,
+    "positive_macro_iou": 0.5124870751670142,
+    "coverage_mae_pp": 0.9238027150654984,
+    "negative_false_positive_fraction": 0.002434622677105176,
+    "scene_tp": 42,
+    "scene_fn": 7,
+    "scene_fp": 3,
+    "scene_tn": 396,
+    "mean_loss": 0.11284574214369059
+  },
+  "soup_holdout": {
+    "n": 370,
+    "n_positive": 23,
+    "global_iou": 0.5579628305497254,
+    "global_dice": 0.7162723264108282,
+    "positive_macro_iou": 0.5575252853191182,
+    "coverage_mae_pp": 0.5983152045232818,
+    "negative_false_positive_fraction": 0.0015456766546488475,
+    "scene_tp": 21,
+    "scene_fn": 2,
+    "scene_fp": 4,
+    "scene_tn": 343,
+    "mean_loss": 0.07602637877335419
+  }
+}

@@ -1,0 +1,7 @@
+﻿方案,评估集,样本数,受淹场景数,IoU百分比,覆盖率MAE百分点,命中TP,漏检FN,误报FP,正确排除TN,证据路径
+原模型,448幅测试,448,49,8.65663155362343,5.046792919949851,40,9,169,230,work/finetune_backups_20261015/formal/results/baseline_test.json
+初轮分割头微调,448幅测试,448,49,48.808339328455794,1.0531965245129873,42,7,4,395,work/finetune_backups_20261015/formal/results/head_seed20261015_test.json
+长训练单视图,448幅测试,448,49,58.62745329962844,0.8102850438324494,45,4,4,395,work/night_20261016/tta_backup/results/single_view_test.json
+最终四视图,448幅测试,448,49,58.27679429196668,0.8333716062692292,44,5,2,397,work/night_20261016/tta_backup/results/tta4_test.json
+长训练单视图,额外370幅,370,23,52.05639690842221,0.7039221460519633,21,2,10,337,work/night_20261016/tta_backup/results/single_view_holdout.json
+最终四视图,额外370幅,370,23,55.685061515759415,0.597475209038286,21,2,1,346,work/night_20261016/tta_backup/results/tta4_holdout.json

@@ -1,0 +1,77 @@
+{
+  "added_parameters": 50016,
+  "feature_shapes": [
+    [
+      1,
+      256,
+      256,
+      256
+    ],
+    [
+      1,
+      256,
+      128,
+      128
+    ],
+    [
+      1,
+      256,
+      64,
+      64
+    ]
+  ],
+  "identity_max_logit_error": 0.0,
+  "gradient_steps": [
+    {
+      "step": 1,
+      "loss": 1.0591888427734375,
+      "gradient_abs_sum": {
+        "blocks.0.down.weight": 0.0,
+        "blocks.0.local.weight": 0.0,
+        "blocks.0.up.weight": 1.0454766750335693,
+        "blocks.1.down.weight": 0.0,
+        "blocks.1.local.weight": 0.0,
+        "blocks.1.up.weight": 0.2948654294013977,
+        "blocks.2.down.weight": 0.0,
+        "blocks.2.local.weight": 0.0,
+        "blocks.2.up.weight": 6.877103328704834
+      }
+    },
+    {
+      "step": 2,
+      "loss": 1.0588393211364746,
+      "gradient_abs_sum": {
+        "blocks.0.down.weight": 0.018522247672080994,
+        "blocks.0.local.weight": 0.001556098461151123,
+        "blocks.0.up.weight": 1.0480152368545532,
+        "blocks.1.down.weight": 0.007650759071111679,
+        "blocks.1.local.weight": 0.0004237149842083454,
+        "blocks.1.up.weight": 0.2957061529159546,
+        "blocks.2.down.weight": 0.16115616261959076,
+        "blocks.2.local.weight": 0.01040930487215519,
+        "blocks.2.up.weight": 6.870607376098633
+      }
+    },
+    {
+      "step": 3,
+      "loss": 1.053886890411377,
+      "gradient_abs_sum": {
+        "blocks.0.down.weight": 0.036747001111507416,
+        "blocks.0.local.weight": 0.0031325817108154297,
+        "blocks.0.up.weight": 1.053469181060791,
+        "blocks.1.down.weight": 0.015129601582884789,
+        "blocks.1.local.weight": 0.0008537120884284377,
+        "blocks.1.up.weight": 0.29829347133636475,
+        "blocks.2.down.weight": 0.33087965846061707,
+        "blocks.2.local.weight": 0.0216131079941988,
+        "blocks.2.up.weight": 7.161274433135986
+      }
+    }
+  ],
+  "baseline_mask_matches": [
+    "6345",
+    "6503",
+    "6511"
+  ],
+  "reload_max_logit_error": 0.0
+}

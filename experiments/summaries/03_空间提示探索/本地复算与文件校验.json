@@ -1,0 +1,45 @@
+{
+  "archive_sha256": "7306b05d47ec1ff2cbfd43bc083899b071067234ed72d56a0d468a5ad185b15e",
+  "verified_members": 420,
+  "verified_prediction_masks": 320,
+  "recomputed_validation": {
+    "initial_single_view": {
+      "tp_fp_fn": [
+        3295618,
+        802785,
+        1278837
+      ],
+      "global_iou": 0.6128828172073406,
+      "n": 80
+    },
+    "continued_control_selected": {
+      "tp_fp_fn": [
+        3295618,
+        802785,
+        1278837
+      ],
+      "global_iou": 0.6128828172073406,
+      "n": 80
+    },
+    "dense_prompt_selected": {
+      "tp_fp_fn": [
+        3297444,
+        774901,
+        1277011
+      ],
+      "global_iou": 0.6164188735989903,
+      "n": 80
+    },
+    "dense_prompt_prompt_disabled": {
+      "tp_fp_fn": [
+        3298367,
+        774177,
+        1276088
+      ],
+      "global_iou": 0.6166748806049847,
+      "n": 80
+    }
+  },
+  "paired_sample_sequence_equal": true,
+  "test_accessed": false
+}

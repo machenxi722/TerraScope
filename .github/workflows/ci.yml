@@ -1,0 +1,43 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        database: [sqlite, postgres]
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: terra
+          POSTGRES_PASSWORD: ci-only-database-password
+          POSTGRES_DB: terra_test
+        ports: ['5432:5432']
+        options: --health-cmd "pg_isready -U terra -d terra_test" --health-interval 5s --health-timeout 3s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch report font (other LFS archives are not needed for tests)
+        run: git lfs pull --include='data/fonts/*'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r backend/requirements.lock
+      - run: PYTHONPATH=backend pytest backend/tests -q
+        env:
+          TERRA_TEST_DATABASE_URL: ${{ matrix.database == 'postgres' && 'postgresql+psycopg://terra:ci-only-database-password@localhost:5432/terra_test' || '' }}
+      - run: PYTHONPATH=backend alembic -c backend/alembic.ini upgrade head
+      - run: PYTHONPATH=backend alembic -c backend/alembic.ini check
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - run: npm test && npm run build
+        working-directory: frontend

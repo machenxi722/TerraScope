@@ -1,0 +1,318 @@
+[
+  {
+    "source": "terrascope/.env",
+    "reason": "local state or secret"
+  },
+  {
+    "source": "terrascope/.venv/lib/python3.12/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz",
+    "reason": "bundled archive; sources retained separately, may contain dataset"
+  },
+  {
+    "source": "terrascope/docs/evidence/7301-evidence.zip",
+    "reason": "bundled archive; sources retained separately, may contain dataset"
+  },
+  {
+    "source": "展示交付_20261019/案例成果/6480_含GPS证据包.zip",
+    "reason": "evidence archive contains source images"
+  },
+  {
+    "source": "展示交付_20261019/案例成果/7598_完整证据包.zip",
+    "reason": "evidence archive contains source images"
+  },
+  {
+    "source": "terrascope/docs/evidence/autodl-028-shutdown.jpg",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/7301_gt_detail.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/7301_rgb_detail.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/7461_gt_detail.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/7461_rgb_detail.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/7986_gt_detail.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/7986_rgb_detail.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/train_6597_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/train_6597_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/train_6601_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/editorial_v2_20261016/assets/train_6701_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6345_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6345_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6345_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6480_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6480_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6480_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6598_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6598_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/6598_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7301_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7301_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7301_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7301_zoom_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7301_zoom_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7461_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7461_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7461_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7558_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7558_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7558_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7595_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7595_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7595_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7679_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7679_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7679_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7986_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7986_mask_gt.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/work/final_talk_20261016/assets/7986_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/outputs/TerraScope_洪灾对齐修正版_20261015/逐景证据/evaluation/7571/RGB.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/04_素材与源码/workspace/outputs/TerraScope_洪灾对齐修正版_20261015/逐景证据/evaluation/7571/reference_flooded_road.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/06_历史备选素材/早期问答与水体图件/本地素材/FloodNet_7571_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/06_历史备选素材/早期问答与水体图件/本地素材/Ghana_406026_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/06_历史备选素材/早期问答与水体图件/本地素材/Ghana_406026_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/06_历史备选素材/早期问答与水体图件/本地素材/India_747992_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队友Codex接续资料_20261016/06_历史备选素材/早期问答与水体图件/本地素材/India_747992_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P02_洪灾调查需求与传统水体分析的难点/01_7571_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P03_TerraScope单景输出_回答与像素证据/01_7571_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P04_TerraScope模型结构与分割证据回注/01_7571_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P05_研究流程与实验设置/01_7571_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P05_研究流程与实验设置/05_India_747992_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P07_完整水体标注_核算收益与成败案例/02_Ghana_406026_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P07_完整水体标注_核算收益与成败案例/04_Ghana_406026_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P07_完整水体标注_核算收益与成败案例/05_Paraguay_232281_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P07_完整水体标注_核算收益与成败案例/07_Paraguay_232281_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P08_一致性检查_把可疑回答交给复核/01_gate1371_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P09_有限复核预算下的调查名单优化/02_India_747992_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P09_有限复核预算下的调查名单优化/05_India_747992_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P12_空间误差分析_典型误报与漏检/01_7199_zoom_RGB.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/02_逐页图件/P12_空间误差分析_典型误报与漏检/04_7362_zoom_RGB.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/6614/RGB.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/6614/reference_flooded_road.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/7199/RGB.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/7199/reference_flooded_road.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/7362/RGB.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/7362/reference_flooded_road.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/7571/RGB.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "历史文件/TerraScope_汇报润色分享包_20261015/04_道路案例配套/7571/reference_flooded_road.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队员材料包/本地素材/FloodNet_7571_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队员材料包/本地素材/Ghana_406026_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队员材料包/本地素材/Ghana_406026_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队员材料包/本地素材/India_747992_reference.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  },
+  {
+    "source": "TerraScope_队员材料包/本地素材/India_747992_rgb.png",
+    "reason": "standalone dataset RGB/GT or local cloud control screenshot"
+  }
+]

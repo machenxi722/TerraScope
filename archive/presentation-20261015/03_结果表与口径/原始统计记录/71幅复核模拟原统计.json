@@ -1,0 +1,1849 @@
+{
+  "n": 71,
+  "unscorable": [
+    {
+      "id": "Ghana_83483",
+      "reason": "No valid annotated pixels"
+    }
+  ],
+  "top_k": 24,
+  "budget": 16,
+  "ideal_review": true,
+  "reference_top": [
+    "Paraguay_34417",
+    "Pakistan_849790",
+    "Mekong_1443339",
+    "Spain_7387658",
+    "India_747992",
+    "Nigeria_812045",
+    "Ghana_866994",
+    "India_900498",
+    "Spain_7370579",
+    "Ghana_319168",
+    "Somalia_685158",
+    "India_1018327",
+    "Paraguay_232281",
+    "Spain_5650136",
+    "Spain_6095801",
+    "Paraguay_868895",
+    "USA_595451",
+    "Ghana_313799",
+    "USA_430764",
+    "Somalia_94102",
+    "Paraguay_1029191",
+    "Paraguay_511199",
+    "Sri-Lanka_450918",
+    "Mekong_382276"
+  ],
+  "results": {
+    "no_review": {
+      "top_k_hits": 14,
+      "precision": 0.5833333333333334,
+      "recall": 0.5833333333333334,
+      "ndcg": 0.5036699422446839,
+      "mae_pp": 8.808090861465184,
+      "selected": [
+        "Ghana_97059",
+        "Pakistan_849790",
+        "Ghana_866994",
+        "India_900498",
+        "Paraguay_868895",
+        "Nigeria_812045",
+        "Mekong_1443339",
+        "Paraguay_232281",
+        "Paraguay_80102",
+        "Pakistan_664885",
+        "Ghana_319168",
+        "Nigeria_417184",
+        "Paraguay_280900",
+        "India_1018327",
+        "Pakistan_167553",
+        "Sri-Lanka_377277",
+        "Paraguay_1029191",
+        "Somalia_166342",
+        "USA_595451",
+        "Spain_5650136",
+        "Spain_7387658",
+        "Paraguay_683296",
+        "Mekong_382276",
+        "Ghana_359826"
+      ]
+    },
+    "spectral_only_extra_bands": {
+      "top_k_hits": 17,
+      "precision": 0.7083333333333334,
+      "recall": 0.7083333333333334,
+      "ndcg": 0.710586402494005,
+      "mae_pp": 8.01943291028476,
+      "selected": [
+        "Pakistan_849790",
+        "Sri-Lanka_1049830",
+        "Mekong_1443339",
+        "India_747992",
+        "Spain_7387658",
+        "Nigeria_812045",
+        "Spain_7370579",
+        "Paraguay_868895",
+        "Paraguay_232281",
+        "Sri-Lanka_377277",
+        "Sri-Lanka_450918",
+        "India_900498",
+        "Ghana_319168",
+        "Somalia_685158",
+        "India_1018327",
+        "India_952728",
+        "Paraguay_511199",
+        "Ghana_866994",
+        "Sri-Lanka_849649",
+        "India_828067",
+        "Spain_6095801",
+        "Spain_5650136",
+        "Pakistan_528249",
+        "Mekong_333434"
+      ]
+    },
+    "prompt_disagreement": {
+      "top_k_hits": 18,
+      "precision": 0.75,
+      "recall": 0.75,
+      "ndcg": 0.7581048926820957,
+      "mae_pp": 4.681449308349198,
+      "selected": [
+        "Ghana_97059",
+        "Paraguay_34417",
+        "Pakistan_849790",
+        "Mekong_1443339",
+        "India_747992",
+        "Nigeria_812045",
+        "Ghana_866994",
+        "India_900498",
+        "Spain_7370579",
+        "Paraguay_232281",
+        "Paraguay_80102",
+        "Ghana_319168",
+        "Nigeria_417184",
+        "Paraguay_868895",
+        "USA_595451",
+        "India_1018327",
+        "Sri-Lanka_377277",
+        "Paraguay_1029191",
+        "Somalia_166342",
+        "Spain_5650136",
+        "Spain_7387658",
+        "Paraguay_511199",
+        "Paraguay_683296",
+        "Mekong_382276"
+      ],
+      "reviewed_ids": [
+        "Nigeria_812045",
+        "Mekong_45934",
+        "Mekong_254910",
+        "Paraguay_34417",
+        "India_747992",
+        "Spain_7370579",
+        "Ghana_1078550",
+        "Paraguay_511199",
+        "Pakistan_664885",
+        "Paraguay_271769",
+        "Mekong_1443339",
+        "Pakistan_167553",
+        "Paraguay_868895",
+        "USA_595451",
+        "India_79637",
+        "Paraguay_280900"
+      ]
+    },
+    "decision_boundary": {
+      "top_k_hits": 18,
+      "precision": 0.75,
+      "recall": 0.75,
+      "ndcg": 0.7591612021733669,
+      "mae_pp": 5.024091383581279,
+      "selected": [
+        "Ghana_97059",
+        "Paraguay_34417",
+        "Pakistan_849790",
+        "Spain_7387658",
+        "India_747992",
+        "Nigeria_812045",
+        "Ghana_866994",
+        "India_900498",
+        "Paraguay_868895",
+        "Spain_7370579",
+        "Mekong_1443339",
+        "Paraguay_232281",
+        "Paraguay_80102",
+        "Ghana_319168",
+        "Nigeria_417184",
+        "Spain_5650136",
+        "Paraguay_280900",
+        "India_1018327",
+        "Pakistan_167553",
+        "Sri-Lanka_377277",
+        "Paraguay_1029191",
+        "USA_595451",
+        "Paraguay_511199",
+        "Mekong_382276"
+      ],
+      "reviewed_ids": [
+        "Nigeria_812045",
+        "Mekong_45934",
+        "Mekong_254910",
+        "Paraguay_34417",
+        "Paraguay_511199",
+        "India_747992",
+        "Spain_7370579",
+        "Ghana_1078550",
+        "Paraguay_271769",
+        "Paraguay_683296",
+        "Somalia_166342",
+        "Ghana_359826",
+        "Spain_5650136",
+        "Spain_7387658",
+        "Mekong_382276",
+        "Pakistan_664885"
+      ]
+    },
+    "spectral_disagreement": {
+      "top_k_hits": 17,
+      "precision": 0.7083333333333334,
+      "recall": 0.7083333333333334,
+      "ndcg": 0.7772026783088665,
+      "mae_pp": 4.058736155863212,
+      "selected": [
+        "Pakistan_849790",
+        "Mekong_1443339",
+        "Spain_7387658",
+        "India_747992",
+        "Nigeria_812045",
+        "Ghana_866994",
+        "India_900498",
+        "Spain_7370579",
+        "Paraguay_232281",
+        "Paraguay_80102",
+        "Pakistan_664885",
+        "Ghana_319168",
+        "Somalia_685158",
+        "Nigeria_417184",
+        "Spain_5650136",
+        "Paraguay_868895",
+        "Paraguay_280900",
+        "India_1018327",
+        "Pakistan_167553",
+        "Paraguay_1029191",
+        "Somalia_166342",
+        "USA_595451",
+        "Paraguay_683296",
+        "Sri-Lanka_450918"
+      ],
+      "reviewed_ids": [
+        "Nigeria_812045",
+        "Mekong_254910",
+        "Mekong_45934",
+        "Ghana_97059",
+        "Sri-Lanka_1049830",
+        "Spain_7387658",
+        "India_747992",
+        "Mekong_1443339",
+        "Spain_7370579",
+        "Sri-Lanka_377277",
+        "Sri-Lanka_450918",
+        "Spain_5650136",
+        "Paraguay_868895",
+        "Somalia_685158",
+        "Ghana_866994",
+        "India_952728"
+      ]
+    },
+    "random_review": {
+      "top_k_hits": {
+        "mean": 15.8955,
+        "p025": 14.0,
+        "p975": 18.0
+      },
+      "precision": {
+        "mean": 0.6623125,
+        "p025": 0.5833333333333334,
+        "p975": 0.75
+      },
+      "ndcg": {
+        "mean": 0.6063802303808011,
+        "p025": 0.5081488921426995,
+        "p975": 0.8718809332503814
+      },
+      "mae_pp": {
+        "mean": 6.834572590920942,
+        "p025": 4.72789666515191,
+        "p975": 8.263732097413932
+      }
+    }
+  },
+  "spectral_mean_iou": 0.47647312765791966,
+  "spectral_mae_pp": 8.049648526610255,
+  "rows": [
+    {
+      "id": "Ghana_1078550",
+      "valid_fraction": 1.0,
+      "p": [
+        0.7030487060546875,
+        36.35444641113281
+      ],
+      "abnormal": false,
+      "difference_pp": 35.651397705078125,
+      "spectral_xor_pct": 1.629638671875,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.9265899658203125,
+      "flips_membership": true,
+      "boundary_risk": 8.965847462801769,
+      "reference_pct": 0.5367279052734375
+    },
+    {
+      "id": "Ghana_141271",
+      "valid_fraction": 1.0,
+      "p": [
+        1.3187408447265625,
+        1.140594482421875
+      ],
+      "abnormal": false,
+      "difference_pp": 0.1781463623046875,
+      "spectral_xor_pct": 1.3187408447265625,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.0,
+      "flips_membership": false,
+      "boundary_risk": 0.05300928364992972,
+      "reference_pct": 0.62408447265625
+    },
+    {
+      "id": "Ghana_167233",
+      "valid_fraction": 1.0,
+      "p": [
+        0.173187255859375,
+        0.000762939453125
+      ],
+      "abnormal": false,
+      "difference_pp": 0.17242431640625,
+      "spectral_xor_pct": 0.173187255859375,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.0,
+      "flips_membership": false,
+      "boundary_risk": 0.038263651029635665,
+      "reference_pct": 0.0
+    },
+    {
+      "id": "Ghana_313799",
+      "valid_fraction": 0.93255615234375,
+      "p": [
+        1.2157209241442504,
+        0.9678316643759408
+      ],
+      "abnormal": false,
+      "difference_pp": 0.24788925976830956,
+      "spectral_xor_pct": 6.812045945415276,
+      "spectral_iou_disagreement": 0.8812976291278578,
+      "spectral_nonpermanent_pct": 7.431360036651613,
+      "flips_membership": false,
+      "boundary_risk": 0.07156810624229605,
+      "reference_pct": 6.108465868185091
+    },
+    {
+      "id": "Ghana_319168",
+      "valid_fraction": 0.654693603515625,
+      "p": [
+        17.013354775555868,
+        17.678180207896332
+      ],
+      "abnormal": false,
+      "difference_pp": 0.6648254323404643,
+      "spectral_xor_pct": 11.37486598610917,
+      "spectral_iou_disagreement": 0.40762549068737997,
+      "spectral_nonpermanent_pct": 27.422155409499837,
+      "flips_membership": false,
+      "boundary_risk": 0.046381172687343965,
+      "reference_pct": 23.027665128420267
+    },
+    {
+      "id": "Ghana_359826",
+      "valid_fraction": 1.0,
+      "p": [
+        3.8818359375,
+        3.8158416748046875
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0659942626953125,
+      "spectral_xor_pct": 4.384613037109375,
+      "spectral_iou_disagreement": 0.8678646934460887,
+      "spectral_nonpermanent_pct": 1.837921142578125,
+      "flips_membership": true,
+      "boundary_risk": 0.054884003869837474,
+      "reference_pct": 1.3336181640625
+    },
+    {
+      "id": "Ghana_406026",
+      "valid_fraction": 1.0,
+      "p": [
+        1.564788818359375,
+        1.493072509765625
+      ],
+      "abnormal": false,
+      "difference_pp": 0.07171630859375,
+      "spectral_xor_pct": 0.60272216796875,
+      "spectral_iou_disagreement": 0.31874117409723624,
+      "spectral_nonpermanent_pct": 1.6109466552734375,
+      "flips_membership": false,
+      "boundary_risk": 0.023025734328129738,
+      "reference_pct": 1.6387939453125
+    },
+    {
+      "id": "Ghana_53713",
+      "valid_fraction": 1.0,
+      "p": [
+        0.0141143798828125,
+        0.0087738037109375
+      ],
+      "abnormal": false,
+      "difference_pp": 0.005340576171875,
+      "spectral_xor_pct": 0.0141143798828125,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.0,
+      "flips_membership": false,
+      "boundary_risk": 0.0011447468998398904,
+      "reference_pct": 0.0
+    },
+    {
+      "id": "Ghana_866994",
+      "valid_fraction": 0.4482688903808594,
+      "p": [
+        40.89914986682098,
+        40.89914986682098
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 23.984988639361422,
+      "spectral_iou_disagreement": 0.23984988639361426,
+      "spectral_nonpermanent_pct": 18.23573963288543,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 39.98944779637651
+    },
+    {
+      "id": "Ghana_97059",
+      "valid_fraction": 0.10449981689453125,
+      "p": [
+        100.0,
+        100.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 100.0,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.0,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 0.0
+    },
+    {
+      "id": "India_1018327",
+      "valid_fraction": 0.9999923706054688,
+      "p": [
+        7.006889395823637,
+        6.963782987846281
+      ],
+      "abnormal": false,
+      "difference_pp": 0.043106407977355765,
+      "spectral_xor_pct": 20.06164597813399,
+      "spectral_iou_disagreement": 0.7476861395851402,
+      "spectral_nonpermanent_pct": 24.545856825689892,
+      "flips_membership": false,
+      "boundary_risk": 0.009961076009242483,
+      "reference_pct": 12.959769895705382
+    },
+    {
+      "id": "India_44475",
+      "valid_fraction": 0.9924888610839844,
+      "p": [
+        0.3724416258287691,
+        0.39973095032189876
+      ],
+      "abnormal": false,
+      "difference_pp": 0.027289324493129652,
+      "spectral_xor_pct": 0.43278562506005575,
+      "spectral_iou_disagreement": 0.6611861421021726,
+      "spectral_nonpermanent_pct": 0.5038916114153935,
+      "flips_membership": false,
+      "boundary_risk": 0.006336094961422165,
+      "reference_pct": 0.0
+    },
+    {
+      "id": "India_592446",
+      "valid_fraction": 0.8558464050292969,
+      "p": [
+        1.177152280983263,
+        1.1758151144391702
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0013371665440928826,
+      "spectral_xor_pct": 6.533395734438724,
+      "spectral_iou_disagreement": 0.8404334613840949,
+      "spectral_nonpermanent_pct": 5.372735174165942,
+      "flips_membership": false,
+      "boundary_risk": 0.0003818019197867356,
+      "reference_pct": 2.22370796282677
+    },
+    {
+      "id": "India_747992",
+      "valid_fraction": 0.9997825622558594,
+      "p": [
+        0.15834436656530082,
+        52.41694551809132
+      ],
+      "abnormal": false,
+      "difference_pp": 52.258601151526015,
+      "spectral_xor_pct": 66.25967713011327,
+      "spectral_iou_disagreement": 0.997615942736668,
+      "spectral_nonpermanent_pct": 66.41802149667858,
+      "flips_membership": true,
+      "boundary_risk": 11.55892687365009,
+      "reference_pct": 44.764524757046324
+    },
+    {
+      "id": "India_79637",
+      "valid_fraction": 1.0,
+      "p": [
+        1.214599609375,
+        0.0057220458984375
+      ],
+      "abnormal": false,
+      "difference_pp": 1.2088775634765625,
+      "spectral_xor_pct": 11.120986938476562,
+      "spectral_iou_disagreement": 0.9911603712644069,
+      "spectral_nonpermanent_pct": 10.104751586914062,
+      "flips_membership": false,
+      "boundary_risk": 0.3489020801266221,
+      "reference_pct": 1.9702911376953125
+    },
+    {
+      "id": "India_828067",
+      "valid_fraction": 0.69854736328125,
+      "p": [
+        2.522935779816514,
+        2.4175404106596767
+      ],
+      "abnormal": false,
+      "difference_pp": 0.10539536915683723,
+      "spectral_xor_pct": 14.687090432503277,
+      "spectral_iou_disagreement": 0.8884154196809038,
+      "spectral_nonpermanent_pct": 15.487112276103101,
+      "flips_membership": false,
+      "boundary_risk": 0.04887405877457067,
+      "reference_pct": 3.5665137614678897
+    },
+    {
+      "id": "India_900498",
+      "valid_fraction": 0.999420166015625,
+      "p": [
+        39.77793215060002,
+        40.49131271183853
+      ],
+      "abnormal": false,
+      "difference_pp": 0.7133805612385089,
+      "spectral_xor_pct": 20.62811078200861,
+      "spectral_iou_disagreement": 0.3136258124419684,
+      "spectral_nonpermanent_pct": 29.334101804635253,
+      "flips_membership": false,
+      "boundary_risk": 0.01922934958750961,
+      "reference_pct": 27.31228434456014
+    },
+    {
+      "id": "India_952728",
+      "valid_fraction": 0.7198944091796875,
+      "p": [
+        0.0,
+        0.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 22.901608766612263,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 22.84967888255368,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 3.0537951207104856
+    },
+    {
+      "id": "Mekong_1443339",
+      "valid_fraction": 0.9999656677246094,
+      "p": [
+        20.55772788830183,
+        24.314189253628857
+      ],
+      "abnormal": false,
+      "difference_pp": 3.756461365327027,
+      "spectral_xor_pct": 50.52663703816735,
+      "spectral_iou_disagreement": 0.6381375449280668,
+      "spectral_nonpermanent_pct": 70.54075190264558,
+      "flips_membership": false,
+      "boundary_risk": 0.21011261747132026,
+      "reference_pct": 65.12598470253876
+    },
+    {
+      "id": "Mekong_254910",
+      "valid_fraction": 0.7839012145996094,
+      "p": [
+        0.0004866298450083944,
+        0.0
+      ],
+      "abnormal": true,
+      "difference_pp": 0.0004866298450083944,
+      "spectral_xor_pct": 1.8613591571571084,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 1.8608725273121,
+      "flips_membership": false,
+      "boundary_risk": 0.00010400478901484213,
+      "reference_pct": 0.06569502907613324
+    },
+    {
+      "id": "Mekong_333434",
+      "valid_fraction": 0.7748908996582031,
+      "p": [
+        0.0,
+        0.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 10.576814205471292,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 10.576814205471292,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 1.6166747894236781
+    },
+    {
+      "id": "Mekong_382276",
+      "valid_fraction": 0.9998741149902344,
+      "p": [
+        4.007080969512916,
+        4.0364578365654245
+      ],
+      "abnormal": false,
+      "difference_pp": 0.029376867052508082,
+      "spectral_xor_pct": 0.5474779768876545,
+      "spectral_iou_disagreement": 0.12721631205673756,
+      "spectral_nonpermanent_pct": 4.052481582230429,
+      "flips_membership": true,
+      "boundary_risk": 0.02212652199673769,
+      "reference_pct": 3.7419261305324842
+    },
+    {
+      "id": "Mekong_45934",
+      "valid_fraction": 0.9989128112792969,
+      "p": [
+        0.5751186707350139,
+        0.0
+      ],
+      "abnormal": true,
+      "difference_pp": 0.5751186707350139,
+      "spectral_xor_pct": 0.9631137367820086,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.38799506604699474,
+      "flips_membership": false,
+      "boundary_risk": 0.14012637589370464,
+      "reference_pct": 0.11303793262786462
+    },
+    {
+      "id": "Nigeria_22088",
+      "valid_fraction": 0.8493270874023438,
+      "p": [
+        0.0,
+        0.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 0.18100482380101146,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.18100482380101146,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 0.2825112510442586
+    },
+    {
+      "id": "Nigeria_225131",
+      "valid_fraction": 0.9203147888183594,
+      "p": [
+        0.5015440094505813,
+        0.22382955793662307
+      ],
+      "abnormal": false,
+      "difference_pp": 0.27771445151395824,
+      "spectral_xor_pct": 2.3580858427804605,
+      "spectral_iou_disagreement": 0.9845967462789893,
+      "spectral_nonpermanent_pct": 1.930322687612692,
+      "flips_membership": false,
+      "boundary_risk": 0.066472890968177,
+      "reference_pct": 0.4687985741228161
+    },
+    {
+      "id": "Nigeria_417184",
+      "valid_fraction": 0.22533035278320312,
+      "p": [
+        13.69076842336928,
+        13.404662344038329
+      ],
+      "abnormal": false,
+      "difference_pp": 0.2861060793309509,
+      "spectral_xor_pct": 13.448678663935398,
+      "spectral_iou_disagreement": 0.9823172993693582,
+      "spectral_nonpermanent_pct": 0.24208975943388242,
+      "flips_membership": false,
+      "boundary_risk": 0.025982800686819095,
+      "reference_pct": 2.343022566828624
+    },
+    {
+      "id": "Nigeria_812045",
+      "valid_fraction": 0.9045944213867188,
+      "p": [
+        29.34754189614311,
+        8.022046606560004
+      ],
+      "abnormal": true,
+      "difference_pp": 21.325495289583106,
+      "spectral_xor_pct": 18.056879232838817,
+      "spectral_iou_disagreement": 0.3354222643489977,
+      "spectral_nonpermanent_pct": 46.45516880750968,
+      "flips_membership": false,
+      "boundary_risk": 0.7996619640940132,
+      "reference_pct": 43.75036898968516
+    },
+    {
+      "id": "Pakistan_167553",
+      "valid_fraction": 0.9426307678222656,
+      "p": [
+        6.792658991117137,
+        9.05202241961919
+      ],
+      "abnormal": false,
+      "difference_pp": 2.259363428502053,
+      "spectral_xor_pct": 6.857408793832581,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.06474980271544485,
+      "flips_membership": false,
+      "boundary_risk": 0.549288482642572,
+      "reference_pct": 0.5900325772444912
+    },
+    {
+      "id": "Pakistan_528249",
+      "valid_fraction": 0.29366302490234375,
+      "p": [
+        0.0,
+        0.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 11.672858590319816,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 11.672858590319816,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 0.0
+    },
+    {
+      "id": "Pakistan_664885",
+      "valid_fraction": 0.27851104736328125,
+      "p": [
+        17.13326941514861,
+        31.668264621284752
+      ],
+      "abnormal": false,
+      "difference_pp": 14.534995206136141,
+      "spectral_xor_pct": 21.2546226544309,
+      "spectral_iou_disagreement": 0.8059623974239118,
+      "spectral_nonpermanent_pct": 0.25065059580879334,
+      "flips_membership": false,
+      "boundary_risk": 1.0056130377192094,
+      "reference_pct": 0.013696753869332967
+    },
+    {
+      "id": "Pakistan_849790",
+      "valid_fraction": 0.9812889099121094,
+      "p": [
+        99.40250117594921,
+        99.70883108704356
+      ],
+      "abnormal": false,
+      "difference_pp": 0.3063299110943518,
+      "spectral_xor_pct": 17.62485470710118,
+      "spectral_iou_disagreement": 0.17629035142974903,
+      "spectral_nonpermanent_pct": 82.92521740482586,
+      "flips_membership": false,
+      "boundary_risk": 0.003167081296873399,
+      "reference_pct": 66.82812481777647
+    },
+    {
+      "id": "Paraguay_1029191",
+      "valid_fraction": 0.9686927795410156,
+      "p": [
+        5.879017236558674,
+        6.4720777200644255
+      ],
+      "abnormal": false,
+      "difference_pp": 0.5930604835057514,
+      "spectral_xor_pct": 5.8215226611324855,
+      "spectral_iou_disagreement": 0.22588778192042047,
+      "spectral_nonpermanent_pct": 10.029653024175287,
+      "flips_membership": false,
+      "boundary_risk": 0.18535382094569317,
+      "reference_pct": 5.001240465154743
+    },
+    {
+      "id": "Paraguay_232281",
+      "valid_fraction": 1.0,
+      "p": [
+        20.222091674804688,
+        20.917510986328125
+      ],
+      "abnormal": false,
+      "difference_pp": 0.6954193115234375,
+      "spectral_xor_pct": 19.989776611328125,
+      "spectral_iou_disagreement": 0.498895616740927,
+      "spectral_nonpermanent_pct": 39.92424011230469,
+      "flips_membership": false,
+      "boundary_risk": 0.03964154958871533,
+      "reference_pct": 11.244583129882812
+    },
+    {
+      "id": "Paraguay_271769",
+      "valid_fraction": 1.0,
+      "p": [
+        1.8341064453125,
+        13.75274658203125
+      ],
+      "abnormal": false,
+      "difference_pp": 11.91864013671875,
+      "spectral_xor_pct": 2.4234771728515625,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.5645751953125,
+      "flips_membership": true,
+      "boundary_risk": 4.188890144089808,
+      "reference_pct": 0.97198486328125
+    },
+    {
+      "id": "Paraguay_280900",
+      "valid_fraction": 0.9999923706054688,
+      "p": [
+        7.017952102295702,
+        8.052887366389209
+      ],
+      "abnormal": false,
+      "difference_pp": 1.034935264093507,
+      "spectral_xor_pct": 6.148194490009232,
+      "spectral_iou_disagreement": 0.709406223865487,
+      "spectral_nonpermanent_pct": 3.979141076210604,
+      "flips_membership": false,
+      "boundary_risk": 0.23854416524592187,
+      "reference_pct": 2.4158662099167625
+    },
+    {
+      "id": "Paraguay_34417",
+      "valid_fraction": 0.19083404541015625,
+      "p": [
+        0.0,
+        100.0
+      ],
+      "abnormal": false,
+      "difference_pp": 100.0,
+      "spectral_xor_pct": 0.0,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.0,
+      "flips_membership": true,
+      "boundary_risk": 21.37024151114542,
+      "reference_pct": 100.0
+    },
+    {
+      "id": "Paraguay_40936",
+      "valid_fraction": 0.8214225769042969,
+      "p": [
+        3.4769726606944653,
+        4.282244544445528
+      ],
+      "abnormal": false,
+      "difference_pp": 0.8052718837510628,
+      "spectral_xor_pct": 3.4769726606944653,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.0,
+      "flips_membership": false,
+      "boundary_risk": 0.6697028405047077,
+      "reference_pct": 0.0
+    },
+    {
+      "id": "Paraguay_511199",
+      "valid_fraction": 1.0,
+      "p": [
+        1.8741607666015625,
+        37.10441589355469
+      ],
+      "abnormal": false,
+      "difference_pp": 35.230255126953125,
+      "spectral_xor_pct": 19.34814453125,
+      "spectral_iou_disagreement": 0.952470376143171,
+      "spectral_nonpermanent_pct": 19.404983520507812,
+      "flips_membership": true,
+      "boundary_risk": 12.55871539096312,
+      "reference_pct": 4.4036865234375
+    },
+    {
+      "id": "Paraguay_683296",
+      "valid_fraction": 0.9902114868164062,
+      "p": [
+        4.399833576034949,
+        3.913274622656774
+      ],
+      "abnormal": false,
+      "difference_pp": 0.4865589533781747,
+      "spectral_xor_pct": 8.63131698371973,
+      "spectral_iou_disagreement": 0.9254058072776837,
+      "spectral_nonpermanent_pct": 4.433734754100887,
+      "flips_membership": true,
+      "boundary_risk": 0.282812528187283,
+      "reference_pct": 1.6653953724891941
+    },
+    {
+      "id": "Paraguay_790830",
+      "valid_fraction": 0.9963951110839844,
+      "p": [
+        3.4303347256306496,
+        3.3464906067787394
+      ],
+      "abnormal": false,
+      "difference_pp": 0.08384411885191012,
+      "spectral_xor_pct": 4.218239732923939,
+      "spectral_iou_disagreement": 0.2521916271830438,
+      "spectral_nonpermanent_pct": 6.0390736564841365,
+      "flips_membership": false,
+      "boundary_risk": 0.06712525917929042,
+      "reference_pct": 2.404679956661396
+    },
+    {
+      "id": "Paraguay_80102",
+      "valid_fraction": 0.9999961853027344,
+      "p": [
+        17.785712378358376,
+        17.98789210469095
+      ],
+      "abnormal": false,
+      "difference_pp": 0.20217972633257375,
+      "spectral_xor_pct": 17.794104744357085,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.008392365998710627,
+      "flips_membership": false,
+      "boundary_risk": 0.013383794721500374,
+      "reference_pct": 0.008392365998710627
+    },
+    {
+      "id": "Paraguay_868895",
+      "valid_fraction": 0.6693458557128906,
+      "p": [
+        35.52275382554925,
+        37.43082666058758
+      ],
+      "abnormal": false,
+      "difference_pp": 1.9080728350383254,
+      "spectral_xor_pct": 25.638161456700765,
+      "spectral_iou_disagreement": 0.4943190558864251,
+      "spectral_nonpermanent_pct": 40.250192346051925,
+      "flips_membership": false,
+      "boundary_risk": 0.05809617053527274,
+      "reference_pct": 7.857407460177243
+    },
+    {
+      "id": "Somalia_166342",
+      "valid_fraction": 0.8414344787597656,
+      "p": [
+        5.175970296087081,
+        5.664235165044406
+      ],
+      "abnormal": false,
+      "difference_pp": 0.4882648689573257,
+      "spectral_xor_pct": 5.6057521863113555,
+      "spectral_iou_disagreement": 0.989833493435799,
+      "spectral_nonpermanent_pct": 0.5449344219932268,
+      "flips_membership": true,
+      "boundary_risk": 0.19557458907396597,
+      "reference_pct": 0.005440277091446524
+    },
+    {
+      "id": "Somalia_685158",
+      "valid_fraction": 0.7025604248046875,
+      "p": [
+        0.3437004539235063,
+        0.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.3437004539235063,
+      "spectral_xor_pct": 25.382251373715874,
+      "spectral_iou_disagreement": 0.9866399324609539,
+      "spectral_nonpermanent_pct": 25.72595182763938,
+      "flips_membership": false,
+      "boundary_risk": 0.07927212424946765,
+      "reference_pct": 13.712182090654387
+    },
+    {
+      "id": "Somalia_699062",
+      "valid_fraction": 0.7751808166503906,
+      "p": [
+        0.0,
+        0.4335437898911958
+      ],
+      "abnormal": false,
+      "difference_pp": 0.4335437898911958,
+      "spectral_xor_pct": 8.399234285883008,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 8.399234285883008,
+      "flips_membership": false,
+      "boundary_risk": 0.0926493549563214,
+      "reference_pct": 1.6190227795028762
+    },
+    {
+      "id": "Somalia_94102",
+      "valid_fraction": 0.92071533203125,
+      "p": [
+        0.0,
+        0.008286377195889956
+      ],
+      "abnormal": false,
+      "difference_pp": 0.008286377195889956,
+      "spectral_xor_pct": 6.65437520715943,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 6.65437520715943,
+      "flips_membership": false,
+      "boundary_risk": 0.0017708188192861632,
+      "reference_pct": 5.259363606231355
+    },
+    {
+      "id": "Spain_5650136",
+      "valid_fraction": 0.6545867919921875,
+      "p": [
+        4.735541621016806,
+        4.839856406909252
+      ],
+      "abnormal": false,
+      "difference_pp": 0.1043147858924458,
+      "spectral_xor_pct": 26.72556469847782,
+      "spectral_iou_disagreement": 0.39083006647349583,
+      "spectral_nonpermanent_pct": 14.479941257371967,
+      "flips_membership": true,
+      "boundary_risk": 0.050733375042800816,
+      "reference_pct": 9.366768456141168
+    },
+    {
+      "id": "Spain_6095801",
+      "valid_fraction": 0.9996871948242188,
+      "p": [
+        0.00572383634407125,
+        0.00190794544802375
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0038158908960475003,
+      "spectral_xor_pct": 14.92700200715861,
+      "spectral_iou_disagreement": 0.9997444285422205,
+      "spectral_nonpermanent_pct": 14.928909952606634,
+      "flips_membership": false,
+      "boundary_risk": 0.0008164637968851734,
+      "reference_pct": 8.675809541253598
+    },
+    {
+      "id": "Spain_7370579",
+      "valid_fraction": 0.9996223449707031,
+      "p": [
+        0.6525596748650041,
+        38.81699708065408
+      ],
+      "abnormal": false,
+      "difference_pp": 38.16443740578908,
+      "spectral_xor_pct": 42.962849892194086,
+      "spectral_iou_disagreement": 0.9952615852472639,
+      "spectral_nonpermanent_pct": 42.7193802591158,
+      "flips_membership": true,
+      "boundary_risk": 9.477504340775411,
+      "reference_pct": 26.726325631093893
+    },
+    {
+      "id": "Spain_7387658",
+      "valid_fraction": 0.9996681213378906,
+      "p": [
+        4.572287708399317,
+        4.639067073194
+      ],
+      "abnormal": false,
+      "difference_pp": 0.06677936479468283,
+      "spectral_xor_pct": 67.22354296965928,
+      "spectral_iou_disagreement": 0.8932722146725351,
+      "spectral_nonpermanent_pct": 66.02952792713036,
+      "flips_membership": true,
+      "boundary_risk": 0.03527917486439627,
+      "reference_pct": 51.59907958955494
+    },
+    {
+      "id": "Spain_7558720",
+      "valid_fraction": 0.9993896484375,
+      "p": [
+        0.004580432392817882,
+        0.003435324294613412
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0011451080982044703,
+      "spectral_xor_pct": 2.118068278978869,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 2.1134878465860507,
+      "flips_membership": false,
+      "boundary_risk": 0.00024495213741854426,
+      "reference_pct": 0.8156986686209846
+    },
+    {
+      "id": "Sri-Lanka_1049830",
+      "valid_fraction": 0.7256813049316406,
+      "p": [
+        0.19397265458674362,
+        0.13614882801616965
+      ],
+      "abnormal": false,
+      "difference_pp": 0.05782382657057397,
+      "spectral_xor_pct": 78.4012237624387,
+      "spectral_iou_disagreement": 0.9975320036919619,
+      "spectral_nonpermanent_pct": 75.63041112740692,
+      "flips_membership": false,
+      "boundary_risk": 0.012891474255625287,
+      "reference_pct": 1.2973563997834234
+    },
+    {
+      "id": "Sri-Lanka_117737",
+      "valid_fraction": 1.0,
+      "p": [
+        0.054931640625,
+        0.0335693359375
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0213623046875,
+      "spectral_xor_pct": 4.195404052734375,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 4.06494140625,
+      "flips_membership": false,
+      "boundary_risk": 0.004619403392592957,
+      "reference_pct": 2.414703369140625
+    },
+    {
+      "id": "Sri-Lanka_377277",
+      "valid_fraction": 0.9894866943359375,
+      "p": [
+        6.678026739864603,
+        6.6656900087899205
+      ],
+      "abnormal": false,
+      "difference_pp": 0.012336731074682916,
+      "spectral_xor_pct": 38.95669807392786,
+      "spectral_iou_disagreement": 0.9918044050096188,
+      "spectral_nonpermanent_pct": 31.072755871512946,
+      "flips_membership": false,
+      "boundary_risk": 0.0030852452957062355,
+      "reference_pct": 1.7256002590713526
+    },
+    {
+      "id": "Sri-Lanka_450918",
+      "valid_fraction": 0.37813568115234375,
+      "p": [
+        0.0,
+        0.0
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0,
+      "spectral_xor_pct": 30.731594132719977,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 30.731594132719977,
+      "flips_membership": false,
+      "boundary_risk": 0.0,
+      "reference_pct": 4.3147105703851665
+    },
+    {
+      "id": "Sri-Lanka_534068",
+      "valid_fraction": 1.0,
+      "p": [
+        1.7101287841796875,
+        1.772308349609375
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0621795654296875,
+      "spectral_xor_pct": 1.139068603515625,
+      "spectral_iou_disagreement": 0.011453558619896054,
+      "spectral_nonpermanent_pct": 0.6015777587890625,
+      "flips_membership": false,
+      "boundary_risk": 0.020940988843002058,
+      "reference_pct": 0.447845458984375
+    },
+    {
+      "id": "Sri-Lanka_713926",
+      "valid_fraction": 0.999847412109375,
+      "p": [
+        1.0778164392760126,
+        1.1144431218142417
+      ],
+      "abnormal": false,
+      "difference_pp": 0.036626682538229094,
+      "spectral_xor_pct": 2.188444281659189,
+      "spectral_iou_disagreement": 0.06782948028144031,
+      "spectral_nonpermanent_pct": 1.7569361780056771,
+      "flips_membership": false,
+      "boundary_risk": 0.0101695929583812,
+      "reference_pct": 0.9900650123615055
+    },
+    {
+      "id": "Sri-Lanka_849649",
+      "valid_fraction": 0.8323936462402344,
+      "p": [
+        1.1539501482537224,
+        1.2446896753999643
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0907395271462419,
+      "spectral_xor_pct": 16.221752739371333,
+      "spectral_iou_disagreement": 0.9400345239676006,
+      "spectral_nonpermanent_pct": 16.71165452987301,
+      "flips_membership": false,
+      "boundary_risk": 0.025738393768227365,
+      "reference_pct": 0.44728170956935387
+    },
+    {
+      "id": "Sri-Lanka_922192",
+      "valid_fraction": 0.9146995544433594,
+      "p": [
+        1.8370776910790174,
+        2.137349186556178
+      ],
+      "abnormal": false,
+      "difference_pp": 0.3002714954771606,
+      "spectral_xor_pct": 3.2913092254246545,
+      "spectral_iou_disagreement": 0.8814922372389143,
+      "spectral_nonpermanent_pct": 2.1611206799481195,
+      "flips_membership": false,
+      "boundary_risk": 0.10564285421319754,
+      "reference_pct": 0.39535746904492813
+    },
+    {
+      "id": "USA_1049586",
+      "valid_fraction": 0.9996833801269531,
+      "p": [
+        0.2461259019846524,
+        0.5815439916660624
+      ],
+      "abnormal": false,
+      "difference_pp": 0.33541808968141,
+      "spectral_xor_pct": 0.737614524862532,
+      "spectral_iou_disagreement": 0.6409151193633953,
+      "spectral_nonpermanent_pct": 0.681520714642774,
+      "flips_membership": false,
+      "boundary_risk": 0.07565915325774933,
+      "reference_pct": 0.48309363087220153
+    },
+    {
+      "id": "USA_350244",
+      "valid_fraction": 0.999908447265625,
+      "p": [
+        0.11368838699832137,
+        0.3387761330688235
+      ],
+      "abnormal": false,
+      "difference_pp": 0.2250877460705021,
+      "spectral_xor_pct": 0.7557607202807873,
+      "spectral_iou_disagreement": 0.9437827536922344,
+      "spectral_nonpermanent_pct": 0.7000610407446971,
+      "flips_membership": false,
+      "boundary_risk": 0.049299551352731175,
+      "reference_pct": 0.46467266900656184
+    },
+    {
+      "id": "USA_430764",
+      "valid_fraction": 0.9999732971191406,
+      "p": [
+        0.7934782194043573,
+        0.6096049012539245
+      ],
+      "abnormal": false,
+      "difference_pp": 0.18387331815043273,
+      "spectral_xor_pct": 8.338006462269728,
+      "spectral_iou_disagreement": 0.992597638510445,
+      "spectral_nonpermanent_pct": 7.668890694560478,
+      "flips_membership": false,
+      "boundary_risk": 0.04731776013736349,
+      "reference_pct": 5.889668379511477
+    },
+    {
+      "id": "USA_504150",
+      "valid_fraction": 0.9999313354492188,
+      "p": [
+        0.6874556510990898,
+        0.7641363313826175
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0766806802835277,
+      "spectral_xor_pct": 2.0459626286594994,
+      "spectral_iou_disagreement": 0.8226721889860408,
+      "spectral_nonpermanent_pct": 1.5721446937732235,
+      "flips_membership": false,
+      "boundary_risk": 0.019208834342591317,
+      "reference_pct": 0.7938930132836881
+    },
+    {
+      "id": "USA_519181",
+      "valid_fraction": 0.9999351501464844,
+      "p": [
+        0.5112025850065044,
+        1.1669915727872369
+      ],
+      "abnormal": false,
+      "difference_pp": 0.6557889877807325,
+      "spectral_xor_pct": 1.9524886791517089,
+      "spectral_iou_disagreement": 0.9941724941724942,
+      "spectral_nonpermanent_pct": 1.2852548573782938,
+      "flips_membership": false,
+      "boundary_risk": 0.15733139439097168,
+      "reference_pct": 0.6481590984522769
+    },
+    {
+      "id": "USA_527077",
+      "valid_fraction": 0.9999351501464844,
+      "p": [
+        0.04387186363861792,
+        0.20562551740187007
+      ],
+      "abnormal": false,
+      "difference_pp": 0.16175365376325215,
+      "spectral_xor_pct": 0.8888821067650413,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.7435327150579681,
+      "flips_membership": false,
+      "boundary_risk": 0.0348942987705034,
+      "reference_pct": 0.526462363663415
+    },
+    {
+      "id": "USA_595451",
+      "valid_fraction": 0.999969482421875,
+      "p": [
+        4.878383739738151,
+        6.645023957029938
+      ],
+      "abnormal": false,
+      "difference_pp": 1.766640217291787,
+      "spectral_xor_pct": 9.502319406720176,
+      "spectral_iou_disagreement": 0.8559499673550737,
+      "spectral_nonpermanent_pct": 7.7787865840632335,
+      "flips_membership": false,
+      "boundary_risk": 0.803390966118755,
+      "reference_pct": 7.788323618274484
+    },
+    {
+      "id": "USA_670826",
+      "valid_fraction": 0.9999542236328125,
+      "p": [
+        0.26856698152076053,
+        0.45129934536798255
+      ],
+      "abnormal": false,
+      "difference_pp": 0.18273236384722202,
+      "spectral_xor_pct": 0.5417118093174431,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.2529260067446935,
+      "flips_membership": false,
+      "boundary_risk": 0.04142804431237197,
+      "reference_pct": 1.1292020813941068
+    },
+    {
+      "id": "USA_67102",
+      "valid_fraction": 0.9997978210449219,
+      "p": [
+        1.3934091594140967,
+        1.4491150020412757
+      ],
+      "abnormal": false,
+      "difference_pp": 0.055705842627179036,
+      "spectral_xor_pct": 1.4166835183199729,
+      "spectral_iou_disagreement": 0.30970055884560843,
+      "spectral_nonpermanent_pct": 1.0614633848548787,
+      "flips_membership": false,
+      "boundary_risk": 0.016952503049822123,
+      "reference_pct": 0.9122785597368853
+    },
+    {
+      "id": "USA_758178",
+      "valid_fraction": 0.9999580383300781,
+      "p": [
+        0.006103771749455429,
+        0.0007629714686819286
+      ],
+      "abnormal": false,
+      "difference_pp": 0.0053408002807735005,
+      "spectral_xor_pct": 0.41772687910335593,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 0.3818672200753053,
+      "flips_membership": false,
+      "boundary_risk": 0.0011428326189423447,
+      "reference_pct": 0.5687952299023779
+    },
+    {
+      "id": "USA_778194",
+      "valid_fraction": 0.9997177124023438,
+      "p": [
+        0.01564467508680887,
+        0.10646010607852864
+      ],
+      "abnormal": false,
+      "difference_pp": 0.09081543099171976,
+      "spectral_xor_pct": 1.7243484565192508,
+      "spectral_iou_disagreement": 1.0,
+      "spectral_nonpermanent_pct": 1.2241004311825086,
+      "flips_membership": false,
+      "boundary_risk": 0.01947257970247327,
+      "reference_pct": 0.9802724462929753
+    },
+    {
+      "id": "USA_905409",
+      "valid_fraction": 0.9998283386230469,
+      "p": [
+        1.9557495450192486,
+        1.9866538979545896
+      ],
+      "abnormal": false,
+      "difference_pp": 0.030904352935340995,
+      "spectral_xor_pct": 1.3765790788976684,
+      "spectral_iou_disagreement": 0.07650551314673448,
+      "spectral_nonpermanent_pct": 2.521947813612414,
+      "flips_membership": false,
+      "boundary_risk": 0.011346648428575445,
+      "reference_pct": 1.882113247284423
+    }
+  ],
+  "spectral_scores": [
+    {
+      "id": "Ghana_1078550",
+      "gt_positive": true,
+      "iou": 0.3478566408995081,
+      "mae_pp": 0.389862060546875
+    },
+    {
+      "id": "Ghana_141271",
+      "gt_positive": true,
+      "iou": 0.0,
+      "mae_pp": 0.62408447265625
+    },
+    {
+      "id": "Ghana_167233",
+      "gt_positive": false,
+      "iou": 1,
+      "mae_pp": 0.0
+    },
+    {
+      "id": "Ghana_313799",
+      "gt_positive": true,
+      "iou": 0.48670499461013295,
+      "mae_pp": 1.3228941684665227
+    },
+    {
+      "id": "Ghana_319168",
+      "gt_positive": true,
+      "iou": 0.7802084832534901,
+      "mae_pp": 4.39449028107957
+    },
+    {
+      "id": "Ghana_359826",
+      "gt_positive": true,
+      "iou": 0.5815103671295415,
+      "mae_pp": 0.504302978515625
+    },
+    {
+      "id": "Ghana_406026",
+      "gt_positive": true,
+      "iou": 0.8296185169309901,
+      "mae_pp": 0.0278472900390625
+    },
+    {
+      "id": "Ghana_53713",
+      "gt_positive": false,
+      "iou": 1,
+      "mae_pp": 0.0
+    },
+    {
+      "id": "Ghana_866994",
+      "gt_positive": true,
+      "iou": 0.6754774283214083,
+      "mae_pp": 14.164631396209717
+    },
+    {
+      "id": "Ghana_97059",
+      "gt_positive": false,
+      "iou": 1,
+      "mae_pp": 0.0
+    },
+    {
+      "id": "India_1018327",
+      "gt_positive": true,
+      "iou": 0.5312195410107216,
+      "mae_pp": 11.59180901953903
+    },
+    {
+      "id": "India_44475",
+      "gt_positive": false,
+      "iou": 0.0,
+      "mae_pp": 0.5038916114153935
+    },
+    {
+      "id": "India_592446",
+      "gt_positive": true,
+      "iou": 0.4350601242377614,
+      "mae_pp": 3.161507432417374
+    },
+    {
+      "id": "India_747992",
+      "gt_positive": true,
+      "iou": 0.6710345223076041,
+      "mae_pp": 21.65349673963226
+    },
+    {
+      "id": "India_79637",
+      "gt_positive": true,
+      "iou": 0.08776632302405499,
+      "mae_pp": 8.13446044921875
+    },
+    {
+      "id": "India_828067",
+      "gt_positive": true,
+      "iou": 0.16616146800951728,
+      "mae_pp": 11.899847094801224
+    },
+    {
+      "id": "India_900498",
+      "gt_positive": true,
+      "iou": 0.9341151045194086,
+      "mae_pp": 2.388622553360408
+    },
+    {
+      "id": "India_952728",
+      "gt_positive": true,
+      "iou": 0.12124951440780604,
+      "mae_pp": 19.802772419932595
+    },
+    {
+      "id": "Mekong_1443339",
+      "gt_positive": true,
+      "iou": 0.9194674374387831,
+      "mae_pp": 5.422015373757796
+    },
+    {
+      "id": "Mekong_254910",
+      "gt_positive": true,
+      "iou": 0.025913449080072558,
+      "mae_pp": 1.795177498235967
+    },
+    {
+      "id": "Mekong_333434",
+      "gt_positive": true,
+      "iou": 0.10373869257163228,
+      "mae_pp": 8.960139416047614
+    },
+    {
+      "id": "Mekong_382276",
+      "gt_positive": true,
+      "iou": 0.9177696423542664,
+      "mae_pp": 0.31055545169794474
+    },
+    {
+      "id": "Mekong_45934",
+      "gt_positive": true,
+      "iou": 0.20477502295684114,
+      "mae_pp": 0.27495713341913014
+    },
+    {
+      "id": "Nigeria_22088",
+      "gt_positive": true,
+      "iou": 0.5065693430656935,
+      "mae_pp": 0.10150642724324713
+    },
+    {
+      "id": "Nigeria_225131",
+      "gt_positive": true,
+      "iou": 0.22731128074639526,
+      "mae_pp": 1.4615241134898758
+    },
+    {
+      "id": "Nigeria_417184",
+      "gt_positive": true,
+      "iou": 0.10173160173160173,
+      "mae_pp": 2.100932807394742
+    },
+    {
+      "id": "Nigeria_812045",
+      "gt_positive": true,
+      "iou": 0.941667322679682,
+      "mae_pp": 2.704799817824521
+    },
+    {
+      "id": "Pakistan_167553",
+      "gt_positive": true,
+      "iou": 0.0012376237623762376,
+      "mae_pp": 0.5252827745290464
+    },
+    {
+      "id": "Pakistan_528249",
+      "gt_positive": false,
+      "iou": 0.0,
+      "mae_pp": 11.672858590319816
+    },
+    {
+      "id": "Pakistan_664885",
+      "gt_positive": true,
+      "iou": 0.43283582089552236,
+      "mae_pp": 4.1227229146692235
+    },
+    {
+      "id": "Pakistan_849790",
+      "gt_positive": true,
+      "iou": 0.8046575252622259,
+      "mae_pp": 16.097092587049396
+    },
+    {
+      "id": "Paraguay_1029191",
+      "gt_positive": true,
+      "iou": 0.7778643925102509,
+      "mae_pp": 5.261935046881707
+    },
+    {
+      "id": "Paraguay_232281",
+      "gt_positive": true,
+      "iou": 0.2807546881564374,
+      "mae_pp": 28.679656982421875
+    },
+    {
+      "id": "Paraguay_271769",
+      "gt_positive": true,
+      "iou": 0.4892550143266476,
+      "mae_pp": 0.40740966796875
+    },
+    {
+      "id": "Paraguay_280900",
+      "gt_positive": true,
+      "iou": 0.5603144483599891,
+      "mae_pp": 1.5632748662938407
+    },
+    {
+      "id": "Paraguay_34417",
+      "gt_positive": true,
+      "iou": 0.0,
+      "mae_pp": 100.0
+    },
+    {
+      "id": "Paraguay_40936",
+      "gt_positive": false,
+      "iou": 1,
+      "mae_pp": 0.0
+    },
+    {
+      "id": "Paraguay_511199",
+      "gt_positive": true,
+      "iou": 0.17824847558097828,
+      "mae_pp": 15.001296997070312
+    },
+    {
+      "id": "Paraguay_683296",
+      "gt_positive": true,
+      "iou": 0.3881529144587434,
+      "mae_pp": 2.768724622271533
+    },
+    {
+      "id": "Paraguay_790830",
+      "gt_positive": true,
+      "iou": 0.747806026589293,
+      "mae_pp": 3.673827235173182
+    },
+    {
+      "id": "Paraguay_80102",
+      "gt_positive": true,
+      "iou": 0.5714285714285714,
+      "mae_pp": 0.0
+    },
+    {
+      "id": "Paraguay_868895",
+      "gt_positive": true,
+      "iou": 0.2095574208317436,
+      "mae_pp": 32.595104436782265
+    },
+    {
+      "id": "Somalia_166342",
+      "gt_positive": true,
+      "iou": 0.008305647840531562,
+      "mae_pp": 0.5394941449017804
+    },
+    {
+      "id": "Somalia_685158",
+      "gt_positive": true,
+      "iou": 0.531619678215212,
+      "mae_pp": 12.013769736984992
+    },
+    {
+      "id": "Somalia_699062",
+      "gt_positive": true,
+      "iou": 0.1396741868667077,
+      "mae_pp": 6.780211506380131
+    },
+    {
+      "id": "Somalia_94102",
+      "gt_positive": true,
+      "iou": 0.7896931598929483,
+      "mae_pp": 1.3950116009280744
+    },
+    {
+      "id": "Spain_5650136",
+      "gt_positive": true,
+      "iou": 0.8989483508032111,
+      "mae_pp": 6.607380125410849
+    },
+    {
+      "id": "Spain_6095801",
+      "gt_positive": true,
+      "iou": 0.553933882636656,
+      "mae_pp": 6.253100411353038
+    },
+    {
+      "id": "Spain_7370579",
+      "gt_positive": true,
+      "iou": 0.6124456179835015,
+      "mae_pp": 15.993054628021905
+    },
+    {
+      "id": "Spain_7387658",
+      "gt_positive": true,
+      "iou": 0.7937010420034838,
+      "mae_pp": 14.471279149192734
+    },
+    {
+      "id": "Spain_7558720",
+      "gt_positive": true,
+      "iou": 0.3654804270462633,
+      "mae_pp": 1.2977891779650665
+    },
+    {
+      "id": "Sri-Lanka_1049830",
+      "gt_positive": true,
+      "iou": 0.017235844134997392,
+      "mae_pp": 77.24054186182208
+    },
+    {
+      "id": "Sri-Lanka_117737",
+      "gt_positive": true,
+      "iou": 0.3106506670641723,
+      "mae_pp": 1.5727996826171875
+    },
+    {
+      "id": "Sri-Lanka_377277",
+      "gt_positive": true,
+      "iou": 0.1004706267999719,
+      "mae_pp": 29.60584144216386
+    },
+    {
+      "id": "Sri-Lanka_450918",
+      "gt_positive": true,
+      "iou": 0.13292460213931645,
+      "mae_pp": 26.41688356233481
+    },
+    {
+      "id": "Sri-Lanka_534068",
+      "gt_positive": true,
+      "iou": 0.9981376364278315,
+      "mae_pp": 0.174713134765625
+    },
+    {
+      "id": "Sri-Lanka_713926",
+      "gt_positive": true,
+      "iou": 0.964915445863703,
+      "mae_pp": 0.8984983060159326
+    },
+    {
+      "id": "Sri-Lanka_849649",
+      "gt_positive": true,
+      "iou": 0.049332264957264955,
+      "mae_pp": 16.270330466025378
+    },
+    {
+      "id": "Sri-Lanka_922192",
+      "gt_positive": true,
+      "iou": 0.1844380403458213,
+      "mae_pp": 1.8833695466317462
+    },
+    {
+      "id": "USA_1049586",
+      "gt_positive": true,
+      "iou": 0.7136183974128638,
+      "mae_pp": 0.2003350364991357
+    },
+    {
+      "id": "USA_350244",
+      "gt_positive": true,
+      "iou": 0.40711462450592883,
+      "mae_pp": 0.24187395086220054
+    },
+    {
+      "id": "USA_430764",
+      "gt_positive": true,
+      "iou": 0.7168389527581877,
+      "mae_pp": 1.7792223150490012
+    },
+    {
+      "id": "USA_504150",
+      "gt_positive": true,
+      "iou": 0.5117999295526594,
+      "mae_pp": 0.7858815989257075
+    },
+    {
+      "id": "USA_519181",
+      "gt_positive": true,
+      "iou": 0.4261553120533587,
+      "mae_pp": 0.6420551869895127
+    },
+    {
+      "id": "USA_527077",
+      "gt_positive": true,
+      "iou": 0.669260700389105,
+      "mae_pp": 0.21707035139455302
+    },
+    {
+      "id": "USA_595451",
+      "gt_positive": true,
+      "iou": 0.7193614614321029,
+      "mae_pp": 0.009918515579699087
+    },
+    {
+      "id": "USA_670826",
+      "gt_positive": true,
+      "iou": 0.19461365822378968,
+      "mae_pp": 0.8751316130804327
+    },
+    {
+      "id": "USA_67102",
+      "gt_positive": true,
+      "iou": 0.9,
+      "mae_pp": 0.18810260558355688
+    },
+    {
+      "id": "USA_758178",
+      "gt_positive": true,
+      "iou": 0.4440278521692555,
+      "mae_pp": 0.20523932507543882
+    },
+    {
+      "id": "USA_778194",
+      "gt_positive": true,
+      "iou": 0.8248847926267281,
+      "mae_pp": 0.244209562330675
+    },
+    {
+      "id": "USA_905409",
+      "gt_positive": true,
+      "iou": 0.9521307521695127,
+      "mae_pp": 0.656622116070645
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://storage.googleapis.com/sen1floods11/v1.1/splits/flood_handlabeled/flood_bolivia_data.csv",
+    "name": "v1.1/splits/flood_handlabeled/flood_bolivia_data.csv",
+    "csv_row_count": 15,
+    "first_row": [
+      "Bolivia_103757_S1Hand.tif",
+      "Bolivia_103757_LabelHand.tif"
+    ]
+  },
+  {
+    "url": "https://storage.googleapis.com/sen1floods11/v1.1/splits/flood_handlabeled/flood_test_data.csv",
+    "name": "v1.1/splits/flood_handlabeled/flood_test_data.csv",
+    "csv_row_count": 90,
+    "first_row": [
+      "Ghana_313799_S1Hand.tif",
+      "Ghana_313799_LabelHand.tif"
+    ]
+  },
+  {
+    "url": "https://storage.googleapis.com/sen1floods11/v1.1/splits/flood_handlabeled/flood_train_data.csv",
+    "name": "v1.1/splits/flood_handlabeled/flood_train_data.csv",
+    "csv_row_count": 252,
+    "first_row": [
+      "Ghana_103272_S1Hand.tif",
+      "Ghana_103272_LabelHand.tif"
+    ]
+  },
+  {
+    "url": "https://storage.googleapis.com/sen1floods11/v1.1/splits/flood_handlabeled/flood_valid_data.csv",
+    "name": "v1.1/splits/flood_handlabeled/flood_valid_data.csv",
+    "csv_row_count": 89,
+    "first_row": [
+      "Ghana_5079_S1Hand.tif",
+      "Ghana_5079_LabelHand.tif"
+    ]
+  }
+]

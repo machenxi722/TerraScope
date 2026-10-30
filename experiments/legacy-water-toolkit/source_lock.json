@@ -1,0 +1,21 @@
+{
+  "hf_repo": "sy1998/TerraScope",
+  "hf_revision": "a2333262586f8a07238d85db85061979198435fc",
+  "github_repo": "https://github.com/shuyansy/Earth-Observation-VLMs",
+  "github_revision": "12b9970fca8d87ea3978c55a8f8fceddfd8efc2e",
+  "files": {
+    "vendor_metadata/hf_model_info.json": "434daa93a0e579d8d2427b3844ed43b9c09c43787c8f64fa05891bf5642eec47",
+    "vendor_metadata/configuration_sa2va_chat.py": "86a3e05c7fc2f0b4ad766dcdae633eed654e02c6f5c52cf384e5f7aba12d0a4d",
+    "vendor_metadata/config.json": "bbf2f6fd597d843b74c4b3344d22e661b17d604a6dbe3f7b320ee217039fcf7b",
+    "vendor_metadata/official_requirements.txt": "de18e292126be74361c77e08a2f08f20b2ef39053d330fb62628115831b6b101",
+    "vendor_metadata/official_projects_terrascope_hf_convert_to_hf.py": "95578efcd8d9fc59381a33e33e255a21903743aeb0257acf7f45c4e42f5b85e0",
+    "vendor_metadata/modeling_sa2va_chat.py": "193a9bf6cb48d393beef04e9a551eb5b7e1f67b684b351befd0d43872e15c95f",
+    "vendor_metadata/templates.py": "585663d5c3cf9bba1ee095ae45f88af0866129d70436cbc2ef8aefe957db38d2",
+    "vendor_metadata/official_demo.py": "1aee1d6da3afb9fedc3f3f016661c6fb26c739ec4deb0fd956ef42ade39412f2",
+    "vendor_metadata/sam2.py": "f9cb4f6075f9a1447ed4ac2fe7ff75ed4ab85ecd8bdcd0b6cf886c72241baa56",
+    "splits/flood_bolivia_data.csv": "4775d100fae1f1ca66a842b8af6d2a97b8bfc5847f29d88ff0affff2c1e22768",
+    "splits/flood_valid_data.csv": "04999b82b93e393c32a54ac85b2bf8a18b671f7a6f43a9478b340e8a9b9647fb",
+    "splits/flood_test_data.csv": "8b598c9438042f3ed8aed4484268387fae1aa5b660882e1c5b4c1218eba63d67",
+    "splits/flood_train_data.csv": "57be4dc440bf8a526effa77e06d4b8cb7a8484589c0bffa201d8e0f49e994beb"
+  }
+}

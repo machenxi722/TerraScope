@@ -1,0 +1,13 @@
+{
+  "images": 1198,
+  "gps": 895,
+  "splits": {
+    "test": 448,
+    "holdout": 370,
+    "train": 300,
+    "val": 80
+  },
+  "predictions": 1796,
+  "verified_files": 5391,
+  "manifest_sha256": "ac9e35950c1278b1e1cc66794a47d61279ec8922ecc10e150900e00269b9b925"
+}

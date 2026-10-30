@@ -1,0 +1,5 @@
+# Installed into a separate vendor directory; preserve the existing Torch environment.
+fastapi==0.143.3
+uvicorn==0.54.0
+pydantic==2.14.1
+python-multipart==0.0.32

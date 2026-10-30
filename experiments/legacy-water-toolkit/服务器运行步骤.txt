@@ -1,0 +1,176 @@
+TerraScope 投影层 + SAM2 解码器微调：服务器运行步骤
+版本：2026-10-15
+
+一、预算与服务器选择
+
+总预算按人民币 200 元；默认预留 20 元给磁盘、上传下载等非 GPU 费用。
+GPU 租期上限 = min(24 小时, (200−20)/整机每小时实付价格)。
+例如 5 元/小时 → 最多 24 小时，GPU 120 元；7.5 元/小时 → 24 小时，GPU 180 元；
+10 元/小时 → 18 小时；12 元/小时 → 15 小时。这些是预算算式，不是当前平台报价。
+若磁盘/流量预估超过 20 元，提高 --reserve-cny，相应减少 GPU 时间。
+
+优先：单卡 48GB、支持 BF16（如 A6000/A40/L40S 同等级），RAM 至少 64GB，
+可用磁盘建议 100–120GB。完整模型约十几 GB，446 张原始 FPN 缓存约 20GB，
+另有模型下载临时文件、数据、环境和多组检查点。只租一张卡。
+24GB 单卡只在完整 8B + 真实图像预检成功后采用；不要只凭解码器小就判断能放下。
+本工具包没有默认启用 4-bit 量化，也没有依赖 FlashAttention 编译。
+
+建议实付整机单价不超过 7.5 元/小时，以保留足够缓冲。若当地 48GB 超出这个价，
+先考虑通过预检的 24GB 或减少实验次数；不建议为了 48GB 强行压缩到没有测试时间。
+
+参考时间盒（不是实测耗时保证）：
+  环境与真实 GPU 预检：1.5 小时以内
+  完整特征缓存：3 小时以内
+  M1：3 小时以内
+  M2：3 小时以内
+  验证集选定配置的第二个种子：3 小时以内
+  test / Bolivia 评价及结果导出：4 小时以内
+  剩余约 6.5 小时用于 I/O 波动、排错、下载成果和关机
+自动调度的各主要阶段时间盒总和是 16 小时；其他时间也属于租期，不能漏算。
+第 100 次优化器更新后输出实测吞吐预测；跑不满 1000 步时按时间盒停止，不加时硬跑。
+
+二、租 GPU 前准备
+
+1. 向队友索取“向队友补齐文件清单.txt”中的资料。当前分享包没有找到可执行训练/
+   推理代码、真实 checkpoint 或原始 GeoTIFF，因此不能声称已复现他的运行环境。
+2. 尽量在不计 GPU 费的 CPU 实例或本地完成依赖与大文件下载，再挂载数据盘到 GPU。
+3. 把整个工具包上传到服务器，例如 /workspace/terrascope；下列命令在 Linux bash 执行。
+   示例路径可替换；不要漏传 splits、vendor_metadata、source_lock.json。
+4. 选择 Python 3.10 镜像与可运行 PyTorch cu121 的 NVIDIA 驱动。
+5. 记录实际开始计费时间，在租赁平台设置不超过预算截止时间的自动停机/释放策略。
+   Python 进程停止、tmux 退出、nvidia-smi 没有进程，都不代表平台停止计费。
+
+三、环境、官方模型与数据
+
+cd /workspace/terrascope
+bash setup_server.sh
+source .venv/bin/activate
+
+python -m tsft.download model --out /data/models/TerraScope
+python -m tsft.download data --out /data/sen1floods11_raw
+python -m tsft.data --raw /data/sen1floods11_raw --out /data/water_prepared
+
+模型固定在官方 HF revision a2333262586f8a07238d85db85061979198435fc。
+数据下载 446 个 S2Hand + 446 个 LabelHand 文件，遵循随包的官方划分。
+检查 /data/water_prepared/manifest.json：252 train、89 val、90 test、15 Bolivia，
+若全无效样本被剔除，必须在 excluded 中看到 ID 和原因，最终论文也要说明分母。
+missing_files.json 必须为空。对齐失败必须回查源数据，不能随意 resize 标签糊过去。
+
+如果队友给的是已经导出的 HF 格式完整 TerraScope，可以改 --model 路径。
+需要完整 safetensors 分片、索引、config、tokenizer、全部自定义 .py；当前桥接只支持
+与锁定官方版本一致的 modeling_sa2va_chat.py 和 sam2.py，代码不一致时会停止。
+如果只有 .pth / DeepSpeed checkpoint，先按官方转换工具导出 HF；不得把 .pth 改名冒充。
+本包保留了官方 convert_to_hf.py 供核对，但不能在缺少训练配置时替队友猜转换参数。
+
+四、真实 GPU 预检——先两张训练图，不直接跑满
+
+python -m tsft.cache \
+  --model /data/models/TerraScope \
+  --manifest /data/water_prepared/manifest.json \
+  --out /data/water_cache --limit 2 --hours 0.75
+
+python -m tsft.preflight \
+  --manifest /data/water_prepared/manifest.json \
+  --cache /data/water_cache --out /data/pilot_result
+
+应得到：
+  water_cache/index.json：complete=false（两张试跑时正常）、parity 与峰值显存；
+  pilot_result/preflight.json：passed=true、非零梯度、重载差异为零。
+预检权重只存在 pilot_result，正式 M1/M2 不加载它们。
+
+如果出现 CUDA OOM：
+  先确认没有其他占卡进程；保持 max-patches=1、微批次=1；
+  如发生在完整 8B 加载/特征生成，梯度累计无助于解决冻结模型常驻显存问题；
+  终止当前卡的计费，换符合预算的更大显存卡，或暂缓实验。不要临时混用量化与非量化缓存。
+如果官方路径 parity 检查失败：保留报错、软件版本与 index.json，先核对代码版本和模型。
+  不要简单增大容差或删除断言继续跑。
+
+五、推荐：总预算自动调度
+
+以下租赁开始时间与单价只是语法示例，必须替换成“实际开始计费”的时间与实付单价。
+不是运行命令时的当前时间；重新运行不能把已用的费用清零。
+
+python -m tsft.run_budget \
+  --model /data/models/TerraScope \
+  --manifest /data/water_prepared/manifest.json \
+  --cache /data/water_cache --out /data/experiment_01 \
+  --hourly-price 7.5 --rental-start '2026-10-15T10:00:00+08:00' \
+  --dry-run
+
+确认打印的绝对截止时间符合真实租期，去掉 --dry-run 执行同一命令。
+请用 tmux 等保持进程运行，并查看 /data/experiment_01/*.log。
+顺序：补齐缓存 → M1 → M2 → 按验证集选择第二种子配置 → test 与 Bolivia 的统一评估。
+若剩余时间不足，调度器会跳过 M2 或第二种子，为最终评价预留时间，并记录跳过原因。
+预算更紧时也可主动加 --skip-m2 --skip-second-seed，只做 R1/M1 与最终评价。
+自动脚本复用两张试跑缓存；重新加载完整 8B 后补完余下图像。
+
+完整计划包含两个独立实验；每个实验都从 base_head.pt 初始化。第二种子也从基线
+初始化，不从第一个种子的最优权重继续训练。selection_before_test.json 记录测试前选模。
+调度器先扣掉一小时用于成果导出/关机；工作结束时间和最晚停机时间都打印并保存。
+同一输出目录的 budget.json 不允许修改起始时间来延长预算。
+
+预算保护范围：停止训练/缓存/评估子进程，并尽可能保存结果；它不调用云厂商 API，
+不能替你释放租赁实例，也不能控制磁盘持续计费。最终仍须到平台停止/释放 GPU，
+核实账单与保留磁盘设置。提前设置平台定时关机是必要操作。
+
+六、手动分阶段运行（需要自己遵守同一个租期截止时间）
+
+python -m tsft.cache --model /data/models/TerraScope \
+  --manifest /data/water_prepared/manifest.json --out /data/water_cache --hours 3
+
+python -m tsft.train --manifest /data/water_prepared/manifest.json \
+  --cache /data/water_cache --out /data/runs/M1 --area-weight 0.0 --hours 3
+
+python -m tsft.train --manifest /data/water_prepared/manifest.json \
+  --cache /data/water_cache --out /data/runs/M2 --area-weight 0.1 --hours 3
+
+根据两个 status.json 的 best_score 选配置；若选择 M2：
+python -m tsft.train --manifest /data/water_prepared/manifest.json \
+  --cache /data/water_cache --out /data/runs/M2_seed2 \
+  --area-weight 0.1 --seed 20261016 --hours 3
+
+同一协议的冻结基线 R1：
+python -m tsft.evaluate --manifest /data/water_prepared/manifest.json \
+  --cache /data/water_cache --split test --out /data/eval/R1_test --export-masks
+
+微调模型：
+python -m tsft.evaluate --manifest /data/water_prepared/manifest.json \
+  --cache /data/water_cache --checkpoint /data/runs/M2/best.pt \
+  --split test --out /data/eval/M2_test --export-masks
+
+将 --split 改为 bolivia，并换输出目录做跨地区测试；M1 与第二种子同理。
+不传 --checkpoint 就是 R1，不是队友原流程 R0。
+相同目录不覆盖旧训练/评价；需要重跑时使用新目录，不删除原日志。
+时间不足优先保留 M1 和测试，取消第二种子/M2；取消后在报告中写明，不伪装完整消融。
+
+七、比较结果、导入平台
+
+python -m tsft.compare --baseline /data/eval/R1_test/per_image.csv \
+  --candidate /data/eval/M2_test/per_image.csv --out /data/eval/M2_vs_R1.json
+
+可再加 --unit country，输出另一个文件，检查按国家聚类的敏感性。
+micro IoU 差为正较好，面积 MAE 差为负较好。IoU 单位是 0–1，面积比例误差单位是百分点。
+summary.json、per_image.csv、masks/*.tif 可以进入技术报告和 TerraScope 核验流程。
+掩码 tif 中 0=非水、1=水、255=无效，已有地理参考；不能把 255 当水计面积。
+
+新 RGB 图片推理：
+python -m tsft.infer --model /data/models/TerraScope --cache /data/water_cache \
+  --checkpoint /data/runs/M2/best.pt --image /data/new_rgb.png --out /data/new_mask.png
+
+输入 RGB 必须采用同一波段/反射率处理。PNG 本身不携带真实地理面积，不能仅凭 PNG
+给出平方米数值。固定前缀微调权重不能未经重测就宣称自由问答、任意提示词都改善。
+
+八、结束前必须保存
+
+保存以下目录/文件到本地或持久数据盘：
+  工具包、installed-environment.txt、source_lock.json；
+  prepared/manifest.json、缺失/剔除记录；
+  cache/base_head.pt、index.json；
+  每组 run_config.json、metrics.jsonl、status.json、best.pt、latest.pt；
+  budget.json、所有阶段日志、selection_before_test.json；
+  evaluation 的 summary.json、per_image.csv、GeoTIFF；
+  preflight.json、GPU 型号、平台实际租期与费用。
+缓存特征约 20GB 可留在持久盘以便重训；推理只需完整官方模型、base_head.pt、best.pt，
+不需要把全部特征都带走。最重要的 best.pt 与证据日志先下载，不要等到最后一分钟。
+
+确认成果可读取后，到租赁平台停止/释放 GPU，核实不再计费。

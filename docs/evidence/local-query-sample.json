@@ -1,0 +1,14 @@
+{
+  "scope": "40 serial authenticated GET /projects via Vite proxy; localhost; SQLite; development mode",
+  "n": 40,
+  "p50_ms": 3.73,
+  "p95_ms": 5.15,
+  "max_ms": 7.5,
+  "not_measured": [
+    "multi-user load",
+    "production PostgreSQL",
+    "image switching p95",
+    "GPU latency"
+  ],
+  "latest_report_snapshot_to_zip_asset_seconds": 1.121
+}

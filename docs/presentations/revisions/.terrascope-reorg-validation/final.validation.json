@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "presentation-finalization.v1",
+  "finalSha256": "352a5d0b9e0a327bb03fdd81074308ec86d222b0578e18685b44a6d43a455cfd",
+  "byteCount": 32770880,
+  "packageIntegrity": {
+    "chart_count": 3,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 7,
+    "relationship_part_count": 33,
+    "slide_count": 7,
+    "status": "pass",
+    "exitCode": 0,
+    "findingCount": 0,
+    "warnings": []
+  },
+  "presentationLayout": {
+    "finding_count": 0,
+    "findings": [],
+    "font_policy": {
+      "checked_text_script_count": 278,
+      "native_font_rendering_verified": false,
+      "observed_font_families": [
+        "Songti SC",
+        "Times New Roman",
+        "微软雅黑"
+      ],
+      "observed_font_use_counts": {
+        "Songti SC": 198,
+        "Times New Roman": 15,
+        "微软雅黑": 65
+      },
+      "passed": true,
+      "performed": true
+    },
+    "slide_count": 7,
+    "slide_size_in": [
+      13.3333,
+      7.5
+    ],
+    "warning_count": 0,
+    "warnings": [],
+    "exitCode": 0,
+    "findingCount": 0,
+    "fontPolicy": {
+      "checked_text_script_count": 278,
+      "native_font_rendering_verified": false,
+      "observed_font_families": [
+        "Songti SC",
+        "Times New Roman",
+        "微软雅黑"
+      ],
+      "observed_font_use_counts": {
+        "Songti SC": 198,
+        "Times New Roman": 15,
+        "微软雅黑": 65
+      },
+      "passed": true,
+      "performed": true
+    }
+  },
+  "fontSelection": {
+    "basis": "reference",
+    "approvedFamilies": [
+      "Songti SC",
+      "Times New Roman",
+      "微软雅黑",
+      "宋体",
+      "Cambria Math",
+      "Segoe UI Symbol",
+      "微软雅黑 Light"
+    ],
+    "scriptFonts": {},
+    "referenceSha256": "2358b0f0668788be852e67a40f2f71b60e712303b72a3d7caa66e5c064358bbf",
+    "referenceFontsVerifiedInEncodedText": true,
+    "checked_text_script_count": 278,
+    "native_font_rendering_verified": false,
+    "observed_font_families": [
+      "Songti SC",
+      "Times New Roman",
+      "微软雅黑"
+    ],
+    "observed_font_use_counts": {
+      "Songti SC": 198,
+      "Times New Roman": 15,
+      "微软雅黑": 65
+    },
+    "passed": true,
+    "performed": true
+  },
+  "firstPartyImport": {
+    "performed": true,
+    "passed": true,
+    "slideCount": 7,
+    "sha256": "352a5d0b9e0a327bb03fdd81074308ec86d222b0578e18685b44a6d43a455cfd",
+    "runtimeNodeModules": "/Users/chenxi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules",
+    "nodeExecutable": "/Users/chenxi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  },
+  "nativeTableArithmetic": {
+    "performed": true,
+    "checked_column_count": 0,
+    "checks": [],
+    "claim_boundary": "Displayed-value arithmetic with rounding tolerance; not source-data verification.",
+    "eligible_table_count": 0,
+    "finding_count": 0,
+    "findings": [],
+    "native_table_count": 2,
+    "passed": true,
+    "schema_version": "presentation-native-table-arithmetic.v1",
+    "skipped_tables": [
+      {
+        "reason": "no_numeric_amounts",
+        "slide": 1,
+        "table": 1
+      },
+      {
+        "reason": "no_unambiguous_bottom_total",
+        "slide": 2,
+        "table": 1
+      }
+    ],
+    "slide_count": 7,
+    "warning_count": 0,
+    "warnings": []
+  },
+  "nativeChartTitles": {
+    "performed": true,
+    "checks": [
+      {
+        "chart": 1,
+        "slide": 2,
+        "status": "absent"
+      },
+      {
+        "chart": 1,
+        "slide": 4,
+        "status": "absent"
+      },
+      {
+        "chart": 2,
+        "slide": 4,
+        "status": "absent"
+      }
+    ],
+    "finding_count": 0,
+    "findings": [],
+    "native_chart_count": 3,
+    "native_powerpoint_verified": false,
+    "passed": true,
+    "presentation_sha256": "352a5d0b9e0a327bb03fdd81074308ec86d222b0578e18685b44a6d43a455cfd",
+    "schema_version": "presentation-native-chart-titles.v1",
+    "slide_count": 7,
+    "source_text_emitted": false,
+    "unresolved_linked_title_count": 0
+  },
+  "sourceDerivedPolicyFlags": [
+    "--expected-slide-size-emu",
+    "12192000,6858000",
+    "--validate-bullet-geometry",
+    "--validate-heading-fit",
+    "--require-native-table-slide",
+    "1",
+    "--require-native-table-slide",
+    "2",
+    "--cover-role",
+    "none",
+    "--expected-slide-count",
+    "7",
+    "--approved-font-family",
+    "Songti SC",
+    "--approved-font-family",
+    "Times New Roman",
+    "--approved-font-family",
+    "微软雅黑",
+    "--approved-font-family",
+    "宋体",
+    "--approved-font-family",
+    "Cambria Math",
+    "--approved-font-family",
+    "Segoe UI Symbol",
+    "--approved-font-family",
+    "微软雅黑 Light"
+  ],
+  "nativeChartValidation": {
+    "detectedOwnerSlides": [
+      2,
+      4
+    ],
+    "detectedChartCount": 3,
+    "targetApplication": "portable",
+    "sourceChartOwnersExplicitlyDeclared": true,
+    "validatorRan": true,
+    "passed": true
+  },
+  "nativeQuantitativeCharts": {
+    "report": {
+      "claim_boundary": "OOXML/workbook structural validation only; source provenance and native PowerPoint opening remain separate checks.",
+      "expected_quantitative_chart_slides": [
+        2,
+        4
+      ],
+      "failed_slide_count": 0,
+      "failed_slides": [],
+      "formal_human_reviewed": false,
+      "native_application_open_verified": false,
+      "package_sha256": "352a5d0b9e0a327bb03fdd81074308ec86d222b0578e18685b44a6d43a455cfd",
+      "passed": true,
+      "required_embedded_workbook_slides": [
+        2,
+        4
+      ],
+      "results": [
+        {
+          "approved_source_figure_exception": false,
+          "charts": [
+            {
+              "cache_reference_ranges_verified": true,
+              "embedded_workbook_count": 1,
+              "embedded_workbook_sheet_count": 1,
+              "native_chart_types": [
+                "barChart"
+              ],
+              "numeric_cache_point_count": 4,
+              "series_formula_count": 2,
+              "workbook_numeric_cell_count": 4
+            }
+          ],
+          "failure_codes": [],
+          "native_chart_count": 1,
+          "raster_picture_count": 2,
+          "required_native_chart_count": 1,
+          "slide_number": 2,
+          "status": "passed"
+        },
+        {
+          "approved_source_figure_exception": false,
+          "charts": [
+            {
+              "cache_reference_ranges_verified": true,
+              "embedded_workbook_count": 1,
+              "embedded_workbook_sheet_count": 1,
+              "native_chart_types": [
+                "barChart"
+              ],
+              "numeric_cache_point_count": 2,
+              "series_formula_count": 2,
+              "workbook_numeric_cell_count": 2
+            },
+            {
+              "cache_reference_ranges_verified": true,
+              "embedded_workbook_count": 1,
+              "embedded_workbook_sheet_count": 1,
+              "native_chart_types": [
+                "barChart"
+              ],
+              "numeric_cache_point_count": 2,
+              "series_formula_count": 2,
+              "workbook_numeric_cell_count": 2
+            }
+          ],
+          "failure_codes": [],
+          "native_chart_count": 2,
+          "raster_picture_count": 7,
+          "required_native_chart_count": 1,
+          "slide_number": 4,
+          "status": "passed"
+        }
+      ],
+      "schema_version": "owner-private.quantitative-chart-native-gate.v1",
+      "slide_count": 7,
+      "source_attachments_accessed": false,
+      "target_application": "portable",
+      "validated_slide_count": 2
+    },
+    "exitCode": 0,
+    "validatedSlideCount": 2,
+    "requiredOwnerSlides": [
+      2,
+      4
+    ],
+    "approvedSourceFigureExceptionSlides": [],
+    "requiredEmbeddedWorkbookChartOwnerSlides": [
+      2,
+      4
+    ]
+  }
+}

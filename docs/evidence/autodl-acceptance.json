@@ -1,0 +1,75 @@
+{
+  "tested_at": "2026-10-18T14:50:32.968461+00:00",
+  "sample": "7301",
+  "runs": [
+    {
+      "strategy": "single_view",
+      "task_id": "46385d8c-adb2-43d7-9b33-18c20f243d57",
+      "prediction_id": "068f79a6-ac97-4b6a-9487-75154775aa71",
+      "input_sha256": "0e4e5d1cb02b9f1a157f017a7b3947257f7bd52f4ea0e72d19cb468cdc8f6126",
+      "mask_sha256": "276c526638963e64ae30505980dcb60bd9a10ddf65894868709e36e6e3c89e73",
+      "width": 1024,
+      "height": 685,
+      "disagreement_fraction": 0.0,
+      "pred_pixels": 147010,
+      "metrics": {
+        "pred_pixels": 147010,
+        "valid_pixels": 701440,
+        "coverage_percent": 20.95831432481752,
+        "scene_threshold_percent": 1.0,
+        "scene_screen_positive": true,
+        "validity_source": "full_image",
+        "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+        "area_m2": null
+      },
+      "runtime": {
+        "job_id": "ee694410-fa09-45c4-882d-331704ace940",
+        "device": "NVIDIA A800 80GB PCIe",
+        "elapsed_seconds": 0.5754644758999348,
+        "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+      }
+    },
+    {
+      "strategy": "tta4",
+      "task_id": "2d529ec9-3f39-42cd-86b2-b439434dfc3e",
+      "prediction_id": "777dd162-15f7-401d-975a-816abda4648a",
+      "input_sha256": "0e4e5d1cb02b9f1a157f017a7b3947257f7bd52f4ea0e72d19cb468cdc8f6126",
+      "mask_sha256": "decdb55ecd1ff7de72c2ee07bbb050bf2fef092dfb2123534f11692e7d218fa1",
+      "width": 1024,
+      "height": 685,
+      "disagreement_fraction": 0.0,
+      "pred_pixels": 152585,
+      "metrics": {
+        "pred_pixels": 152585,
+        "valid_pixels": 701440,
+        "coverage_percent": 21.753107892335766,
+        "scene_threshold_percent": 1.0,
+        "scene_screen_positive": true,
+        "validity_source": "full_image",
+        "coverage_definition": "影像有效区域内预测受淹道路像素比例",
+        "area_m2": null
+      },
+      "runtime": {
+        "job_id": "043c4b96-7e20-4fc3-8fe5-e8702eee0c97",
+        "device": "NVIDIA A800 80GB PCIe",
+        "elapsed_seconds": 1.2456496804952621,
+        "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+      }
+    }
+  ],
+  "gpu": {
+    "available": true,
+    "reason": "模型服务已连接并验证版本",
+    "device": "NVIDIA A800 80GB PCIe",
+    "state": "ready",
+    "queue_depth": 0,
+    "running_jobs": 0,
+    "base_manifest_sha256": "eeaf19cf6411d24e51b2463fb4e814d1862ddadc05b459251abc50431a7afea4"
+  },
+  "project_id": "88b91e43-9b18-4892-900f-d3008adb1192",
+  "image_id": "cd4321e1-bbc7-4455-afaa-d5a789473454",
+  "report_id": "c9a6fc68-aec2-42d4-8bae-a3f4d12cbb46",
+  "report_verified": true,
+  "passed": true,
+  "offline_results_verified": true
+}

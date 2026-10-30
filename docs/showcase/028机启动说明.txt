@@ -1,0 +1,13 @@
+028 已配置为默认推理实例
+
+1. AutoDL 开启 028：bb5a41b362-ace379d4，选择正常 GPU 开机，设置定时关机。
+2. 进入 terrascope 目录运行：
+   .venv/bin/python scripts/autodl.py start
+   .venv/bin/python scripts/autodl.py status
+3. 首次连接按提示输入 028 的 SSH 密码。
+4. 本地页面已运行则直接打开 http://127.0.0.1:5173；否则运行 .venv/bin/python scripts/dev.py。
+5. 选择 7611，分析设置 → 本次推理 → 四视图增强 tta4 → 提交分析。
+6. 完成后停止模型并在 AutoDL 关闭 028。
+
+已验证：两种真实预测与对应历史掩膜逐像素一致，四视图 IoU 82.35%，报告导出正常。
+039 配置保存在 runtime/autodl-039.json；当前默认配置 runtime/autodl.json 指向 028。

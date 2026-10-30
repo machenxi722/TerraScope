@@ -1,0 +1,11 @@
+{
+  "host": "your-gpu-host.example.com",
+  "port": 22,
+  "user": "root",
+  "python": "/root/terrascope-env/bin/python",
+  "service_root": "/root/terrascope-platform",
+  "local_port": 18100,
+  "remote_port": 8100,
+  "base_path": "/root/autodl-tmp/terrascope/models/TerraScope",
+  "delta_path": "/root/terrascope-platform/weights/long_bce_lovasz_seed20261017_best_delta.pt"
+}

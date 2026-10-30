@@ -1,0 +1,15 @@
+{
+  "version": "holdout370-v1",
+  "selection": "All 370 official validation images excluded from the frozen 80-image tuning subset. No overlap with previous 828-image experiment or archived FloodNet input/raw directories.",
+  "n": 370,
+  "positive_n": 23,
+  "use": "Additional evaluation only; no checkpoint, threshold, prompt, loss, or architecture tuning. Results reported separately from the 448 official test images.",
+  "candidates": "Original head control; original LoRA selected by the 80-image validation score; best 80-image-validation candidate in each of the two night methods. Model selection uses validation only.",
+  "threshold_logit": 0,
+  "source": "https://huggingface.co/datasets/torchgeo/floodnet/resolve/main/floodnet.zip",
+  "limitation": "Single-event frame-level holdout; not geographic cross-event evidence or proof of absence from foundation-model pretraining.",
+  "selected_at": "2026-10-16 01:27:26",
+  "manifest_sha256": "6fe5f7f90808810254c252cb742af50dc6ea2c2ea53b77cd09289da5aa39afa6",
+  "maximum_run_seconds": 1200,
+  "deadline_epoch": 1792096800
+}

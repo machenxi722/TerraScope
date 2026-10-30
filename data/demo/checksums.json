@@ -1,0 +1,10 @@
+{
+  "manifest.json": "909ce3f8c6ad1ef50c97529a03c565855acdccd8c1ecc06945dd2d1b9dee0e85",
+  "experiments/tta4_test.json": "d76897fd05daa7f44c9311e1c4878d65f61f29004acf2bfe30df562756393ed6",
+  "experiments/tta4_holdout.json": "a1b62df458c7b1784168c6a475f4a4ea35b649eeda32e0eccfa542d106f554d0",
+  "experiments/baselines.json": "8aff7ac0a4b581c6701a37836873ff1a7945a7c685c5a80e695c76f39fa58827",
+  "experiments/tta4_val.json": "136f2085d50e6fee3500a8a2d121c91d9e4f9f7808c91d668741ce7f314581e5",
+  "experiments/single_view_test.json": "446cc3ab15ee8f2081db228f3442ebaf07fc2852576e2c3a8bc4321d7f3bc6d8",
+  "experiments/single_view_holdout.json": "752bb77fd485361629beeacf7b0adb463c36a5a0739d25844d21cf25995cd28f",
+  "experiments/single_view_val.json": "39370338308dbc09051a0edb4a568f4e7565675b3bc1f8442c980a1e35b7d13f"
+}
